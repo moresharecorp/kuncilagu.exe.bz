@@ -16,6 +16,8 @@ Welcome Guest :)
 <script>
 $(document).ready(function(){
 
+localStorage.setItem("advertisechord",'<div style="clear:both"><center><span style="font-size:12px;color:silver"><iframe style="width:250px;height:30px;padding:0px;border:none;margin:0px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/chat.html"></iframe></span></center></div><div style="clear:both"></div>');
+
 /****
 if (!localStorage.getItem("IpUserCache") || localStorage.getItem("IpUserCache") == '') { $.getJSON('http://ip-api.com/json', function(result) { localStorage.setItem("IpUserCache", result.countryCode); });  }
 ****/
