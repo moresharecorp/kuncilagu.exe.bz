@@ -329,6 +329,20 @@ var ytEmbed = {
 
                 ytPlayerParams.videoId = id;
 
+				
+				
+				
+				
+				var url = 'http://kuncilagu.exe.bz/youtube_url_update.php?id_chord='+this.cfg.id_chord+'&id_youtube='+id+'';
+$.get(url, function(data) {
+$("#insertDB").empty();
+$('#insertDB').html(data); 
+     });
+
+				
+				
+				
+				
 
                 //other settings
                 if (this.cfg.playerVars) {
