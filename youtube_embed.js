@@ -259,6 +259,16 @@ var ytEmbed = {
 
                 if (id) {
                     playlist += id + ",";
+			
+			
+	$(document).ready(function(){				
+var urlinsertDB = 'http://kuncilagu.exe.bz/youtube_url_update.php?id_chord='+this.cfg.id_chord+'&id_youtube='+id+'';
+$.get(urlinsertDB, function(datainsertDB) {
+$('#insertDB').html(datainsertDB); 
+     });
+});		
+			
+			
                 }
 
                 var li = document.createElement('li');
@@ -332,12 +342,7 @@ var ytEmbed = {
 				
 				
 				
-$(document).ready(function(){				
-var urlinsertDB = 'http://kuncilagu.exe.bz/youtube_url_update.php?id_chord='+this.cfg.id_chord+'&id_youtube='+id+'';
-$.get(urlinsertDB, function(datainsertDB) {
-$('#insertDB').html(datainsertDB); 
-     });
-});
+
 				
 				
 				
