@@ -16,8 +16,8 @@ ga('send', 'pageview', {
   
   ga('send', 'event', {
     eventCategory: decodeURIComponent(okehash[1]),
-    eventAction: 'click',
-    eventLabel: decodeURIComponent(okehash[2])
+    eventAction: decodeURIComponent(okehash[2]),
+    eventLabel: decodeURIComponent(okehash[1])  +' - '+decodeURIComponent(okehash[2])
   });
 
 </script>
