@@ -12,6 +12,13 @@ var okehash = totalhash.split("#");
 ga('create', 'UA-76029292-4', 'auto');
 ga('send', 'pageview', {
   'page': '/kuncilagu.exe.bz/'+okehash[0],
-  'title': decodeURIComponent(okehash[1])});
+  'title': decodeURIComponent(okehash[1])  +' - '+decodeURIComponent(okehash[2])});
+  
+  ga('send', 'event', {
+    eventCategory: decodeURIComponent(okehash[1]),
+    eventAction: 'click',
+    eventLabel: decodeURIComponent(okehash[2])
+  });
+
 </script>
 <!-- End Google Analytics -->
