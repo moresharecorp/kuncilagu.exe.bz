@@ -23,7 +23,7 @@
 <script>
 $(document).ready(function(){
 
-localStorage.setItem("advertisechord",'<div style="clear:both"><center><span style="font-size:12px;color:silver"><iframe style="width:250px;height:30px;padding:0px;border:none;margin:0px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/chat.html"></iframe></span></center></div><div style="clear:both"></div><script>$(document).ready(function() {$("#ganalytics").attr("src", "https://moresharecorp.github.io/kuncilagu.exe.bz/ganalytics.html#\"\+idchord\+\"#\"\+encodeURI(tampilchord[idchord][nama_band])\+\"%20-%20\"\+encodeURI(tampilchord[idchord][judul])\+\"");});<\/script><iframe id="ganalytics" src="" style="width:0;height:0;border:0;border: none;"></iframe>');
+localStorage.setItem("advertisechord",'<div style="clear:both"><center><span style="font-size:12px;color:silver"><iframe style="width:250px;height:30px;padding:0px;border:none;margin:0px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/chat.html"></iframe></span></center></div><div style="clear:both"></div><script>$(document).ready(function() {$("#ganalytics").attr("src", "https://moresharecorp.github.io/kuncilagu.exe.bz/ganalytics.html#\"+idchord+\"#\"+encodeURI(tampilchord[idchord][nama_band])+\"%20-%20\"+encodeURI(tampilchord[idchord][judul])+\"");});<\/script><iframe id="ganalytics" src="" style="width:0;height:0;border:0;border: none;"></iframe>');
 
 /****
 if (!localStorage.getItem("IpUserCache") || localStorage.getItem("IpUserCache") == '') { $.getJSON('http://ip-api.com/json', function(result) { localStorage.setItem("IpUserCache", result.countryCode); });  }
