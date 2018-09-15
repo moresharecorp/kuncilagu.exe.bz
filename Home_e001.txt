@@ -54,11 +54,12 @@ if (!localStorage.getItem('rewardedpoints') || localStorage.getItem('rewardedpoi
         localStorage.setItem('rewardedpoints', oldrewardedpoints);
     } else {
         $("div").click(function() {
-            oldrewardedpoints = newpointsset - 1;
+            oldrewardedpoints = document.getElementById("mypoints").value - 1;
             localStorage.setItem('rewardedpoints', oldrewardedpoints);
+            $("#mypoints").empty(); document.getElementById('mypoints').innerHTML=oldrewardedpoints;
         });
     }
-    $('#promokhususatas').append('<div class="aboutrewardpoint" style="clear:both;color:white;font-size:18px;text-align:center;background-color:#e68a00;padding:5px;margin-bottom:5px;">My Points: ' + newpointsset + '</div>');
+    $('#promokhususatas').append('<div class="aboutrewardpoint" style="clear:both;color:white;font-size:18px;text-align:center;background-color:#e68a00;padding:5px;margin-bottom:5px;">My Points: <span id="mypoints">' + newpointsset + '</span></div>');
 } else {
     if (localStorage.getItem('rewardedpoints') < 0) {
         localStorage.setItem('rewardedpoints', '0');
