@@ -47,7 +47,12 @@ if (!localStorage.getItem('rewardedpoints1') || localStorage.getItem('rewardedpo
         oldrewardedpoints = newpointsset + 100;
         localStorage.setItem('rewardedpoints1', oldrewardedpoints);
     } else {
-        $("div").click(function() {
+        $("a").click(function() {
+            oldrewardedpoints = parseInt(localStorage.getItem("rewardedpoints1"),10) - 1;
+            localStorage.setItem('rewardedpoints1', oldrewardedpoints);
+            $("#mypoints").empty(); document.getElementById('mypoints').innerHTML=oldrewardedpoints;
+        });
+        $("#buttonsearchzz").click(function() {
             oldrewardedpoints = parseInt(localStorage.getItem("rewardedpoints1"),10) - 1;
             localStorage.setItem('rewardedpoints1', oldrewardedpoints);
             $("#mypoints").empty(); document.getElementById('mypoints').innerHTML=oldrewardedpoints;
