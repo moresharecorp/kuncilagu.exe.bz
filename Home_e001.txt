@@ -96,7 +96,7 @@ document.addEventListener("deviceready", function() {
     id: admobid.banner,
     isTesting: false,
     autoShow: true,
-	overlap: false,
+	overlap: false
   })
   admob.banner.prepare();
 }, false);
