@@ -87,7 +87,7 @@ if (!localStorage.getItem('rewardedpoints1') || localStorage.getItem('rewardedpo
 var admobid = {}
 if (/(android)/i.test(navigator.userAgent)) {  
   admobid = {
-    banner: "ca-app-pub-6516367932506481/9278162138"
+    banner: "ca-app-pub-6516367932506481/2416247460"
   }
 } 
 
