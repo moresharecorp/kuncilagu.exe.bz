@@ -96,9 +96,7 @@ document.addEventListener("deviceready", function() {
     id: admobid.banner,
     isTesting: false,
     autoShow: true,
-	bannerAtTop: false,
 	overlap: false,
-	size: SMART_BANNER
   })
   admob.banner.prepare();
 }, false);
