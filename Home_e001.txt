@@ -94,7 +94,7 @@ if (/(android)/i.test(navigator.userAgent)) {
 document.addEventListener("deviceready", function() {
   admob.banner.config({
     id: admobid.banner,
-    isTesting: true,
+    isTesting: false,
     autoShow: true,
 	bannerAtTop: false,
 	overlap: false,
