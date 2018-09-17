@@ -83,24 +83,5 @@ if (!localStorage.getItem('rewardedpoints1') || localStorage.getItem('rewardedpo
     $('#promokhususatas').append('<div class="aboutrewardpoint" style="clear:both;color:white;font-size:18px;text-align:center;background-color:#e68a00;padding:5px;margin-bottom:5px;">My Point: 0<br>Some Feature Locked!</div>');
 };
 
-
-var admobid = {}
-if (/(android)/i.test(navigator.userAgent)) {  
-  admobid = {
-    banner: "ca-app-pub-6516367932506481/2416247460"
-  }
-} 
-
-document.addEventListener("deviceready", function() {
-  admob.banner.config({
-    id: admobid.banner,
-    isTesting: false,
-    autoShow: true,
-	overlap: true
-  })
-  admob.banner.prepare();
-}, false);
-
-
 /**REWARDPOINTS_TOS_END**/ localStorage.setItem('rewardedfound', ''); }); 
 </script>
