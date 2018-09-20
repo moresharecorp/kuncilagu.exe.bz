@@ -41,7 +41,9 @@ if(localStorage.getItem("IpUserCache") != 'ID')
 localStorage.setItem("interstitial_check", "");
 localStorage.setItem('rewardedfound', '');
 
+/** 
 $("div").click(function(){ admob.rewardvideo.show(); admob.interstitial.show(); }); if (localStorage.getItem('rewardedfound') == 'LOADED') { }
+**/
 
 $(".aboutrewardpoint").live("click", function (){
   alert("The reward points only compatible with the latest version!\n\nYou will get 1000 points for the first time access and you need 1 point for:\n* Searching of chord\n* Bookmark Chord\n* Viewing Bookmark List\n* Viewing Top Chord\n* Viewing Played Chord\n* Chord Transposer\n* Zoom in/out\n\n(Limited Time Reward Points) You will get 100 points every showing video ads on Chord page area with the icon point. If your reward point = 0, Some feature will be locked by system.");
