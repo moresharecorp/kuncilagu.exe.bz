@@ -39,7 +39,7 @@ if(localStorage.getItem("IpUserCache") != 'ID')
 
 if (!localStorage.getItem("rewardedpoints1") || localStorage.getItem("rewardedpoints1") == "") { localStorage.setItem("rewardedpoints1", "1000"); }
 
-if (!localStorage.getItem("freeOneHourAccess_reward") || localStorage.getItem("freeOneHourAccess_reward") == "") { } else {
+if (((!localStorage.getItem("freeOneHourAccess_reward") || localStorage.getItem("freeOneHourAccess_reward") == "") && localStorage.getItem("admob_plugin_version") == "free") || localStorage.getItem("freeOneHourAccess_reward") > "1000") {
 /**REWARDPOINTS_TOS_START**/
 localStorage.setItem("interstitial_check", "");
 localStorage.setItem('rewardedfound', '');
