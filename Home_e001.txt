@@ -97,6 +97,5 @@ if (!localStorage.getItem('rewardedpoints1') || localStorage.getItem('rewardedpo
 /**REWARDPOINTS_TOS_END**/ 
 }
 
-$.getJSON('http://bit.ly/2R2mCyE?callback=?', function(response){});
 }); 
 </script>
