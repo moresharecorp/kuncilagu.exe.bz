@@ -9,8 +9,8 @@ document.addEventListener("deviceready", function()
 { admob.interstitial.config({ id: admobid.interstitial, isTesting: false, autoShow: false }); admob.interstitial.prepare();}, false); 
 });
 function refreshPage(){
- 
-    window.location.reload();
+ location.reload(true);
+    /*window.location.reload();*/
 } 
 </script>
 
