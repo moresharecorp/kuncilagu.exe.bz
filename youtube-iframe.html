@@ -59,7 +59,7 @@ function getVideo() {
 	      
 		  
 function embedVideo(data) {
-    $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
+    $('#ytvideo').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
     $('h3').text(data.items[0].snippet.title)
     $('.description').text(data.items[0].snippet.description)
 	$('title').text(data.items[0].snippet.title)
@@ -74,18 +74,18 @@ body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-co
 <center>
 <h3 style="padding:10px;background-color:#ebdaa7">Video Title</h3>
 <div style="text-align:center;width:95%">
-<iframe style="border:none;width:420px;height:250px;" src=""></iframe><br><br>
- <center><div class="description" style="text-align:center;width:400px;padding:10px;background-color:#fffbed;margin-bottom:20px;">Video Description</div></center>
+<iframe id="ytvideo" style="border:none;width:95%;height:250px;" src=""></iframe><br><br>
+ <center><div class="description" style="text-align:center;width:91%;padding:10px;background-color:#fffbed;margin-bottom:20px;">Video Description</div></center>
  
  <center>
  
- <script src="https://apis.google.com/js/platform.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 <div style="margin-top:10px;margin-bottom:10px" class="g-ytsubscribe" data-channelid="UCMVGVscOPTjiw14xJGlc4NA" data-layout="full" data-count="default"></div>
  
- <a target="_blank" href="https://www.youtube.com/channel/UCMVGVscOPTjiw14xJGlc4NA"><img src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/head_my_youtube.png" style="width:95%;margin-top:5px;margin-bottom:-5px;padding-bottom:0px;"><div id="headnews"></div></a>
+ <a target="_blank" href="https://www.youtube.com/channel/UCMVGVscOPTjiw14xJGlc4NA"><!--<img src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/head_my_youtube.png" style="width:95%;margin-top:5px;margin-bottom:-5px;padding-bottom:0px;">--><div id="headnews"></div></a>
  </center>
  
- 
+
  </div>
  </center>
  <br><Br><Br><Br><br>
