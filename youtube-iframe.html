@@ -7,24 +7,6 @@
 <link rel="shortcut icon" href="https://www.ms-room.com/gambar/moreshare.png" type="image/x-icon" /><link rel="icon" href="https://www.ms-room.com/gambar/moreshare.png" type="image/x-icon" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
-$(document).ready(function(){ 
-
-$.get('https://moresharecorp.github.io/kuncilagu.exe.bz/Home_e002.txt', function(data) {
-
- 
-	var res = data.match(/<div style="width:95%;(.*)"><\/div><img/i);
-	var res2 = '<div style="width:95%;'+res[1]+'"></div>';
-
-$("#headnews").empty();
-$("#headnews").html(res2);
-  
-  
-getVideo();
-
-
-
- });});
-
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, '\\$&');
@@ -35,6 +17,25 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 var judul = getParameterByName('judul');
+
+$(document).ready(function(){ 
+$.get('https://moresharecorp.github.io/kuncilagu.exe.bz/Home_e002.txt', function(data) {
+
+ 
+	var res = data.match(/<div style="width:95%;(.*)"><\/div><img/i);
+	var res2 = '<div style="width:95%;'+res[1]+'"></div>';
+
+$("#headnews").empty();
+$("#headnews").html(res2);
+
+  
+
+
+
+
+ });});
+
+
 
 function getVideo() {
       $.ajax({
@@ -53,6 +54,12 @@ function getVideo() {
         },
         error: function(response){
             console.log("Request Failed");
+			
+
+			 $("#deskripsi").empty(); 
+ $("#judulvideo").empty();
+$('#deskripsi').append('Jika Video ini gagal dimuat kemungkinan server penuh, silakan tonton langsung di youtube dengan mengklik link berikut -> <a href="https://www.youtube.com/results?search_query='+judul+'"><b>'+judul+'</b></a><meta http-equiv="refresh" content="0; url=https://www.youtube.com/results?search_query='+judul+'" />');
+$('#judulvideo').append('Video Gagal Dimuat!');
         }
       });
     }
@@ -65,6 +72,7 @@ function embedVideo(data) {
 	$('title').text(data.items[0].snippet.title)
 }
 
+$(document).ready(function(){ getVideo(); });
 </script>
 <style>
 body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-color:#f0eee9}
@@ -72,10 +80,10 @@ body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-co
 </head>
 <body>
 <center>
-<h3 style="padding:10px;background-color:#ebdaa7">Video Title</h3>
+<h3 id="judulvideo" style="padding:10px;background-color:#ebdaa7">Video Title</h3>
 <div style="text-align:center;width:95%">
 <iframe id="ytvideo" style="border:none;width:95%;height:250px;" src=""></iframe><br><br>
- <center><div class="description" style="text-align:center;width:91%;padding:10px;background-color:#fffbed;margin-bottom:20px;">Video Description</div></center>
+ <center><div id="deskripsi" class="description" style="text-align:center;width:91%;padding:10px;background-color:#fffbed;margin-bottom:20px;">Deskripsi Video</div></center>
  
  <center>
  
