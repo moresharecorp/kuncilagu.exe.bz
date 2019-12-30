@@ -6,6 +6,7 @@
 <center style="padding:5px;margin-top:3px;"><b class="sharingmedia" style="background-color:#996633;">Follow:</b> <a href="#" onclick="cordova.InAppBrowser.open('http://bit.ly/2JGfNQJ', '_system');"><Span class="sharingmedia" style="background-color:#2988bc;">FB</span></a> <a href="#" onclick="cordova.InAppBrowser.open('http://bit.ly/2qvvJMM', '_system');"><Span class="sharingmedia" style="background-color:#09b8c1;">Twit</span></a> <a href="#" onclick="cordova.InAppBrowser.open('http://bit.ly/2Hn4tul', '_system');"><Span class="sharingmedia" style="background: linear-gradient(to right, #5242d6,#a32db0,#f21f3e,#fdbf52);">IG</span></a> <a href="#" onclick="cordova.InAppBrowser.open('http://bit.ly/2ISkK7y', '_system');"><Span class="sharingmedia" style="background-color:#D52F2F;">YT</span></a></center>
 
 <br><span onclick="cordova.InAppBrowser.open('https://goo.gl/9jwU5S', '_system');" style="font-weight:bold;color:orange;border-top:solid 1px orange;border-bottom:solid 1px orange;">View Latest Version And ChangeLOG HERE (CLICK)</span>
+<br><span onclick="cordova.InAppBrowser.open('https://www.youtube.com/watch?v=oymPQsquPlw', '_system');" style="font-weight:bold;color:orange;border-top:solid 1px orange;border-bottom:solid 1px orange;">Bingung? Coba Tonton Video Cara Pakai Aplikasi ini (CLICK)</span>
 </center></div>
 
 <div id="for_id_user">
