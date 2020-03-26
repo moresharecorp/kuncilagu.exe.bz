@@ -46,7 +46,7 @@ document.getElementById("semuanegara").style.backgroundColor="#707070";
 
 
 
-<div style="margin:20px;padding:0px;border:solid 1px silver;background-color:#ebe8e1;border-top-left-radius:5px;border-top-right-radius:5px;"><br><center><i style="color:#84bdbf">Update: 2020-03-26 08:46:02 WIB</i></center>
+<div style="margin:20px;padding:0px;border:solid 1px silver;background-color:#ebe8e1;border-top-left-radius:5px;border-top-right-radius:5px;"><br><center><i style="color:#84bdbf">Update: 2020-03-26 08:50:15 WIB</i></center>
 
 <div style="text-align:center;width:100%"> <h1> <div style="display:inline"> <img src="https://www.worldometers.info/img/flags/small/tn_id-flag.gif" width="60" border="1 px solid #aaa" /></div>&nbsp;Indonesia </h1> </div> <div id="maincounter-wrap" style=" "> <h1>Coronavirus Cases:</h1> <div class="maincounter-number"> <span style="color:#aaa">790 </span> </div> </div> <div id="maincounter-wrap" style=" "> <h1>Deaths:</h1> <div class="maincounter-number"> <span>58</span> </div> </div> <div id="maincounter-wrap" style=" ;"> <h1>Recovered:</h1> <div class="maincounter-number" style="color:#8ACA2B "> <span>31</span> </div> </div> <div style="margin-top:50px;"></div>
 
@@ -106,7 +106,7 @@ display:inline-block;text-align:center;padding:5px;margin:2px;border:solid 1px s
 <b style="color:#d44459;">LUPAKAN MASALAH RASIS, SUKUIS, SARA, POLITIK! BERSATU IKUTI ARAHAN PEMENRINTAH! why? <I>"SEMUA PEREKONOMIAN DUNIA HANCUR AKIBAT INI, SIAPA YANG PALING CEPAT BANGKIT DAN BERSIH DARI VIRUS BERPOTENSI MENJADI SOROTAN DUNIA!"</I> AYO BERSATU UNTUK BERSIH, MAJU DAN BANGKIT!!! SETELAH MASALAH INI SELESAI SILAKAN RIBUT LAGI DEMO LAGI! BODO AMAT!!!</b> <BR><BR><center><I style="color:#4D973C">Berdoa untuk keselamatan WARGA & BANGSA INDONESIA menurut kepercayaan masing-masing... (amin).</center></i><br><br>
 </div>
 
-<div style="width:100%;text-align:center;"><div style="width:100%;display:inline-block;text-align:center;padding-top:10px;padding-bottom:10px;background-color:#707070;color:white;font-weight:bold;font-family:verdana;font-size:120%;text-align:center;">Chat Room</div></div><iframe style="width:100%;height:250px;padding:0px;border:none;margin:0px" src="http://coronaindonesia.chatango.com/"></iframe>
+<div style="width:100%;text-align:center;"><div style="width:100%;display:inline-block;text-align:center;padding-top:10px;padding-bottom:10px;background-color:#707070;color:white;font-weight:bold;font-family:verdana;font-size:120%;text-align:center;">Chat Room</div></div><iframe style="width:100%;height:250px;padding:0px;border:none;margin:0px" src="https://coronaindonesia.chatango.com/"></iframe>
 
 <div id="sponsor"></div>
 </div>
