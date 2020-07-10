@@ -23,8 +23,8 @@ var mqAry1=[
 ['https://i.ytimg.com/vi/RxBTUnVKGnU/mqdefault.jpg','https://www.youtube.com/watch?v=RxBTUnVKGnU'],
 ['https://i.ytimg.com/vi/0EqRLwCVuSI/mqdefault.jpg','https://www.youtube.com/watch?v=0EqRLwCVuSI'],
 ['https://i.ytimg.com/vi/Zj7WiWTAKrU/mqdefault.jpg','https://www.youtube.com/watch?v=Zj7WiWTAKrU'],
-['https://i.ytimg.com/vi/t3AehSr0Ghc/mqdefault.jpg','https://www.youtube.com/watch?v=t3AehSr0Ghc'],
-['https://i.ytimg.com/vi/1KTUXGR5R3E/mqdefault.jpg','https://www.youtube.com/watch?v=1KTUXGR5R3E']
+['https://i.ytimg.com/vi/_K6eyGI7oEM/mqdefault.jpg','https://www.youtube.com/watch?v=_K6eyGI7oEM'],
+['https://i.ytimg.com/vi/W5MekAwgpLU/mqdefault.jpg','https://www.youtube.com/watch?v=W5MekAwgpLU']
 ];
 
 
