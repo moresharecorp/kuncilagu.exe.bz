@@ -46,7 +46,7 @@ document.getElementById("semuanegara").style.backgroundColor="#707070";
 
 
 
-<div style="margin:20px;padding:0px;border:solid 1px silver;background-color:#ebe8e1;border-top-left-radius:5px;border-top-right-radius:5px;"><br><center><i style="color:#84bdbf">Update: 2020-07-26 10:45:55 WIB</i></center>
+<div style="margin:20px;padding:0px;border:solid 1px silver;background-color:#ebe8e1;border-top-left-radius:5px;border-top-right-radius:5px;"><br><center><i style="color:#84bdbf">Update: 2020-07-26 11:10:39 WIB</i></center>
 
 <div style="text-align:center;width:100%"> <h1> <div style="display:inline"> <img src="https://www.worldometers.info/img/flags/small/tn_id-flag.gif" width="60" border="1 px solid #aaa" /></div>&nbsp;Indonesia </h1> </div> <div id="maincounter-wrap" style=" "> <h1>Coronavirus Cases:</h1> <div class="maincounter-number"> <span style="color:#aaa">97,286 </span> </div> </div> <div id="maincounter-wrap" style=" "> <h1>Deaths:</h1> <div class="maincounter-number"> <span>4,714</span> </div> </div> <div id="maincounter-wrap" style=" ;"> <h1>Recovered:</h1> <div class="maincounter-number" style="color:#8ACA2B "> <span>55,354</span> </div> </div> <div style="margin-top:50px;"></div>
 
