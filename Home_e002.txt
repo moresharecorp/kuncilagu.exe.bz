@@ -25,8 +25,10 @@
 	<script>$(document).ready(function(){
     if (/(android)/i.test(navigator.userAgent)) {  
     $("#dataslideshowhome_result").append(dataslideshowhome);
-	$("#ownersponsor_result").append(ownersponsor);} });</script>
-	<div id="dataslideshowhome_result"></div><script type="text/javascript">jssor_1_slider_init();</script><!-- #endregion Jssor Slider End -->
+	$("#ownersponsor_result").append(ownersponsor); 
+	jssor_1_slider_init(); }
+	});</script>
+	<div id="dataslideshowhome_result"></div><!-- #endregion Jssor Slider End -->
 
 <div style="clear:both;margin-bottom:5px"></div>
 <div id="ownersponsor_result"></div>
