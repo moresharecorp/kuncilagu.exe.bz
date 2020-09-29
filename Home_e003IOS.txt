@@ -1,3 +1,16 @@
+<script>
+/*********LUPA RUMUS IOS HOME INDEX.HTML************/
+$(document).ready(function(){
+if (/(android)/i.test(navigator.userAgent)) {   }
+else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  
+if( (localStorage.getItem("cachetopten") || localStorage.getItem("cachetopten") != ''))
+{ $("#topfive").empty(); $('#topfive').append(localStorage.getItem("cachetopten")); }
+
+if( (localStorage.getItem("cachepromo") || localStorage.getItem("cachepromo") != ''))
+{ $("#promokhususatas").empty(); $('#promokhususatas').append(localStorage.getItem("cachepromo")); }	 
+}
+});</script>
+
 <div style="clear:both"></div>
 <a href="https://goo.gl/uPRaBE" target="_blank"><div style="clear:both;color:white;font-size:18px;text-align:center;background-color:#e68a00;padding:5px;margin-top:2px;margin-bottom:2px;">Request & Contribute Chord <i class="material-icons" style="font-size:18px;color:#99ccff">border_color</i></div></a>
 
