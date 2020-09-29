@@ -31,28 +31,19 @@ $("#headnews").html(res2);
  
  
 $.get('http://kuncilagu.exe.bz/get_id_video_youtube.php?id_chord='+id_chord+'', function(data_vid) {
-	
-embedVideo(data_vid);
-if(data_vid == "") { $.get('http://kuncilagu.exe.bz/?kunci='+id_chord+'&continue_site=desktop', function(webchord_vid) {}); }
-
+	$('#ytvideo').attr('src', 'https://www.youtube.com/embed/' + data_vid);
+    
  });
 
+$('h3').text(judul);
+$('title').text(judul);
 $('#deskripsi').empty(); 
 $('#deskripsi').append('Jika Video GAGAL DIMUAT/KESALAHAN ISI VIDEO/ERROR, silakan tonton langsung di youtube dengan mengklik link berikut:<br><a href="https://www.youtube.com/results?search_query='+judul+' %23moresharemusic"><b>'+judul+'</b></a><br><br>Utau bisa laporkan masalah ini kepada TEAM kami melalui email dengan meng-copy detail error berikut:<br><span style="color:red;">"ERROR-VIDCODE'+id_chord+'"</span><br><span style="font-size:80%">Email: support [at] ms-room.com</span>'); 
  
- ;});
+ });
 
-	      
-		  
-function embedVideo(data_vid) {
-    $('#ytvideo').attr('src', 'https://www.youtube.com/embed/' + data_vid);
-    $('h3').text(judul);
-	$('title').text(judul);
-}
 
-$(document).ready(function(){ 
-//getVideo(); 
-});
+
 </script>
 <style>
 body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-color:#f0eee9}
