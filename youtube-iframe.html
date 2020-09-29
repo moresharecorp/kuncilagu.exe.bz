@@ -16,63 +16,43 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
 var judul = getParameterByName('judul');
+var id_chord = getParameterByName('id_chord');
 
 $(document).ready(function(){ 
 $.get('https://moresharecorp.github.io/kuncilagu.exe.bz/Home_e002.txt', function(data) {
 
- 
 	var res = data.match(/<div style="width:95%;(.*)"><\/div><img/i);
 	var res2 = '<div style="width:95%;'+res[1]+'"></div>';
-
 $("#headnews").empty();
 $("#headnews").html(res2);
+ });
+ 
+ 
+$.get('http://kuncilagu.exe.bz/get_id_video_youtube.php?id_chord='+id_chord+'', function(data_vid) {
 
-  
+if(data_vid == "") { $.get('http://kuncilagu.exe.bz/?kunci='+id_chord+'&continue_site=desktop', function(data_vid) {}); }
+embedVideo(data_vid);
 
+ });
 
+$('#deskripsi').empty(); 
+$('#deskripsi').append('Jika Video GAGAL DIMUAT/KESALAHAN ISI VIDEO/ERROR, silakan tonton langsung di youtube dengan mengklik link berikut:<br><a href="https://www.youtube.com/results?search_query='+judul+' %23moresharemusic"><b>'+judul+'</b></a><br><br>Utau bisa laporkan masalah ini kepada TEAM kami melalui email dengan meng-copy detail error berikut:<br><span style="color:red;">"ERROR-VIDCODE'+id_chord+'"</span><br><span style="font-size:80%">Email: support [at] ms-room.com</span>'); 
+ 
+ ;});
 
-
- });});
-
-
-
-function getVideo() {
-      $.ajax({
-        type: 'GET',
-        url: 'https://www.googleapis.com/youtube/v3/search',
-        data: {
-            key: 'AIzaSyCtIeHJxkZrtq20h6dionURv3ICToFivcA',
-            q: judul,
-            part: 'snippet',
-            maxResults: 1,
-            type: 'video',
-            videoEmbeddable: true,
-        },
-        success: function(data){
-            embedVideo(data)
-        },
-        error: function(response){
-            console.log("Request Failed");
-			
-
-			 $("#deskripsi").empty(); 
- $("#judulvideo").empty();
-$('#deskripsi').append('Jika Video ini gagal dimuat kemungkinan server penuh, silakan tonton langsung di youtube dengan mengklik link berikut -> <a href="https://www.youtube.com/results?search_query='+judul+' %23moresharemusic"><b>'+judul+'</b></a>');
-$('#judulvideo').append('Video Gagal Dimuat!');
-        }
-      });
-    }
 	      
 		  
-function embedVideo(data) {
-    $('#ytvideo').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
-    $('h3').text(data.items[0].snippet.title)
-    $('.description').text(data.items[0].snippet.description)
-	$('title').text(data.items[0].snippet.title)
+function embedVideo(data_vid) {
+    $('#ytvideo').attr('src', 'https://www.youtube.com/embed/' + data_vid);
+    $('h3').text(judul);
+	$('title').text(judul);
 }
 
-$(document).ready(function(){ getVideo(); });
+$(document).ready(function(){ 
+//getVideo(); 
+});
 </script>
 <style>
 body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-color:#f0eee9}
@@ -95,7 +75,7 @@ body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-co
  
  <br>
  
-  <center><div style="text-align:center;width:91%;padding:10px;background-color:#fffbed;margin-bottom:20px;color:red;font-size:70%"><b>NOTE:</b> Pastikan anda membuka halaman ini dengan browser <b>CHROME</b> agar lagu bisa dimainkan dilatar belakang notifikasi, jangan tutup halaman ini dan anda bisa memainkan chord pada aplikasi diiringi lagu ini. Jangan lupa subscribe agar team kami terus semangat mengembangkan aplikasi ini. :)</div></center>
+  <center><div style="text-align:center;width:91%;padding:10px;background-color:#fffbed;margin-bottom:20px;color:red;font-size:70%"><b>NOTE:</b> Pastikan anda membuka halaman ini atau halaman youtube dengan browser <b>CHROME</b> agar lagu bisa dimainkan dilatar belakang notifikasi, jangan tutup halaman ini dan anda bisa memainkan chord pada aplikasi diiringi lagu ini. Jangan lupa subscribe agar team kami terus semangat mengembangkan aplikasi ini. :)</div></center>
   
  </div>
  </center>
@@ -103,4 +83,3 @@ body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-co
  <Br><Br><br>
 </body>
 </html>
-
