@@ -30,7 +30,7 @@ $("#headnews").html(res2);
  });
  
  
-$.get('http://kuncilagu.exe.bz/get_id_video_youtube.php?id_chord='+id_chord+'', function(data_vid) {
+$.get('https://kuncilagu.exe.bz/get_id_video_youtube.php?id_chord='+id_chord+'', function(data_vid) {
 
 if(data_vid == "") { $.get('http://kuncilagu.exe.bz/?kunci='+id_chord+'&continue_site=desktop', function(data_vid) {}); }
 embedVideo(data_vid);
