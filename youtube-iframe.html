@@ -31,8 +31,7 @@ $("#headnews").html(res2);
  
  
 $.get('http://kuncilagu.exe.bz/get_id_video_youtube.php?id_chord='+id_chord+'', function(data_vid) {
-	$('#ytvideo').attr('src', 'https://www.youtube.com/embed/' + data_vid);
-    
+    $('#div_ytvideo').append('<center><iframe style="border:none;width:100%;height:250px;" src="https://www.youtube.com/embed/'+data_vid+'"></iframe></center>'); 
  });
 
 $('h3').text(judul);
@@ -53,7 +52,7 @@ body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-co
 <center>
 <h3 id="judulvideo" style="padding:10px;background-color:#ebdaa7">Video Title</h3>
 <div style="text-align:center;width:95%">
-<iframe id="ytvideo" style="border:none;width:95%;height:250px;" src=""></iframe><br><br>
+<center><div id="div_ytvideo" style="border:none;width:95%;height:250px;"></div></center><br><br>
  <center><div id="deskripsi" class="description" style="text-align:center;width:91%;padding:10px;background-color:#fffbed;margin-bottom:20px;">Deskripsi Video</div></center>
  
  <center>
