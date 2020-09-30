@@ -34,7 +34,22 @@ $("#headnews").html(res2);
 $.get('https://www.resmart.info/cgyt.php?id_chord='+id_chord+'', function(datavid) {
 var datavid_new = datavid;
 if (datavid_new == '') {
-ytEmbed.init({'block':'ytThumbs','key':'AIzaSyDNiJK-x0VwrPTbbpTEusdjVaIJlqqUlnU','q':judul,'type':'search','results':1,'meta':true,'player':'embed','layout':'thumbnails','id_chord':id_chord}); 
+
+var apiyt = Array(
+"AIzaSyCJ23X8XwKtDe0TIJFDFZ4ZAoee_BseECk",
+"AIzaSyDNiJK-x0VwrPTbbpTEusdjVaIJlqqUlnU",
+"AIzaSyAhhVL5dFS2Em-5oCtv6uWFmWYlTpd9D2A",
+"AIzaSyCGo-BnAXAfC1W2X5_ok1_UJtDjuLsLbkA",
+"AIzaSyB6qo1XuOa67vOMgLKZ0nxo1KjPhLRFbrQ",
+"AIzaSyA6V4LibTykun5kV_ygPdXNmPH1l3gqzMU",
+"AIzaSyCtIeHJxkZrtq20h6dionURv3ICToFivcA",
+"AIzaSyC19k_N-vCPHYaNAAirUiSJykNygj0ALJk",
+"AIzaSyCpE5UHhXw76Z_03fPzx9SFgROwAxp_scQ",
+"AIzaSyCwI5SsnqIL9EQ2gN7af2GXKT-dBBxILOw"
+);
+var random_apiyt = apiyt[Math.floor(Math.random() * apiyt.length)];
+	
+ytEmbed.init({'block':'ytThumbs','key':random_apiyt,'q':judul,'type':'search','results':1,'meta':true,'player':'embed','layout':'thumbnails','id_chord':id_chord}); 
 $("#ytThumbs").show();
 $("#div_ytvideo").hide();
 }
