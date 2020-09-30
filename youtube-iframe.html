@@ -52,12 +52,14 @@ var random_apiyt = apiyt[Math.floor(Math.random() * apiyt.length)];
 ytEmbed.init({'block':'ytThumbs','key':random_apiyt,'q':judul,'type':'search','results':1,'meta':true,'player':'embed','layout':'thumbnails','id_chord':id_chord}); 
 $("#ytThumbs").show();
 $("#div_ytvideo").hide();
+$("#div_ytvideo_loading").hide();
 }
 else 
 {  
 $("#ytThumbs").hide();
 $("#div_ytvideo").show();
 $('#div_ytvideo').append('<iframe style="border:none;width:100%;height:250px;" src="https://www.youtube.com/embed/'+datavid_new+'"></iframe>');
+$("#div_ytvideo_loading").hide();
 }
  });
  
@@ -85,6 +87,7 @@ iframe { width:95%;height:250px; }
 <div style="text-align:center;width:95%">
 <center>
 	
+	<div id="div_ytvideo_loading" style="border:none;width:95%;"><center><br><br>Wait...<br>Loading...<br><br></center></div>
 	<div id="div_ytvideo" style="border:none;width:95%;height:250px;display:none;"></div>
 	<div style="display:none;width:95%;" id="ytThumbs"></div>
 	<div style="clear:both;"></div>
