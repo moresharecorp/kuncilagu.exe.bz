@@ -31,7 +31,7 @@ var ytEmbed = {
 
         // temp hardcode our own key if not provided
         if (!this.cfg.key) {
-                this.cfg.key = 'AIzaSyDNiJK-x0VwrPTbbpTEusdjVaIJlqqUlnU';
+                this.cfg.key = 'AIzaSyDegaM8QngWq1tomLEUoHn5bCokmA2Ng8Y';
         }
 
         if (!this.cfg.block) {
