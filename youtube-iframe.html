@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="https://www.ms-room.com/gambar/moreshare.png" type="image/x-icon" /><link rel="icon" href="https://www.ms-room.com/gambar/moreshare.png" type="image/x-icon" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='https://moresharecorp.github.io/kuncilagu.exe.bz/youtube_embed.js'></script>
 <script>
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
@@ -28,15 +29,25 @@ $.get('https://moresharecorp.github.io/kuncilagu.exe.bz/Home_e002.txt', function
 $("#headnews").empty();
 $("#headnews").html(res2);
  });
+	
+	
+$.get('https://www.resmart.info/cgyt.php?id_chord='+id_chord+'', function(datavid) {
+var datavid_new = datavid;
+if (datavid_new == '') {
+ytEmbed.init({'block':'ytThumbs','key':'AIzaSyDNiJK-x0VwrPTbbpTEusdjVaIJlqqUlnU','q':'Thavia Rahasia','type':'search','results':1,'meta':true,'player':'embed','layout':'thumbnails','id_chord':'56789'}); 
+}
+else 
+{ $('#div_ytvideo').append('<iframe style="border:none;width:100%;height:250px;" src="https://www.youtube.com/embed/'+datavid_new+'"></iframe>'); }
+ });
  
  
-$('#div_ytvideo').append('<iframe style="border:none;width:100%;height:250px;" src="https://www.resmart.info/cgyt.php?id_chord='+id_chord+'"></iframe>'); 
-
 $('h3').text(judul);
 $('title').text(judul);
 $('#deskripsi').empty(); 
 $('#deskripsi').append('Jika Video GAGAL DIMUAT/KESALAHAN ISI VIDEO/ERROR, silakan tonton langsung di youtube dengan mengklik link berikut:<br><a href="https://www.youtube.com/results?search_query='+judul+' %23moresharemusic"><b>'+judul+'</b></a><br><br>Utau bisa laporkan masalah ini kepada TEAM kami melalui email dengan meng-copy detail error berikut:<br><span style="color:red;">"ERROR-VIDCODE'+id_chord+'"</span><br><span style="font-size:80%">Email: support [at] ms-room.com</span>'); 
  
+	
+	
  });
 
 
