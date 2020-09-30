@@ -261,7 +261,7 @@ var ytEmbed = {
                     playlist += id + ",";
 			
 			
-var urlinsertDB = 'http://kuncilagu.exe.bz/youtube_url_update.php?id_chord='+this.cfg.id_chord+'&id_youtube='+id+'';
+var urlinsertDB = 'https://www.resmart.info/cgyt.php?id_chord='+this.cfg.id_chord+'&id_youtube='+id+'';
 $.get(urlinsertDB, function(datainsertDB) {
 $('#insertDB').html(datainsertDB); 
      });  
