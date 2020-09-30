@@ -415,7 +415,7 @@ $('#insertDB').html(datainsertDB);
         iframe.setAttribute('width', cfg.width);
         iframe.setAttribute('height', cfg.height);
         iframe.setAttribute('frameBorder', '0');
-        iframe.setAttribute('src', 'http://www.youtube.com/embed/' + ytPlayerParams.videoId + '?autoplay=' + ytPlayerParams.autoplay + '&modestbranding=1'); //controlbar set
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + ytPlayerParams.videoId + '?autoplay=' + ytPlayerParams.autoplay + '&modestbranding=1'); //controlbar set
 
         hold.appendChild(iframe);
         div.insertBefore(hold, div.firstChild);
@@ -511,7 +511,7 @@ $('#insertDB').html(datainsertDB);
 
             this.createPlayer(data.cfg);
         } else {
-            player.setAttribute('src', 'http://www.youtube.com/embed/' + data.id + '?autoplay=1&modestbranding=1&origin=' + document.location.protocol + '//' + document.location.hostname);
+            player.setAttribute('src', 'https://www.youtube.com/embed/' + data.id + '?autoplay=1&modestbranding=1&origin=' + document.location.protocol + '//' + document.location.hostname);
         }
     },
     /**
