@@ -34,7 +34,7 @@ $("#headnews").html(res2);
 $.get('https://www.resmart.info/cgyt.php?id_chord='+id_chord+'', function(datavid) {
 var datavid_new = datavid;
 if (datavid_new == '') {
-ytEmbed.init({'block':'ytThumbs','key':'AIzaSyDNiJK-x0VwrPTbbpTEusdjVaIJlqqUlnU','q':judul,'type':'search','results':1,'meta':true,'player':'embed','layout':'thumbnails','id_chord':id_chord}); 
+ytEmbed.init({'block':'ytThumbs','key':'AIzaSyDNiJK-x0VwrPTbbpTEusdjVaIJlqqUlnU','q':judul,'type':'search','results':1,'meta':true,'player':'embed','layout':'thumbnails','id_chord':id_chord,'width':'95%','height':'250'}); 
 $("#ytThumbs").show();
 $("#div_ytvideo").hide();
 }
