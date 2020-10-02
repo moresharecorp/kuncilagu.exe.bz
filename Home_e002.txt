@@ -47,6 +47,12 @@
 	$("#platformshare_result").append(platformshare_ios); 
 	jssor_1_slider_init(); }
 	
+	else {  
+	$("#dataslideshowhome_result").append(dataslideshowhome);
+	$("#ownersponsor_result").append(ownersponsorios); 
+	$("#platformshare_result").append(platformshare_ios); 
+	jssor_1_slider_init(); }
+	
 	
 	});</script>
 	<div id="dataslideshowhome_result"></div><!-- #endregion Jssor Slider End -->
