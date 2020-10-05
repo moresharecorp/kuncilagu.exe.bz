@@ -54,6 +54,7 @@
 	jssor_1_slider_init(); }
 	
 	localStorage.setItem("showkonten", "showkonten");
+	sessionStorage.setItem("logOnceTimehome", "123");
 	});</script>
 	<div id="dataslideshowhome_result"></div><!-- #endregion Jssor Slider End -->
 
