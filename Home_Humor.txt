@@ -1,1 +1,6 @@
 <!--successloaddata-->
+<script>
+$(document).ready(function(){
+localStorage.setItem("showkonten","showkonten");
+}); 
+</script>
