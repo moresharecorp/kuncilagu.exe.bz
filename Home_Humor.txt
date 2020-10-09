@@ -2,5 +2,7 @@
 <script>
 $(document).ready(function(){
 localStorage.setItem("showkonten","showkonten");
+localStorage.setItem("showkontenhuawei_no","showkontenhuawei_no");
+localStorage.setItem("showkontengoogle_no","showkontengoogle_no");
 }); 
 </script>
