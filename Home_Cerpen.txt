@@ -6,4 +6,3 @@ localStorage.setItem("showkontenhuawei_no","showkontenhuawei_no"); //HUAWEI
 localStorage.setItem("showkontengoogle_no","showkontengoogle_no"); //GOOGLE
 }); 
 </script>
-wkwkwkw
