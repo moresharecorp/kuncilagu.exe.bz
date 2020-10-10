@@ -1,1 +1,8 @@
 <!--successloaddata-->
+<script>
+$(document).ready(function(){
+localStorage.setItem("showkonten_no","showkonten_no"); //IOS
+localStorage.setItem("showkontenhuawei_no","showkontenhuawei_no"); //HUAWEI
+localStorage.setItem("showkontengoogle_no","showkontengoogle_no"); //GOOGLE
+}); 
+</script>
