@@ -1,0 +1,138 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Play Lagu</title>
+	<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://www.ms-room.com/gambar/moreshare.png" type="image/x-icon" /><link rel="icon" href="https://www.ms-room.com/gambar/moreshare.png" type="image/x-icon" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='https://moresharecorp.github.io/kuncilagu.exe.bz/youtube_embed.js'></script>
+<script>
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+var judul = getParameterByName('judul');
+var id_chord = getParameterByName('id_chord');
+
+$(document).ready(function(){ 
+$.get('https://moresharecorp.github.io/kuncilagu.exe.bz/Home_e002.txt', function(data) {
+
+	var res = data.match(/<div style="width:95%;(.*)"><\/div><img/i);
+	var res2 = '<div style="width:95%;'+res[1]+'"></div>';
+$("#headnews").empty();
+$("#headnews").html(res2);
+ });
+	
+	
+$.get('https://www.resmart.info/cgyt.php?id_chord='+id_chord+'', function(datavid) {
+var datavid_new = datavid;
+if (datavid_new == '') {
+
+var apiyt = Array(
+"AIzaSyCJ23X8XwKtDe0TIJFDFZ4ZAoee_BseECk",
+"AIzaSyDNiJK-x0VwrPTbbpTEusdjVaIJlqqUlnU",
+"AIzaSyAhhVL5dFS2Em-5oCtv6uWFmWYlTpd9D2A",
+"AIzaSyCGo-BnAXAfC1W2X5_ok1_UJtDjuLsLbkA",
+"AIzaSyB6qo1XuOa67vOMgLKZ0nxo1KjPhLRFbrQ",
+"AIzaSyA6V4LibTykun5kV_ygPdXNmPH1l3gqzMU",
+"AIzaSyCtIeHJxkZrtq20h6dionURv3ICToFivcA",
+"AIzaSyC19k_N-vCPHYaNAAirUiSJykNygj0ALJk",
+"AIzaSyCpE5UHhXw76Z_03fPzx9SFgROwAxp_scQ",
+"AIzaSyCwI5SsnqIL9EQ2gN7af2GXKT-dBBxILOw"
+);
+var random_apiyt = apiyt[Math.floor(Math.random() * apiyt.length)];
+	
+ytEmbed.init({'block':'ytThumbs','key':random_apiyt,'q':judul,'type':'search','results':1,'meta':true,'player':'embed','layout':'thumbnails','id_chord':id_chord}); 
+$("#ytThumbs").show();
+$("#div_ytvideo").hide();
+$("#div_ytvideo_loading").hide();
+}
+else 
+{  
+$("#ytThumbs").hide();
+$("#div_ytvideo").show();
+$('#div_ytvideo').append('<iframe style="border:none;width:100%;height:250px;" src="https://www.youtube.com/embed/'+datavid_new+'"></iframe>');
+$("#div_ytvideo_loading").hide();
+}
+ });
+ 
+$('h3').text(judul);
+$('title').text(judul);
+$('#deskripsi').empty(); 
+$('#deskripsi').append('Jika Video GAGAL DIMUAT/KESALAHAN ISI VIDEO/ERROR, silakan tonton langsung di youtube dengan mengklik link berikut:<br><a href="https://www.youtube.com/results?search_query='+judul+' %23moresharemusic"><b>'+judul+'</b></a><br><br>Utau bisa laporkan masalah ini kepada TEAM kami melalui email dengan meng-copy detail error berikut:<br><span style="color:red;">"ERROR-VIDCODE'+id_chord+'"</span><br><span style="font-size:80%">Email: support [at] ms-room.com</span>'); 
+ 
+	
+	
+ });
+</script>
+	
+	
+<!-- GOOGLE TRACK IOS INSTALL -->
+<!-- Global site tag (gtag.js) - Google Ads: 1006619572 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1006619572"></script>
+<script>
+if (/(android)/i.test(navigator.userAgent)) {  } 
+else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { 
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1006619572');
+}
+else { }
+</script>
+<!-- Event snippet for installsuccess conversion page -->
+<script>
+    
+if (/(android)/i.test(navigator.userAgent)) {  } 
+else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { gtag('event', 'conversion', {'send_to': 'AW-1006619572/dnxNCLfXvOEBELSX_98D'});  }
+else { }
+  
+</script>
+<style>
+body{font-family:Helvetica,Arial,sans-serif;margin:0;color:#565656;background-color:#f0eee9}
+ul,li { list-style-type:none;margin:0;padding: 0; }
+iframe { width:95%;height:250px; }
+</style>
+</head>
+<body>
+<center>
+<h3 id="judulvideo" style="padding:10px;background-color:#ebdaa7">Video Title</h3>
+<div style="text-align:center;width:95%">
+<center>
+	
+	<div id="div_ytvideo_loading" style="border:none;width:95%;"><center><br><br>Wait...<br>Loading...<br><br></center></div>
+	<div id="div_ytvideo" style="border:none;width:95%;height:250px;display:none;"></div>
+	<div style="display:none;width:95%;" id="ytThumbs"></div>
+	<div style="clear:both;"></div>
+</center><br><br>
+ <center><div id="deskripsi" class="description" style="text-align:center;width:91%;padding:10px;background-color:#fffbed;margin-bottom:20px;">Deskripsi Video</div></center>
+ 
+ <center>
+ 
+<script src="https://apis.google.com/js/platform.js"></script>
+<div style="margin-top:10px;margin-bottom:10px" class="g-ytsubscribe" data-channelid="UCMVGVscOPTjiw14xJGlc4NA" data-layout="full" data-count="default"></div>
+ 
+ <a target="_blank" href="https://www.youtube.com/channel/UCMVGVscOPTjiw14xJGlc4NA"><!--<img src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/head_my_youtube.png" style="width:95%;margin-top:5px;margin-bottom:-5px;padding-bottom:0px;">--><div id="headnews"></div></a>
+ </center>
+ 
+ <br>
+ 
+  <center><div style="text-align:center;width:91%;padding:10px;background-color:#fffbed;margin-bottom:20px;color:red;font-size:70%"><b>NOTE:</b> Pastikan anda membuka halaman ini atau halaman youtube dengan browser <b>CHROME</b> agar lagu bisa dimainkan dilatar belakang notifikasi, jangan tutup halaman ini dan anda bisa memainkan chord pada aplikasi diiringi lagu ini. Jangan lupa subscribe agar team kami terus semangat mengembangkan aplikasi ini. :)</div> 
+	<div id="sfctlztqdczwueq473rjp3n8nmhlzg4ak19"></div>
+<script type="text/javascript" src="https://counter11.stat.ovh/private/counter.js?c=tlztqdczwueq473rjp3n8nmhlzg4ak19&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter11.stat.ovh/private/freecounterstat.php?c=tlztqdczwueq473rjp3n8nmhlzg4ak19" border="0" title="web counter" alt="web counter"></a></noscript>
+	</center>
+  
+ </div>
+ </center>
+
+ <Br><Br><br>
+</body>
+</html>
