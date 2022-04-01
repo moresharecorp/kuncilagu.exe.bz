@@ -39,10 +39,10 @@ localStorage.setItem("advertisechord",'\<script\>$(document).ready(function() { 
 
 
 $(document).ready(function(){
-$('#for_id_user1').hide(); $('#for_id_user2').hide();
+$('#for_id_user').hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide();
 if (!localStorage.getItem("IpUserCache") || localStorage.getItem("IpUserCache") == '') { $.getJSON('http://ip-api.com/json', function(result) { localStorage.setItem("IpUserCache", result.countryCode); });  }
 if(localStorage.getItem("IpUserCache") != 'ID')
-{ $('#for_id_user1').hide(); $('#for_id_user2').hide(); }
+{ $('#for_id_user').hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide(); }
 });
 
 
