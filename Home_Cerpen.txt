@@ -1,6 +1,6 @@
 <!--successloaddata-->
 <script>
 $(document).ready(function(){
-//localStorage.getItem("showkonten",""); //ios/huawei/google
+//localStorage.getItem("showkonten"); //ios/huawei/google
 }); 
 </script>
