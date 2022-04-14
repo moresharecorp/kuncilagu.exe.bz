@@ -41,9 +41,9 @@ if(localStorage.getItem("ANDROIDVERSION") == '20220401') {  } else {  }
 
 document.addEventListener("deviceready", function(){ 
 var deviceplatformsponsor = device.platform;
-if (deviceplatformsponsor == 'Android') {  $("#ownersponsor_result").append(ownersponsorandroid); }
-else if (deviceplatformsponsor == 'iOS') {  $("#ownersponsor_result").append(ownersponsorios);  }
-else {  $("#ownersponsor_result").append(ownersponsorios); }
+if (deviceplatformsponsor == 'Android') { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorandroid); }
+else if (deviceplatformsponsor == 'iOS') { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios);  }
+else { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios); }
 },false);
 
 ////////////////ANDROID 5-6-7 ONLY/////////////////
