@@ -7,6 +7,7 @@ localStorage.setItem("showkontengoogle","showkontengoogle"); //GOOGLE
 
 //////////////TERBARU 2022//////////////
 //if(localStorage.getItem("showkontenswitch") == '') { }; //ios/huawei/google
+localStorage.setItem("showkontenswitch","google");
 
 }); 
 </script>
