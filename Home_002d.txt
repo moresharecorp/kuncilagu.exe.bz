@@ -22,6 +22,7 @@ Welcome Guest :)
 <script>
 $(document).ready(function(){
 
+if(localStorage.getItem("ANDROIDVERSION") >= '20220401') { localStorage.setItem("urlhomepromodefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001.txt"); }
 
 /****
 if (!localStorage.getItem("IpUserCache") || localStorage.getItem("IpUserCache") == '') { $.getJSON('http://ip-api.com/json', function(result) { localStorage.setItem("IpUserCache", result.countryCode); });  }

@@ -31,7 +31,7 @@ var ytEmbed = {
 
         // temp hardcode our own key if not provided
         if (!this.cfg.key) {
-                this.cfg.key = 'AIzaSyA8OmKcw2DMNkJicyCJ0vqvf90xgeH52zE';
+                this.cfg.key = 'AIzaSyDegaM8QngWq1tomLEUoHn5bCokmA2Ng8Y';
         }
 
         if (!this.cfg.block) {
@@ -261,7 +261,7 @@ var ytEmbed = {
                     playlist += id + ",";
 			
 			
-var urlinsertDB = 'http://kuncilagu.exe.bz/youtube_url_update.php?id_chord='+this.cfg.id_chord+'&id_youtube='+id+'';
+var urlinsertDB = 'https://www.resmart.info/cgyt.php?id_chord='+this.cfg.id_chord+'&id_youtube='+id+'';
 $.get(urlinsertDB, function(datainsertDB) {
 $('#insertDB').html(datainsertDB); 
      });  
@@ -415,7 +415,7 @@ $('#insertDB').html(datainsertDB);
         iframe.setAttribute('width', cfg.width);
         iframe.setAttribute('height', cfg.height);
         iframe.setAttribute('frameBorder', '0');
-        iframe.setAttribute('src', 'http://www.youtube.com/embed/' + ytPlayerParams.videoId + '?autoplay=' + ytPlayerParams.autoplay + '&modestbranding=1'); //controlbar set
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + ytPlayerParams.videoId + '?autoplay=' + ytPlayerParams.autoplay + '&modestbranding=1'); //controlbar set
 
         hold.appendChild(iframe);
         div.insertBefore(hold, div.firstChild);
@@ -511,7 +511,7 @@ $('#insertDB').html(datainsertDB);
 
             this.createPlayer(data.cfg);
         } else {
-            player.setAttribute('src', 'http://www.youtube.com/embed/' + data.id + '?autoplay=1&modestbranding=1&origin=' + document.location.protocol + '//' + document.location.hostname);
+            player.setAttribute('src', 'https://www.youtube.com/embed/' + data.id + '?autoplay=1&modestbranding=1&origin=' + document.location.protocol + '//' + document.location.hostname);
         }
     },
     /**

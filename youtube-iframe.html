@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RIDERECT</title>
+	<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+var judul = getParameterByName('judul');
+var id_chord = getParameterByName('id_chord');
+
+$(document).ready(function(){ 
+window.location.replace('http://kuncilagu.exe.bz/index.php?request=LISTENFROMMOBILEAPPS&id_chord='+id_chord+'');
+$("#div_ytvideo_loading").html('<META HTTP-EQUIV="REFRESH" CONTENT="0;URL=http://kuncilagu.exe.bz/index.php?request=LISTENFROMMOBILEAPPS&id_chord='+id_chord+'">');
+ });
+	</script>
+</head>
+<body>
+	<div id="div_ytvideo_loading" style="border:none;width:95%;"><center><br><br>Wait...<br>Loading...<br><br></center></div>
+</body>
+</html>
