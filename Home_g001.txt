@@ -80,7 +80,6 @@ if(localStorage.getItem("IpUserCache") != 'ID')
 { 
 /*$('#for_id_user').hide(); $('#for_id_user1').hide();*/
 $('#for_id_user2').hide(); }
-});
 
 if(localStorage.getItem("RegionUserCache") != 'West Nusa Tenggara')
 { 
