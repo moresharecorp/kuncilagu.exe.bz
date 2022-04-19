@@ -51,7 +51,7 @@ document.addEventListener("deviceready", function(){
 var olddeviceVersion = parseInt(device.version);
 var deviceplatformsponsor = device.platform;
 
-if(olddeviceVersion < 8 && olddeviceVersion > 4 && !localStorage.getItem("OLD_APPS_ANDROID_VERSION") && deviceplatformsponsor == 'Android') { alert('Android anda TIDAK MENDUKUNG Aplikasi versi ini! Versi Android Anda adalah: (VERSI '+olddeviceVersion+'). Silakan DOWNLOAD VERSI KHUSUS ANDROID ANDA di sini "http://kuncilagu.exe.bz/log.html" \n\nJangan Lupa BINTANG 5 nya di PLAY STORE! SUSAH NJIR bikin banyak versi biar elu semua pada bisa make!!! giliran enak ga bilang makasih! giliran ga enak maki-maki di play store! DASAR BOCIL!!!\n\nJangan Diambil Ati Cil wkwkwkw, semoga bermanfaat dan menghibur! Kalo ada ERROR lagi jangan sungkan untuk email aja ya!'); window.open('http://kuncilagu.exe.bz/log.html', '_blank'); navigator.app.exitApp();  } 
+if(olddeviceVersion < 8 && olddeviceVersion > 4 && !localStorage.getItem("OLD_APPS_ANDROID_VERSION") && deviceplatformsponsor == 'Android') { alert('GOOGLE Sudah tidak mendukung ANDROID versi 7 kebawah! Versi Android Anda adalah: (VERSI '+olddeviceVersion+'). Update sistem ANDROID anda ke ANDROID VERSI 8 atau bisa DOWNLOAD APLIKASI VERSI KHUSUS ANDROID ANDA di sini "http://kuncilagu.exe.bz/log.html" \n\nKami berusaha yang terbaik untuk anda :)'); window.open('http://kuncilagu.exe.bz/log.html', '_blank'); navigator.app.exitApp();  } 
 
 }, false);
 ////////////////END ANDROID 5-6-7 ONLY/////////////////
