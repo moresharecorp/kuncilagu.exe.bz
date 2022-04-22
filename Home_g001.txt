@@ -51,13 +51,11 @@ document.addEventListener("deviceready", function(){
 var olddeviceVersion = parseInt(device.version);
 var deviceplatformsponsor = device.platform;
 
-if(olddeviceVersion < 8 && olddeviceVersion > 4 && !localStorage.getItem("OLD_APPS_ANDROID_VERSION") && deviceplatformsponsor == 'Android') { alert('GOOGLE Sudah tidak mendukung ANDROID versi 7 kebawah! Versi Android Anda adalah: (VERSI '+olddeviceVersion+'). Update sistem ANDROID anda ke ANDROID VERSI 8 atau bisa DOWNLOAD APLIKASI VERSI KHUSUS ANDROID ANDA di sini "http://kuncilagu.exe.bz/log.html" \n\nKami berusaha yang terbaik untuk anda agar tetap bisa menggunakan aplikasi ini :)'); window.open('http://kuncilagu.exe.bz/log.html', '_blank'); navigator.app.exitApp();  }
+if(olddeviceVersion < 8 && olddeviceVersion > 4 && !localStorage.getItem("OLD_APPS_ANDROID_VERSION") && deviceplatformsponsor == 'Android') { alert('GOOGLE Sudah tidak mendukung ANDROID versi 7 kebawah! Versi Android Anda adalah: (VERSI '+olddeviceVersion+'). Update sistem ANDROID anda ke ANDROID VERSI 8 atau bisa DOWNLOAD APLIKASI KUNCI GITAR VERSI KHUSUS ANDROID ANDA di sini "http://kuncilagu.exe.bz/log.html" \n\nKami berusaha yang terbaik untuk anda agar tetap bisa menggunakan aplikasi ini :)'); window.open('http://kuncilagu.exe.bz/log.html', '_blank'); navigator.app.exitApp();  }
 
 else {
 if(!localStorage.getItem("BACADULUPENGGUNABARU") || localStorage.getItem("BACADULUPENGGUNABARU") == "") { 
-localStorage.setItem("BACADULUPENGGUNABARU","BACADULUPENGGUNABARU");
-alert('BACA DULU!!!\n\nDIMANA POSISI IKLAN?\n1.BANNER (diatas, muncul diawal)\n2.IKLAN LOADING (1 menit sekali)\n3.IKLAN POIN (5 menit sekali)\n4.IKLAN TENGAH KONTEN (Sentuh layar dimana aja maka iklan ini lenyap)\n\nDengan memahami posisi iklan anda akan paham jika anda memainkan 1 lagu dalam 3 menit maka anda hanya akan menemui iklan besar 3 MENIT SEKALI saat sebelum/sesudah main.\n\nUNTUK APA IKLAN? Ucapan terimakasih dan memberi kopi kepada team pencari kunci.\n\nUNTUK APA RATING PLAY STORE? bintang 5 akan menyemangati team kami mencari chord terbaru.\n\nSemoga Paham dan dimengerti :)');
-}
+localStorage.setItem("BACADULUPENGGUNABARU","BACADULUPENGGUNABARU"); }
 }
 
 }, false);
