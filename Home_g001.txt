@@ -36,7 +36,7 @@ var ownersponsorios = '<center><a href="https://bigboymusicstudio.business.site"
 	
 $(document).ready(function(){
 
-if(localStorage.getItem("IOSVERSION") == '20220404') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+if(localStorage.getItem("IOSVERSION") == '20220404') { localStorage.setItem("showkonten", "showkonten"); } else { localStorage.setItem("showkonten", "showkonten"); }
 if(localStorage.getItem("ANDROIDVERSION") == '20220401') {  } else {  }
 
 document.addEventListener("deviceready", function(){ 
