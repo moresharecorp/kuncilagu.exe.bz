@@ -9,17 +9,5 @@ localStorage.setItem("showkontengoogle","showkontengoogle"); //GOOGLE
 //if(localStorage.getItem("showkontenswitch") == '') { }; //ios/huawei/google
 //localStorage.setItem("showkontenswitch","google");
 
-////////////////ANDROID 5-6-7 ONLY/////////////////
-document.addEventListener("deviceready", function(){ 
-var olddeviceVersion = parseInt(device.version);
-var deviceplatformsponsor = device.platform;
-if(olddeviceVersion < 8 && olddeviceVersion > 4 && deviceplatformsponsor == 'Android') 
-{ 
-var dtnowfree = new Date(); var tmnext_alwaysfree = dtnowfree.getTime() + 80000000;
-localStorage.setItem("freeOneHourAccess_reward", tmnext_alwaysfree);
-} 
-}, false);
-////////////////END ANDROID 5-6-7 ONLY/////////////////
-
 }); 
 </script>
