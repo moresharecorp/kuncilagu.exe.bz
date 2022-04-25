@@ -7,7 +7,19 @@ localStorage.setItem("showkontengoogle","showkontengoogle"); //GOOGLE
 
 //////////////TERBARU 2022//////////////
 if(localStorage.getItem("showkontenswitch") == 'ios') { localStorage.setItem("showkontenswitch","google"); }; //ios/huawei/google
-
-
 }); 
+
+///////////////////////ONLINEDETECTOR
+$(document).ready(function(){
+var dtnow_ONLINEDETECTOR = new Date();
+var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
+if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDETECTOR") == "") {
+	sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
+	var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
+	$.get(ONLINEDETECTOR, function(data) {
+		if (data.indexOf("ONLINE") > -1) { } else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); }
+	});	
+}
+});
+///////////////////////ONLINEDETECTOR END
 </script>
