@@ -43,7 +43,7 @@ if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDET
 	var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
 	$.get(ONLINEDETECTOR, function(data) {
 		if (data.indexOf("ONLINE") > -1) { } else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); }
-	});	
+	}).fail(function() { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); });	
 }
 });
 ///////////////////////ONLINEDETECTOR END
