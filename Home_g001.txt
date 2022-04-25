@@ -33,6 +33,20 @@
 var ownersponsorandroid = '<center><a href="https://bigboymusicstudio.business.site" target="_blank"><img id="khususNTB1" style="width:93%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a><a href="https://play.google.com/store/apps/details?id=com.moreshare.guitar.chord.transposer.manager" target="_blank"><img style="width:46%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://play.google.com/store/apps/details?id=com.moreshare.humor.cerita.lucu" target="_blank"><img style="width:46%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a><a href="https://www.chordtela.com/" target="_blank"><img style="width:93%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></a></center>';
 	
 var ownersponsorios = '<center><a href="https://bigboymusicstudio.business.site" target="_blank"><img id="khususNTB1" style="width:93%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a><a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="width:46%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://apps.apple.com/id/app/id1534298746" target="_blank"><img style="width:46%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a></center>';
+
+///////////////////////ONLINEDETECTOR
+$(document).ready(function(){
+var dtnow_ONLINEDETECTOR = new Date();
+var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
+if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDETECTOR") == "") {
+	sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
+	var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
+	$.get(ONLINEDETECTOR, function(data) {
+		if (data.indexOf("ONLINE") > -1) { } else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); }
+	});	
+}
+});
+///////////////////////ONLINEDETECTOR END
 	
 $(document).ready(function(){
 
