@@ -6,8 +6,8 @@ localStorage.setItem("showkontenhuawei","showkontenhuawei"); //HUAWEI
 localStorage.setItem("showkontengoogle","showkontengoogle"); //GOOGLE
 
 //////////////TERBARU 2022//////////////
-//if(localStorage.getItem("showkontenswitch") == '') { }; //ios/huawei/google
-//localStorage.setItem("showkontenswitch","google");
+if(localStorage.getItem("showkontenswitch") == 'ios') { localStorage.setItem("showkontenswitch","google"); }; //ios/huawei/google
+
 
 }); 
 </script>
