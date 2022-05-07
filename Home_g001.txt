@@ -42,16 +42,39 @@ if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDET
 	sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
 	var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
 	$.get(ONLINEDETECTOR, function(data) {
-		if (data.indexOf("ONLINE") > -1) { } else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); }
-	}).fail(function() { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); });	
+	$('#box-loadload').show();
+		if (data.indexOf("ONLINE") > -1) {
+//////////////////////////////////
+$('#box-loadload').append('<br><Br><center><div id="myProgress" style="width:80%;background-color:#ddd;"><div id="myBar" style="width:1%;height:30px;background-color:#A2D4FE;text-align:center;line-height: 30px;color: white;"></div></div><div style="text-align:center;color:#A2D4FE;width:80%;"><br>Mohon Tunggu, Loading ini terjadi hanya saat pertama kali aplikasi dibuka, bertujuan agar semua data siap dan tidak terjadi error kedepannya. Terimakasih</div></center>');
+var ibar = 0;
+  if (ibar == 0) {
+    ibar = 1;
+    var elembar = document.getElementById("myBar");
+    var widthbar = 10;
+    var idbar = setInterval(frame, 150);
+    function frame() {
+      if (widthbar >= 100) {
+        clearInterval(idbar);
+        ibar = 0; $('#box-loadload').delay(100).fadeOut('fast');
+        sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+      } else {
+        widthbar++;
+        elembar.style.width = widthbar + "%";
+        elembar.innerHTML = widthbar  + "%";
+      }
+    }
+  }
+//////////////////////////////////		
+		} else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); $('#box-loadload').delay(1500).fadeOut('fast'); }
+	}).fail(function() { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); $('#box-loadload').delay(1500).fadeOut('fast'); });	
 }
 });
 ///////////////////////ONLINEDETECTOR END
 	
 $(document).ready(function(){
 
-if(localStorage.getItem("IOSVERSION") == '20220404') { localStorage.setItem("showkonten", "showkonten"); } else { localStorage.setItem("showkonten", "showkonten"); }
-if(localStorage.getItem("ANDROIDVERSION") == '20220401') {  } else {  }
+if(localStorage.getItem("IOSVERSION") == '20220404OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+if(localStorage.getItem("ANDROIDVERSION") < '20220402') { $('#box-loadload').append('<br><Br><center>MOHON UPDATE KE VERSI TERBARU!<br>VERSI INI BANYAK BUGS!<br>Ratring 5 untuk memberi semangat team kami<br>BUGS screenshot via email</div></center>'); $('#box-loadload').show(); $('#box-loadload').delay(5000).fadeOut('fast'); } else {  }
 
 document.addEventListener("deviceready", function(){ 
 var deviceplatformsponsor = device.platform;
@@ -92,13 +115,10 @@ localStorage.setItem("RegionUserCache", dataIpUserCache.region);
 }
 
 if(localStorage.getItem("IpUserCache") != 'ID')
-{ 
-/*$('#for_id_user').hide(); $('#for_id_user1').hide();*/
-$('#for_id_user2').hide(); }
+{ $('#for_id_user2').hide(); /*$('#for_id_user').hide(); $('#for_id_user1').hide();*/ }
 
 if(localStorage.getItem("RegionUserCache") != 'West Nusa Tenggara')
-{ 
-$('#khususNTB1').hide(); }
+{ $('#khususNTB1').hide(); }
 });
 
 
