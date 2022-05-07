@@ -42,7 +42,6 @@ if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDET
 	sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
 	var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
 	$.get(ONLINEDETECTOR, function(data) {
-	$('#box-loadload').show();
 		if (data.indexOf("ONLINE") > -1) {
 //////////////////////////////////
 $('#box-loadload').append('<br><Br><center><div id="myProgress" style="width:80%;background-color:#ddd;"><div id="myBar" style="width:1%;height:30px;background-color:#A2D4FE;text-align:center;line-height: 30px;color: white;"></div></div><div style="text-align:center;color:#A2D4FE;width:80%;"><br>Mohon Tunggu, Loading ini terjadi hanya saat pertama kali aplikasi dibuka, bertujuan agar semua data siap dan tidak terjadi error kedepannya. Terimakasih</div></center>');
@@ -61,6 +60,7 @@ var ibar = 0;
         widthbar++;
         elembar.style.width = widthbar + "%";
         elembar.innerHTML = widthbar  + "%";
+	$('#box-loadload').show();
       }
     }
   }
