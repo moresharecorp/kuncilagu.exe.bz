@@ -66,8 +66,8 @@ var ibar = 0;
     }
   }
 //////////////////////////////////		
-		} else { $('#box-loadload').delay(1500).fadeOut('fast'); }
-	}).fail(function() { $('#box-loadload').delay(1500).fadeOut('fast'); });	
+		} else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); $('#box-loadload').delay(1500).fadeOut('fast'); }
+	}).fail(function() { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); $('#box-loadload').delay(1500).fadeOut('fast'); });	
 }
 });
 ///////////////////////ONLINEDETECTOR END
