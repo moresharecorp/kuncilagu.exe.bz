@@ -41,6 +41,7 @@ var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
 if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDETECTOR") == "") {
 	sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
 	var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
+	$('#box-loadload').show();
 	$.get(ONLINEDETECTOR, function(data) {
 		if (data.indexOf("ONLINE") > -1) {
 //////////////////////////////////
@@ -65,8 +66,8 @@ var ibar = 0;
     }
   }
 //////////////////////////////////		
-		} else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); $('#box-loadload').delay(1500).fadeOut('fast'); }
-	}).fail(function() { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); $('#box-loadload').delay(1500).fadeOut('fast'); });	
+		} else { $('#box-loadload').delay(1500).fadeOut('fast'); }
+	}).fail(function() { $('#box-loadload').delay(1500).fadeOut('fast'); });	
 }
 });
 ///////////////////////ONLINEDETECTOR END
