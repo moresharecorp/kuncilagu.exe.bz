@@ -36,6 +36,48 @@ $(document).ready(function(){
 if(localStorage.getItem("ANDROIDVERSION") >= '20220401') { 
 localStorage.setItem("urlhomepromodefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001.txt"); 
 localStorage.setItem("urlhometoptendefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/toptenandroid.php_barat2c.html");
+
+///////////////////////ONLINEDETECTOR
+var dtnow_ONLINEDETECTOR = new Date();
+var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
+var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
+
+if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDETECTOR") == "") {
+sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
+$('#box-loadload').show();
+localStorage.setItem("rewardedfound", "");
+	$.get(ONLINEDETECTOR, function(data) {
+    //////////////////////////////////
+$('#box-loadload').append('<br><Br><center><div id="myProgress" style="width:80%;background-color:#ddd;"><div id="myBar" style="width:1%;height:30px;background-color:#A2D4FE;text-align:center;line-height: 30px;color: white;"></div></div><div style="text-align:center;color:#A2D4FE;width:80%;"><br>Mohon Tunggu, Loading ini terjadi hanya saat pertama kali aplikasi dibuka, bertujuan agar semua data siap dan tidak terjadi error kedepannya. Terimakasih</div></center>');
+var ibar = 0;
+  if (ibar == 0) {
+    ibar = 1;
+    var elembar = document.getElementById("myBar");
+    var widthbar = 10;
+    var idbar = setInterval(frame, 100);
+    function frame() {
+      if (widthbar >= 100) {
+        clearInterval(idbar);
+        ibar = 0; $('#box-loadload').delay(100).fadeOut('fast');
+        sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+      } else {
+        widthbar++; 
+        elembar.style.width = widthbar + "%";
+        elembar.innerHTML = widthbar  + "%";
+	$('#box-loadload').show();
+      }
+    }
+  }
+//////////////////////////////////
+    })
+    .fail(function() { 
+    sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+    sessionStorage.setItem("NGOFFLINE", "NGOFFLINE");
+    localStorage.setItem("rewardedfound", "");
+    $('#box-loadload').delay(1500).fadeOut('fast'); });	
+}
+///////////////////////ONLINEDETECTOR END
+
 }
 
 localStorage.setItem("advertisechord",'\<script\>$(document).ready(function() { /***HEADERAPPEND***/ /***HEADERAPPEND***/ /**REWARDPOINTS_CHORD_START**/ if (localStorage.getItem("freeOneHourAccess_reward") > "1000") { var openfeaturetemp = ""; if (localStorage.getItem("rewardedfound") == "LOADED") { openfeaturetemp = "yes"; }; if (parseInt(localStorage.getItem("rewardedpoints1"), 10) < 1 && openfeaturetemp != "yes") {} else { /**** IKLAN SPESIAL OFFER START ****/ var isispesialoffer = ""; var key_spesial_offer = "spesial_offer"; var value_spesial_offer = "promopoin"; if (!localStorage.getItem(key_spesial_offer) || localStorage.getItem(key_spesial_offer) != value_spesial_offer) { isispesialoffer = "<div class=\'banner_promopoin\' style=\'clear:both;text-align:center;margin-bottom:5px;\'><img class=\'showhidebannerpromopoin1\' style=\'width:100%\' src=\'https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_promopoin_1.gif\'><div style=\'display:none\' class=\'showhidebannerpromopoin2\'><center><br><br><a target=\'_blank\' style=\'color:orange;font-size:120%;font-weight:bold;\' href=\'https://www.youtube.com/channel/UCMVGVscOPTjiw14xJGlc4NA\'>--------------------<br>CLICK HERE AND SUBSCRIBE!<br>--------------------</a><br><Br></center></div></div>"; } else { key_spesial_offer = "spesial_offer1"; value_spesial_offer = "promopoin1"; if (!localStorage.getItem(key_spesial_offer) || localStorage.getItem(key_spesial_offer) != value_spesial_offer) { isispesialoffer = "<div class=\'banner_promopoin\' style=\'clear:both;text-align:center;margin-bottom:5px;\'><img class=\'showhidebannerpromopoin1\' style=\'width:100%\' src=\'https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_promopoin_2.gif\'><div style=\'display:none\' class=\'showhidebannerpromopoin2\'><center><br><br><a target=\'_blank\' style=\'color:orange;font-size:120%;font-weight:bold;\' href=\'https://www.youtube.com/channel/UCQulcIf9VwIQLYgRyknqzog\'>--------------------<br>CLICK HERE AND SUBSCRIBE!<br>--------------------</a><br><Br></center></div></div>"; } else { isispesialoffer = ""; }; } /**$("#isispesialoffer").append(isispesialoffer);**/ /**** IKLAN SPESIAL OFFER END ****/ } $(".showhidebannerpromopoin1").click(function() { var oldrewardedpoints = parseInt(localStorage.getItem("rewardedpoints1"), 10) + 2000; localStorage.setItem("rewardedpoints1", oldrewardedpoints); localStorage.setItem(key_spesial_offer, value_spesial_offer); $(".showhidebannerpromopoin1").hide("slow"); $(".showhidebannerpromopoin2").show("slow"); }); /**REWARDPOINTS_CHORD_END**/ } });\<\/script\>');
