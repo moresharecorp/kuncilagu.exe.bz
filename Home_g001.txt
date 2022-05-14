@@ -38,36 +38,41 @@ var ownersponsorios = '<center><a href="https://bigboymusicstudio.business.site"
 $(document).ready(function(){
 var dtnow_ONLINEDETECTOR = new Date();
 var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
+var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
+
 if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDETECTOR") == "") {
-	sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
-	var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
-	$('#box-loadload').show();
+sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
+$('#box-loadload').show();
+localStorage.setItem("rewardedfound", "");
 	$.get(ONLINEDETECTOR, function(data) {
-		if (data.indexOf("ONLINE") > -1) {
-//////////////////////////////////
+    //////////////////////////////////
 $('#box-loadload').append('<br><Br><center><div id="myProgress" style="width:80%;background-color:#ddd;"><div id="myBar" style="width:1%;height:30px;background-color:#A2D4FE;text-align:center;line-height: 30px;color: white;"></div></div><div style="text-align:center;color:#A2D4FE;width:80%;"><br>Mohon Tunggu, Loading ini terjadi hanya saat pertama kali aplikasi dibuka, bertujuan agar semua data siap dan tidak terjadi error kedepannya. Terimakasih</div></center>');
 var ibar = 0;
   if (ibar == 0) {
     ibar = 1;
     var elembar = document.getElementById("myBar");
     var widthbar = 10;
-    var idbar = setInterval(frame, 150);
+    var idbar = setInterval(frame, 100);
     function frame() {
       if (widthbar >= 100) {
         clearInterval(idbar);
         ibar = 0; $('#box-loadload').delay(100).fadeOut('fast');
         sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
       } else {
-        widthbar++;
+        widthbar++; 
         elembar.style.width = widthbar + "%";
         elembar.innerHTML = widthbar  + "%";
 	$('#box-loadload').show();
       }
     }
   }
-//////////////////////////////////		
-		} else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); sessionStorage.setItem("NGOFFLINE", "NGOFFLINE"); $('#box-loadload').delay(1500).fadeOut('fast'); }
-	}).fail(function() { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); sessionStorage.setItem("NGOFFLINE", "NGOFFLINE"); $('#box-loadload').delay(1500).fadeOut('fast'); });	
+//////////////////////////////////
+    })
+    .fail(function() { 
+    sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+    sessionStorage.setItem("NGOFFLINE", "NGOFFLINE");
+    localStorage.setItem("rewardedfound", "");
+    $('#box-loadload').delay(1500).fadeOut('fast'); });	
 }
 });
 ///////////////////////ONLINEDETECTOR END
@@ -94,7 +99,7 @@ document.addEventListener("deviceready", function(){
 var olddeviceVersion = parseInt(device.version);
 var deviceplatformsponsor = device.platform;
 
-if(olddeviceVersion < 8 && olddeviceVersion > 4 && (!localStorage.getItem("OLD_APPS_ANDROID_VERSION") || localStorage.getItem("ANDROIDVERSION") == "20220402") && deviceplatformsponsor == 'Android') { 
+if(olddeviceVersion < 8 && olddeviceVersion > 4 && (!localStorage.getItem("OLD_APPS_ANDROID_VERSION") || localStorage.getItem("ANDROIDVERSION") <= "20220402") && deviceplatformsponsor == 'Android') { 
 $('body').empty();
 $("body").append('<div style="text-align:left;background-color:black;padding:30px;font-size:120%;color:white"><br><br><br>GOOGLE Sudah tidak mendukung ANDROID versi 7 kebawah! Versi Android Anda adalah: (<b style="color:orange;">VERSI '+olddeviceVersion+'</b>). Update sistem ANDROID anda ke <b style="color:orange;">ANDROID VERSI 8</b> atau bisa DOWNLOAD APLIKASI KUNCI GITAR VERSI KHUSUS ANDROID ANDA di sini: "<a style="color:#89cff0;" target="_blank" href="http://kuncilagu.exe.bz/log.html"><b>http://kuncilagu.exe.bz/log.html</b></a>" <br><br>1.Pilih sesuai VERSI ANDROID ANDA<br>2.Download<br>3.Install dan Setujui jika ada permintaan INSTAL dari Luar<br><br>Kami berusaha yang terbaik untuk anda agar tetap bisa menggunakan aplikasi ini, Bugs mohon screenshot dan kirim ke email support@ms-room.com, Rating 5 Di PlayStore sekedar untuk menghargai usaha kami untuk anda.<br><Br>Salam Guitarist :)<br><br><center><img style="width:50%;border-radius:500px;" src="https://c.tenor.com/hm54pgfDPu8AAAAd/fatal-misi-fatal-error-zenekar.gif"></center><br><br><br><br><br></div>');
 }
