@@ -68,6 +68,48 @@ $(document).ready(function(){
 if(localStorage.getItem("IOSVERSION") >= '20220401') { 
 localStorage.setItem("urlhomepromodefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001.txt"); 
 localStorage.setItem("urlhometoptendefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/toptenandroid.php_barat2c.html");
+
+///////////////////////ONLINEDETECTOR
+var dtnow_ONLINEDETECTOR = new Date();
+var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
+var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
+
+if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDETECTOR") == "") {
+sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
+$('#box-loadload').show();
+localStorage.setItem("rewardedfound", "");
+	$.get(ONLINEDETECTOR, function(data) {
+    //////////////////////////////////
+$('#box-loadload').append('<br><Br><center><div id="myProgress" style="width:80%;background-color:#ddd;"><div id="myBar" style="width:1%;height:30px;background-color:#A2D4FE;text-align:center;line-height: 30px;color: white;"></div></div><div style="text-align:center;color:#A2D4FE;width:80%;"><br>Mohon Tunggu, Loading ini terjadi hanya saat pertama kali aplikasi dibuka, bertujuan agar semua data siap dan tidak terjadi error kedepannya. Terimakasih</div></center>');
+var ibar = 0;
+  if (ibar == 0) {
+    ibar = 1;
+    var elembar = document.getElementById("myBar");
+    var widthbar = 10;
+    var idbar = setInterval(frame, 100);
+    function frame() {
+      if (widthbar >= 100) {
+        clearInterval(idbar);
+        ibar = 0; $('#box-loadload').delay(100).fadeOut('fast');
+        sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+      } else {
+        widthbar++; 
+        elembar.style.width = widthbar + "%";
+        elembar.innerHTML = widthbar  + "%";
+	$('#box-loadload').show();
+      }
+    }
+  }
+//////////////////////////////////
+    })
+    .fail(function() { 
+    sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+    sessionStorage.setItem("NGOFFLINE", "NGOFFLINE");
+    localStorage.setItem("rewardedfound", "");
+    $('#box-loadload').delay(1500).fadeOut('fast'); });	
+}
+///////////////////////ONLINEDETECTOR END
+
 }
 
 localStorage.setItem("advertisechord",'<div id="script_recchord" style="clear:both"></div><div style="clear:both;margin-bottom:-10px;color:#edd393;font-size:18px;">Recommended Song <span style="font-size:8px;">(With ADS! No Point!)</span></div><div id="recchord" style="clear:both;margin-bottom:2px;"></div><div style="clear:both;margin-top:25px;"><center><span style="font-size:12px;color:silver">'+platformchat+'</span></center></div><div style="clear:both"></div><script>$(document).ready(function() { var band_judul_yt = tampilchord[idchord]["nama_band"]+\' \'+tampilchord[idchord]["judul"]; var band_judul_yt_fix = band_judul_yt.replace(/[^a-z0-9]+|  /gmi, " "); /***HEADERAPPEND***/ $(".header").append( \'<div style="z-index:2;margin:0;padding:0;position:fixed;bottom:210px;right:10px;"><a target="_blank" href="http://kuncilagu.exe.bz/index.php?request=LISTENFROMMOBILEAPPS&id_chord=\'+idchord+\'"><img style="width:35px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/button_play_small.png"></a></div><div style="color:#0099cc;text-align:right;font-size:8px;margin:0px;border-top:solid 4px #0099cc;z-index:2;position:fixed;top:0px;right:0px;width:100%;"><div style="float:right;border-left:solid 1px #0099cc;border-right:solid 1px #0099cc;border-bottom:solid 1px #0099cc;padding:2px;margin:0px;-moz-border-radius:  0 0 4px 4px;  -webkit-border-radius:  0 0 4px 4px; border-radius:  0 0 4px 4px;background-color:white"> <i style="font-size:8px;color:#0099cc;" class="material-icons">error_outline</i> Banner Ads! No Points!</div><div style="clear:both"></div></div>\' ); /***HEADERAPPEND***/ if(idchord != "") {  if (/(android)/i.test(navigator.userAgent)) { $("#ganalytics_div").append(\'<iframe id="ganalytics" src="" style="width:0;height:0;border:0;border: none;"></iframe>\'); url_ganalytics = "https://moresharecorp.github.io/kuncilagu.exe.bz/ganalytics.html#"+idchord+"#"+encodeURI(tampilchord[idchord][\'nama_band\'])+"#"+encodeURI(tampilchord[idchord][\'judul\'])+""; $("#ganalytics").attr("src", url_ganalytics); }  } /**REWARDPOINTS_CHORD_START**/  if (((!localStorage.getItem("freeOneHourAccess_reward") || localStorage.getItem("freeOneHourAccess_reward") == "") && localStorage.getItem("admob_plugin_version") == "free") || localStorage.getItem("freeOneHourAccess_reward") > "1000") {      /**REWARDPOINTS_CHORD_END**/ $(".rec_ads").live("click", function (){ admob.interstitial.show(); localStorage.setItem("interstitial_check", ""); window.location = $(this).attr("href"); location.reload(); }); url_rec = "https://moresharecorp.github.io/kuncilagu.exe.bz/toptenandroid.php_barat2c_rec.html"; $.get(url_rec, function(data) { $("#script_recchord").html(data); }); var admobid = {}; if (/(android)/i.test(navigator.userAgent)) { admobid = { interstitial: "ca-app-pub-6516367932506481/3671639908" } }; if (!localStorage.getItem("interstitial_check") || localStorage.getItem("interstitial_check") == "") { localStorage.setItem("interstitial_check", "ready"); document.addEventListener("deviceready", function() { admob.interstitial.config({ id: admobid.interstitial, isTesting: false, autoShow: false }); admob.interstitial.prepare();}, false); } } /***ADMOBFREE****/  }); <\/script><div id="ganalytics_div"></div>');
