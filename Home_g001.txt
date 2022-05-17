@@ -40,7 +40,7 @@ var dtnow_ONLINEDETECTOR = new Date();
 var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
 var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
 
-if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDETECTOR") == "") {
+if (!sessionStorage.getItem("ONLINEDETECTOR") || sessionStorage.getItem("ONLINEDETECTOR") == "") {
 sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
 $('#box-loadload').show();
 localStorage.setItem("rewardedfound", "");
