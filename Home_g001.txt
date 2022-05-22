@@ -83,7 +83,7 @@ document.addEventListener("deviceready", function(){
 var deviceplatformsponsor = device.platform;
 if (deviceplatformsponsor == 'Android') 
 { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorandroid); 
-if(localStorage.getItem("ANDROIDVERSION") < '20220402') { $('#box-loadload').append('<br><Br><center>MOHON UPDATE KE VERSI TERBARU!<br>VERSI INI BANYAK BUGS!<br>Ratring 5 untuk memberi semangat team kami<br>BUGS screenshot via email</div></center>'); $('#box-loadload').show(); $('#box-loadload').delay(5000).fadeOut('fast'); }
+if(localStorage.getItem("ANDROIDVERSION") < 20220402) { $('#box-loadload').append('<br><Br><center>MOHON UPDATE KE VERSI TERBARU!<br>VERSI INI BANYAK BUGS!<br>Ratring 5 untuk memberi semangat team kami<br>BUGS screenshot via email</div></center>'); $('#box-loadload').show(); $('#box-loadload').delay(5000).fadeOut('fast'); }
 }
 
 else if (deviceplatformsponsor == 'iOS') 
