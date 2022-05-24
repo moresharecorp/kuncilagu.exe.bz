@@ -76,6 +76,10 @@ var ibar = 0;
         clearInterval(idbar);
         ibar = 0; $('#box-loadload').delay(100).fadeOut('fast');
         sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+	sessionStorage.setItem("logOnceTimehome", "0");
+	localStorage.setItem("cachepromo", "");
+	localStorage.setItem("advertisechord", "");
+	location.reload(true);
       } else {
         widthbar++; 
         elembar.style.width = widthbar + "%";
