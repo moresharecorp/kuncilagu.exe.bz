@@ -1,3 +1,4 @@
+<!-- LOAD SUCCESS -->
 <div style="clear:both"></div>
 <a href="https://goo.gl/uPRaBE" target="_blank"><div style="clear:both;color:white;font-size:18px;text-align:center;background-color:#e68a00;padding:5px;margin-top:2px;margin-bottom:2px;">Request & Contribute Chord <i class="material-icons" style="font-size:18px;color:#99ccff">border_color</i></div></a>
 
@@ -92,6 +93,10 @@ var ibar = 0;
         clearInterval(idbar);
         ibar = 0; $('#box-loadload').delay(100).fadeOut('fast');
         sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+	sessionStorage.setItem("logOnceTimehome", "0");
+	localStorage.setItem("cachepromo", "");
+	localStorage.setItem("advertisechord", "");
+	location.reload(true);
       } else {
         widthbar++; 
         elembar.style.width = widthbar + "%";
