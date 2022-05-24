@@ -1,3 +1,4 @@
+<!-- LOAD SUCCESS -->
 <div style="clear:both"></div>
 <a href="#" onclick="cordova.InAppBrowser.open('http://kuncilagu.exe.bz/chord/request.php', '_system');"><div style="clear:both;color:white;font-size:18px;text-align:center;background-color:#e68a00;padding:5px;margin-top:2px;margin-bottom:2px;">Request & Contribute Chord <i class="material-icons" style="font-size:18px;color:#99ccff">border_color</i></div></a>
 
@@ -22,7 +23,11 @@ Welcome Guest :)
 <script>
 $(document).ready(function(){
 
-if(localStorage.getItem("ANDROIDVERSION") >= '20220401') { localStorage.setItem("urlhomepromodefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001.txt"); }
+if(localStorage.getItem("ANDROIDVERSION") >= '20220401') { localStorage.setItem("urlhomepromodefault", "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001.txt");
+sessionStorage.setItem("logOnceTimehome", "0");
+	localStorage.setItem("cachepromo", "");
+	localStorage.setItem("advertisechord", "");
+	location.reload(true);}
 
 /****
 if (!localStorage.getItem("IpUserCache") || localStorage.getItem("IpUserCache") == '') { $.getJSON('http://ip-api.com/json', function(result) { localStorage.setItem("IpUserCache", result.countryCode); });  }
