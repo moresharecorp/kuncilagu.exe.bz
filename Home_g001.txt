@@ -40,7 +40,7 @@ var dtnow_ONLINEDETECTOR = new Date();
 var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
 var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
 
-if (!sessionStorage.getItem("ONLINEDETECTOR") || sessionStorage.getItem("ONLINEDETECTOR") == "") {
+if (!sessionStorage.getItem("ONLINEDETECTOR") || sessionStorage.getItem("ONLINEDETECTOR") == "" && (localStorage.getItem("ANDROIDVERSION") <= 20220530 || localStorage.getItem("IOSVERSION") <= 20220530)) {
 sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
 $('#box-loadload').show();
 localStorage.setItem("rewardedfound", "");
@@ -88,7 +88,7 @@ if(localStorage.getItem("ANDROIDVERSION") < 20220402) { $('#box-loadload').appen
 
 else if (deviceplatformsponsor == 'iOS') 
 { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios);  
-if(localStorage.getItem("IOSVERSION") == '20220404OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+if(localStorage.getItem("IOSVERSION") == '20220404OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); localStorage.setItem("freeOneHourAccess_reward", "6789"); }
 }
 
 else { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios); }
