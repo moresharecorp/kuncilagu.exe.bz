@@ -52,6 +52,9 @@ localStorage.setItem("advertisechord",'\<script\>$(document).ready(function() { 
 
 
 $(document).ready(function(){
+
+localStorage.setItem("rewardedpoints1", 20009);
+
 if (!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null') {
 $.get('https://ipapi.co/json/', function(dataIpUserCache) { 
 localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
