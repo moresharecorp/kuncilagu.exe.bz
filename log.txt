@@ -1,12 +1,13 @@
 <center>
-<div class="headcontenttitle">Recent Update Chord<br>Version.20220401<br><b style="font-size:24px">(01 APR 2022)</b></div><br>
+<div class="headcontenttitle">Recent Update Chord<br>Version.20220602<br><b style="font-size:24px">(02 JUN 2022)</b></div><br>
+
 
 <div style="color:#818181;">Website: <a style="color:white;background-color:#21b1ff;" target="_blank" href="/"> KunciLagu.exe.bz </a><br><br>
-<span style="font-size:120%;color:purple;font-weight:bold;">IOS & Android Versi 8 Keatas</span><br>
+<span style="font-size:120%;color:purple;font-weight:bold;">IOS & Android Download</span><br>
 Kunci Gitar Indo&nbsp; (<a style="color:white;background-color:#21b1ff;" target="_blank" href="https://play.google.com/store/apps/details?id=com.moreshare.kumpulan.kunci.gitar.indonesia&referrer=utm_source%3Dkuncilagu.exe.bz%26utm_campaign%3Dlog_update"> Download <img style="width:14px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/icon_android.png"> <a>)<br>
 Chord Guitar Full (<a style="color:white;background-color:#21b1ff;" target="_blank" href="https://play.google.com/store/apps/details?id=com.moreshare.chord.guitar.full.offline&referrer=utm_source%3Dkuncilagu.exe.bz%26utm_campaign%3Dlog_update"> Download <img style="width:14px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/icon_android.png"> </a>)<br>
 Chord Guitar Full (<a style="color:white;background-color:#21b1ff;" target="_blank" href="https://apps.apple.com/id/app/chord-guitar-full-offline/id1522940340"> Download <img style="width:14px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/icon_apple.png"> </a>)<br>Chord Transposer (<a style="color:white;background-color:#21b1ff;" target="_blank" href="https://play.google.com/store/apps/details?id=com.moreshare.guitar.chord.transposer.manager&referrer=utm_source%3Dkuncilagu.exe.bz%26utm_campaign%3Dlog_update"> Download <img style="width:14px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/icon_android.png"> </a>)<br><br>
-
+<!--
 <span style="font-size:120%;color:purple;font-weight:bold;">Android Versi 7</span><br>
 Kunci Gitar Indo&nbsp; (<a style="color:white;background-color:#21b1ff;" target="_blank" href="https://drive.google.com/file/d/1XVWTAQXY_xP20HOMjI6vzbRZfvqt24oK/view?usp=sharing"> Download <img style="width:14px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/icon_android.png"> <a>)<br>
 Chord Guitar Full (<a style="color:white;background-color:#21b1ff;" target="_blank" href="https://drive.google.com/file/d/1bIK5gwTVVPkbRjwaZohEL5A1yg9z8rJx/view?usp=sharing"> Download <img style="width:14px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/icon_android.png"> </a>)<br><br>
@@ -18,9 +19,11 @@ Chord Guitar Full (<a style="color:white;background-color:#21b1ff;" target="_bla
 <span style="font-size:120%;color:purple;font-weight:bold;">Android Versi 5</span><br>
 Kunci Gitar Indo&nbsp; (<a style="color:white;background-color:#21b1ff;" target="_blank" href="https://drive.google.com/file/d/1AgJYgYjw5U8opm6L_3Rw0sZ0dt2N4KxH/view?usp=sharing"> Download <img style="width:14px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/icon_android.png"> <a>)<br>
 Chord Guitar Full (<a style="color:white;background-color:#21b1ff;" target="_blank" href="https://drive.google.com/file/d/1i4EJgd-5TXfhFPrw36lUyASEDfZYh4pQ/view?usp=sharing"> Download <img style="width:14px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/icon_android.png"> </a>)<br><br>
-
+-->
 <a href="https://www.chordtela.com/" target="_blank"><img style="width:98%" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></a>
-</div>
+</div><br><br
+
+<span style="font-size:120%;color:purple;font-weight:bold;">LIST UPDATE TERBARU</span><br><br>
 
 <div style="padding:10px;text-align:left;border:solid 1px silver;background-color:#f4f7fc;border-radius:5px;margin-top:20px;">
 
