@@ -41,7 +41,7 @@ if (localStorage.getItem("deviceplatformOS") == 'Android')
 { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorandroid); }
 else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
 { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios);  
-if(localStorage.getItem("IOSVERSION") == '20220404OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); localStorage.setItem("freeOneHourAccess_reward", "6789"); }
+if(localStorage.getItem("IOSVERSION") == '20220602') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); localStorage.setItem("freeOneHourAccess_reward", "6789"); }
 }
 else { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios); }
 
