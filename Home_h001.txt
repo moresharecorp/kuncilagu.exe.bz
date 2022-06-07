@@ -63,8 +63,8 @@ localStorage.setItem("RegionUserCache", dataIpUserCache.region);
 if(localStorage.getItem("IpUserCache") != 'ID')
 { $('#for_id_user2').hide(); /*$('#for_id_user').hide(); $('#for_id_user1').hide();*/ }
 
-if(localStorage.getItem("RegionUserCache") != 'West Nusa Tenggara')
-{ $('#khususNTB1').hide(); }
+if(localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStorage.getItem("RegionUserCache") == 'Bali')
+{ } else { $('#khususNTB1').hide(); }
 });
 
 
