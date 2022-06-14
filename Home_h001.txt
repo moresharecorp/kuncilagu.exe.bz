@@ -37,22 +37,28 @@ var ownersponsorios = '<center><a href="https://bigboymusicstudio.business.site"
 	
 $(document).ready(function(){
 
+/*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
 if (localStorage.getItem("deviceplatformOS") == 'Android') 
 { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorandroid); }
 else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
 { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios);  
-if(localStorage.getItem("IOSVERSION") == '20220602') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+if(localStorage.getItem("IOSVERSION") == '20220603') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
 }
 else { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios); }
+/*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
 
+/**************FREEONEHOURS*************/
+if(parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000){ }
+else { $("#MANGGUNGNOADS").hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide(); if(localStorage.getItem("deviceAPPS_NAME") == 'CGIOS' && localStorage.getItem("showkonten") != 'showkonten') { $("#footerlink").hide(); $("#topfive").hide(); $("#promokhususatas").hide();} }
+/**************FREEONEHOURSEND*************/
 
-localStorage.setItem("advertisechord",'\<script\>$(document).ready(function() { /***HEADERAPPEND***/ /***HEADERAPPEND***/ /**REWARDPOINTS_CHORD_START**/ if (localStorage.getItem("freeOneHourAccess_reward") > "1000") { var openfeaturetemp = ""; if (localStorage.getItem("rewardedfound") == "LOADED") { openfeaturetemp = "yes"; }; if (parseInt(localStorage.getItem("rewardedpoints1"), 10) < 1 && openfeaturetemp != "yes") {} else { /**** IKLAN SPESIAL OFFER START ****/ var isispesialoffer = ""; var key_spesial_offer = "spesial_offer"; var value_spesial_offer = "promopoin"; if (!localStorage.getItem(key_spesial_offer) || localStorage.getItem(key_spesial_offer) != value_spesial_offer) { isispesialoffer = "<div class=\'banner_promopoin\' style=\'clear:both;text-align:center;margin-bottom:5px;\'><img class=\'showhidebannerpromopoin1\' style=\'width:100%\' src=\'https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_promopoin_1.gif\'><div style=\'display:none\' class=\'showhidebannerpromopoin2\'><center><br><br><a target=\'_blank\' style=\'color:orange;font-size:120%;font-weight:bold;\' href=\'https://www.youtube.com/channel/UCMVGVscOPTjiw14xJGlc4NA\'>--------------------<br>CLICK HERE AND SUBSCRIBE!<br>--------------------</a><br><Br></center></div></div>"; } else { key_spesial_offer = "spesial_offer1"; value_spesial_offer = "promopoin1"; if (!localStorage.getItem(key_spesial_offer) || localStorage.getItem(key_spesial_offer) != value_spesial_offer) { isispesialoffer = "<div class=\'banner_promopoin\' style=\'clear:both;text-align:center;margin-bottom:5px;\'><img class=\'showhidebannerpromopoin1\' style=\'width:100%\' src=\'https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_promopoin_2.gif\'><div style=\'display:none\' class=\'showhidebannerpromopoin2\'><center><br><br><a target=\'_blank\' style=\'color:orange;font-size:120%;font-weight:bold;\' href=\'https://www.youtube.com/channel/UCQulcIf9VwIQLYgRyknqzog\'>--------------------<br>CLICK HERE AND SUBSCRIBE!<br>--------------------</a><br><Br></center></div></div>"; } else { isispesialoffer = ""; }; } /**$("#isispesialoffer").append(isispesialoffer);**/ /**** IKLAN SPESIAL OFFER END ****/ } $(".showhidebannerpromopoin1").click(function() { var oldrewardedpoints = parseInt(localStorage.getItem("rewardedpoints1"), 10) + 2000; localStorage.setItem("rewardedpoints1", oldrewardedpoints); localStorage.setItem(key_spesial_offer, value_spesial_offer); $(".showhidebannerpromopoin1").hide("slow"); $(".showhidebannerpromopoin2").show("slow"); }); /**REWARDPOINTS_CHORD_END**/ } });\<\/script\>');
+localStorage.setItem("advertisechord",'');
 
 });
 
 
+/*****************IP LOC***********/
 $(document).ready(function(){
-
 if (!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null') {
 $.get('https://ipapi.co/json/', function(dataIpUserCache) { 
 localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
@@ -66,7 +72,7 @@ if(localStorage.getItem("IpUserCache") != 'ID')
 if(localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStorage.getItem("RegionUserCache") == 'Bali')
 { } else { $('#khususNTB1').hide(); }
 });
-
+/*****************IP LOC END***********/
 
 
  /*****TEST SPEED PHONE $(document).ready(function(){  if( !localStorage.getItem("savedresult")) { localStorage.setItem("savedresult", ''); } if( (localStorage.getItem("savedresult") == '')) { setTimeout(function() { var timerStart = Date.now(); var loopval = 7500; for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load1 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load2 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load3 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load4 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load5 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load6 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load7 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load8 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load9 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load10 = (loopval-(Date.now()-timerStart)); hasilawal = ((load1+load2+load3+load4+load5+load6+load7+load8+load9+load10)/10)/100; hasilpersen = hasilawal.toFixed(2); if(hasilpersen > 100) { hasilpersen = 100; } if(hasilpersen < 1) { hasilpersen = 1; } var xxxxx = ''+hasilpersen+''; localStorage.setItem("savedresult", xxxxx); dcordova = encodeURI(device.cordova); dmodel = encodeURI(device.model); dplatform = encodeURI(device.platform); duuid = encodeURI(device.uuid); dversion = encodeURI(device.version); dmanufacturer = encodeURI(device.manufacturer); disVirtual = encodeURI(device.isVirtual); dserial = encodeURI(device.serial); var urltestspeed = 'https://www.resmart.info/com.moreshare.speed.load.test.benchmark.php?dcordova='+dcordova+'&dmodel='+dmodel+'&dplatform='+dplatform+'&duuid='+duuid+'&dversion='+dversion+'&dmanufacturer='+dmanufacturer+'&disVirtual='+disVirtual+'&dserial='+dserial+'&dscore='+hasilpersen+'&dref=chordguitar'; $.get(urltestspeed, function(data) { }); }, 10000); } }); *****/
