@@ -47,11 +47,6 @@ if(localStorage.getItem("IOSVERSION") == '20220603') { localStorage.setItem("sho
 else { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios); }
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
 
-/**************FREEONEHOURS*************/
-if(parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000){ }
-else { $("#MANGGUNGNOADS").hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide(); if(localStorage.getItem("deviceAPPS_NAME") == 'CGIOS' && localStorage.getItem("showkonten") != 'showkonten') { $("#footerlink").hide(); $("#topfive").hide(); $("#promokhususatas").hide();} }
-/**************FREEONEHOURSEND*************/
-
 localStorage.setItem("advertisechord",'');
 
 });
