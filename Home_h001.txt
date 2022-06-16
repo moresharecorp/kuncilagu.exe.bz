@@ -34,6 +34,9 @@ var ownersponsorandroid = '<center><a href="https://bigboymusicstudio.business.s
 	
 var ownersponsorios = '<center><a href="https://bigboymusicstudio.business.site" target="_blank"><img id="khususNTB1" style="width:93%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a><a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="width:46%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://apps.apple.com/id/app/id1534298746" target="_blank"><img style="width:46%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a></center>';
 
+/****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
+/****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
+/****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
 	
 $(document).ready(function(){
 
@@ -46,6 +49,14 @@ if(localStorage.getItem("IOSVERSION") == '20220603') { localStorage.setItem("sho
 }
 else { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios); }
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
+
+if(parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000){ } else {
+///////////FREEONEHOURS LOCKED
+$("#MANGGUNGNOADS").hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide(); 
+if(APPS_NAME == 'CGIOS' && localStorage.getItem("showkonten") != 'showkonten') 
+{ $("#footerlink").hide(); $("#topfive").hide(); $("#promokhususatas").hide(); }
+//////////FREEONEHOURS LOCKED END
+}
 
 localStorage.setItem("advertisechord",'');
 
