@@ -4,7 +4,7 @@
 <div style="clear:both;margin-bottom:5px"></div>
 
 <style>
-*{box-sizing:border-box}.mySlides{display:none;text-align:center;overflow:hidden;height:200px}.imgSlides{vertical-align:middle;height:100%}.slideshow-container{height:200px;position:relative;margin:auto;background-color:#000}.nextSlides,.prevSlides{cursor:pointer;position:absolute;top:50%;width:auto;padding:16px;margin-top:-22px;color:#fff;font-weight:700;font-size:18px;transition:.6s ease;border-radius:0 3px 3px 0;user-select:none}.nextSlides{right:0;border-radius:3px 0 0 3px}.nextSlides:hover,.prevSlides:hover{background-color:rgba(0,0,0,.8)}.textSlides{color:#f2f2f2;font-size:15px;padding:8px 12px;position:absolute;bottom:8px;width:100%;text-align:center;text-shadow:1px 1px 2px #000}.numbertext{color:#f2f2f2;font-size:12px;padding:8px 12px;position:absolute;top:0}.fadeSlides{animation-name:fadeSlides;animation-duration:1.5s}@keyframes fadeSlides{from{opacity:.4}to{opacity:1}}@media only screen and (max-width:300px){.nextSlides,.prevSlides,.textSlides{font-size:11px}}
+*{box-sizing:border-box}.mySlides{display:none;text-align:center;overflow:hidden;height:99%}.imgSlides{vertical-align:middle;height:99%}.slideshow-container{height:23%;position:relative;margin:auto;background-color:#000;overflow:hidden;}.nextSlides,.prevSlides{cursor:pointer;position:absolute;top:50%;width:auto;padding:16px;margin-top:-22px;color:#fff;font-weight:700;font-size:18px;transition:.6s ease;border-radius:0 3px 3px 0;user-select:none;background-color:rgba(0,0,0,.6)}.nextSlides{right:0;border-radius:3px 0 0 3px}.nextSlides:hover,.prevSlides:hover{background-color:rgba(0,0,0,.8)}.textSlides{color:#f2f2f2;font-size:15px;padding:8px 12px;position:absolute;bottom:8px;width:100%;text-align:center;text-shadow:1px 1px 2px #000;background-color:rgba(0,0,0,.6)}.numbertext{color:#f2f2f2;font-size:12px;padding:8px 12px;position:absolute;top:0;background-color:rgba(0,0,0,.6)}.fadeSlides{animation-name:fadeSlides;animation-duration:1.5s}@keyframes fadeSlides{from{opacity:.4}to{opacity:1}}@media only screen and (max-width:300px){.nextSlides,.prevSlides,.textSlides{font-size:11px}}
 </style>
 
 <div class="slideshow-container">
@@ -30,7 +30,6 @@
   </div>
   
   </div>
-  <div class="textSlides"></div>
 </div>
 
 <div class="mySlides fadeSlides">
