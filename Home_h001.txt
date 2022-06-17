@@ -13,20 +13,20 @@
   <div class="numbertext">1 / 4</div>
   <div id="dinamisSlides" style="height:100%">
   
-  <div id="khususNTB1" style="margin-top:5px">
-  <a href="https://bigboymusicstudio.business.site" target="_blank"><img style="height:29%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a>
+  <div id="khususNTB1" style="margin-top:5px;height:29%;">
+  <a href="https://bigboymusicstudio.business.site" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a>
   </div>
   
-  <div id="khususANDROID" style="margin-top:5px;">
-  <a href="https://play.google.com/store/apps/details?id=com.moreshare.guitar.chord.transposer.manager" target="_blank"><img style="height:28%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://play.google.com/store/apps/details?id=com.moreshare.humor.cerita.lucu" target="_blank"><img style="height:28%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a>
+  <div id="khususANDROID" style="margin-top:5px;height:28%;">
+  <a href="https://play.google.com/store/apps/details?id=com.moreshare.guitar.chord.transposer.manager" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://play.google.com/store/apps/details?id=com.moreshare.humor.cerita.lucu" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a>
   </div>
   
-  <div id="khususIOS" style="margin-top:5px;">
-  <a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="height:28%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="height:28%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a>
+  <div id="khususIOS" style="margin-top:5px;height:28%;">
+  <a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a>
   </div>
   
-  <div id="khususCHORDTELA" style="margin-top:5px;">
-  <a href="https://www.chordtela.com/" target="_blank"><img style="height:29%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></a>
+  <div id="khususCHORDTELA" style="margin-top:5px;height:29%;">
+  <a href="https://www.chordtela.com/" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></a>
   </div>
   
   </div>
