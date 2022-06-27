@@ -10,7 +10,7 @@
 <div class="slideshow-container">
 
 <div class="mySlides fadeSlides">
-  <div class="numbertext">1 / 4</div>
+  <div class="numbertext">1 / 7</div>
   <div id="dinamisSlides" style="height:100%">
   
   <div id="khususNTB1" style="margin-top:5px;height:29%;">
@@ -32,36 +32,42 @@
   </div>
 </div>
 
+<div id="banner_resmart_android" class="mySlides fadeSlides">
+  <div class="numbertext">2 / 7</div>
+  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.moreshare.speed.load.test.benchmark">
+  <img class="imgSlides" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_resmart.jpg"></a>
+</div>
+
 <div class="mySlides fadeSlides">
-  <div class="numbertext">2 / 6</div>
+  <div class="numbertext">3 / 7</div>
   <a target="_blank" href="https://www.tiktok.com/@moresharemusic">
   <img class="imgSlides" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_tiktok.jpg"></a>
   <div class="textSlides">Tiktok @MORESHAREMUSIC</div>
 </div>
 
 <div class="mySlides fadeSlides">
-  <div class="numbertext">3 / 6</div>
+  <div class="numbertext">4 / 7</div>
   <a target="_blank" href="https://www.youtube.com/channel/UCMVGVscOPTjiw14xJGlc4NA/">
   <img class="imgSlides" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_moresharemusic_ytupdate.png"></a>
   <div class="textSlides">Youtube @MORESHAREMUSIC</div>
 </div>
 
 <div class="mySlides fadeSlides">
-  <div class="numbertext">4 / 6</div>
+  <div class="numbertext">5 / 7</div>
   <a target="_blank" href="https://www.youtube.com/watch?v=NWbT1rBkIOo">
   <img class="imgSlides" src="https://i.ytimg.com/vi/NWbT1rBkIOo/mqdefault.jpg"></a>
   <div class="textSlides">Youtube @NGANCURINRC</div>
 </div>
 
 <div class="mySlides fadeSlides">
-  <div class="numbertext">5 / 6</div>
+  <div class="numbertext">6 / 7</div>
   <a target="_blank" href="https://www.youtube.com/watch?v=l7hT0huQ8nw">
   <img class="imgSlides" src="https://i.ytimg.com/vi/l7hT0huQ8nw/mqdefault.jpg"></a>
   <div class="textSlides">Youtube @BELAJARYOUTUBERPEMULA</div>
 </div>
 
 <div class="mySlides fadeSlides">
-  <div class="numbertext">6 / 6</div>
+  <div class="numbertext">7 / 7</div>
   <a target="_blank" href="https://www.youtube.com/watch?v=PF6DaTqF_84">
   <img class="imgSlides" src="https://i.ytimg.com/vi/PF6DaTqF_84/mqdefault.jpg"></a>
   <div class="textSlides">Youtube @KOMEDIAMBURADUL</div>
@@ -93,7 +99,7 @@ $(document).ready(function(){
 if (localStorage.getItem("deviceplatformOS") == 'Android') 
 { $("#khususIOS").hide(); }
 else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
-{  $("#khususANDROID").hide();
+{  $("#khususANDROID").hide(); $("#banner_resmart_android").hide();
 if(localStorage.getItem("IOSVERSION") == '20220603OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
 }
 else { $("#khususANDROID").hide(); }
