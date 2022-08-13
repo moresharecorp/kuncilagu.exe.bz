@@ -1,16 +1,16 @@
 <script type="text/javascript">
 
-var version_release_andro="20220603"; var andro_on_off = "on";
-var version_release_ios="20220603"; var ios_on_off = "on";
-var version_clearingcache = "82";
-var version_release_isi="*Many Bugs (Fixed)<br>*Shortcut Bookmark (Added)<br>*History (New Added)<br>*Android 5,6,7 (Fixed)<br>*Pengurangan Iklan<br><br>Version: 20220602<br>*HORRAY +5000 CHORD (Added)<br>*More.........<br><Br>Check on Store now and thanks for 5 rating and SHARE!, lets to rock!!!";
+var version_release_andro="20220817"; var andro_on_off = "off";
+var version_release_ios="20220817"; var ios_on_off = "off";
+var version_clearingcache = "83";
+var version_release_isi="*HORRAY +1000 CHORD (Added)<br>*More.........<br><Br>Check on Store now and thanks for 5 rating and SHARE!, lets to rock!!!";
 
-	if(localStorage.getItem("deviceplatformOS") == "Android" && andro_on_off == "on" && localStorage.getItem("logOnceTimehome_VERSION") != version_release_andro) {
+	if(localStorage.getItem("deviceplatformOS") == "Android" && andro_on_off == "on" && parseInt(localStorage.getItem("logOnceTimehome_VERSION")) < parseInt(version_release_andro)) {
 	if(localStorage.getItem("clearingcache") != version_clearingcache) 
 	{ localStorage.setItem("clearingcache", version_clearingcache); var version_release_apps = version_release_andro; var version_release_update_url = "https://play.google.com/store/apps/dev?id=6786401524492803983#"+version_release_apps+""; notifikasi_alert(); 
 	}}
 	
-	if(localStorage.getItem("deviceplatformOS") == "iOS" && ios_on_off == "on" && localStorage.getItem("logOnceTimehome_VERSION") != version_release_ios) {
+	if(localStorage.getItem("deviceplatformOS") == "iOS" && ios_on_off == "on" && parseInt(localStorage.getItem("logOnceTimehome_VERSION")) < parseInt(version_release_ios)) {
 	if(localStorage.getItem("clearingcache") != version_clearingcache) 
 	{ localStorage.setItem("clearingcache", version_clearingcache); var version_release_apps = version_release_ios; var version_release_update_url = "https://apps.apple.com/id/developer/ramadhani/id1522940342#"+version_release_apps+""; notifikasi_alert();
 	}}
