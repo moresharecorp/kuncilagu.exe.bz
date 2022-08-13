@@ -72,7 +72,7 @@ if (localStorage.getItem("deviceplatformOS") == 'Android')
 { $("#khususIOS").hide(); }
 else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
 {  $("#khususANDROID").hide(); $("#banner_resmart_android").hide();
-if(localStorage.getItem("IOSVERSION") == '20220603OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+if(localStorage.getItem("IOSVERSION") == '20220817') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
 }
 else { $("#khususANDROID").hide(); }
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
