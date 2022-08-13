@@ -33,4 +33,17 @@ ga('send', 'pageview', {
   gtag('js', new Date());
 
   gtag('config', 'G-3DHHYGEJ4M');
+  
+  gtag('event', 'page_view', {
+  page_title: decodeURIComponent(okehash[1])  +' - '+decodeURIComponent(okehash[2]),
+  page_location: okehash[0],
+  page_path: '/chord/kuncilagu.exe.bz/'+okehash[0],
+  send_to: 'G-3DHHYGEJ4M' });
+  
+  gtag('event', 'aaa', {
+  'event_category' : decodeURIComponent(okehash[1]),
+  'event_label' : decodeURIComponent(okehash[2]) });
+  
+  gtag('event', 'screen_view', { 'screen_name': decodeURIComponent(okehash[1])  +' - '+decodeURIComponent(okehash[2]) });
+
 </script>
