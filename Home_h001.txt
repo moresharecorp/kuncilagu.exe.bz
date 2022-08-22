@@ -67,6 +67,10 @@ var slideIndex=1;function plusSlides(a){showSlides(slideIndex+=a)}function curre
 	
 $(document).ready(function(){
 
+sessionStorage.setItem("OPENDEVELOPER", 1);
+sessionStorage.setItem("mabookmak", 1);
+sessionStorage.setItem("derektorilis", 1);
+
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
 if (localStorage.getItem("deviceplatformOS") == 'Android') 
 { $("#khususIOS").hide(); }
