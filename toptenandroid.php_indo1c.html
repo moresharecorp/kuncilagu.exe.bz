@@ -1,30 +1,20 @@
 <script type="text/javascript">
 
-var version_release_andro="20220817"; var andro_on_off = "on";
-var version_release_ios="20220817"; var ios_on_off = "on";
-var version_clearingcache = "85";
-var version_release_isi="*HORRAY +1000 CHORD (Added)<br>*More.........<br><Br>Check on Store now and thanks for 5 rating and SHARE!, lets to rock!!!";
+var version_release_andro="20220818"; var andro_on_off = "on";
+var version_release_ios="20220818"; var ios_on_off = "on";
+var version_clearingcache = "86";
+var version_release_isi="*JANGAN UPDATE!<br>VERSI 20220817 keatas BUGS!<br>ISI BOOKMARK HILANG!!!<br>MOHON SABAR!<br>TEAM MASIH BERUSAHA!";
 
-	if(localStorage.getItem("deviceplatformOS") == "Android" && andro_on_off == "on" && parseInt(localStorage.getItem("logOnceTimehome_VERSION")) < parseInt(version_release_andro)) {
+	if(localStorage.getItem("deviceplatformOS") == "Android" && andro_on_off == "on" && parseInt(localStorage.getItem("logOnceTimehome_VERSION")) <= parseInt(version_release_andro)) {
 	if(localStorage.getItem("clearingcache") != version_clearingcache) 
 	{ localStorage.setItem("clearingcache", version_clearingcache); var version_release_apps = version_release_andro; var version_release_update_url = "https://play.google.com/store/apps/dev?id=6786401524492803983#"+version_release_apps+""; notifikasi_alert(); 
 	}}
 	
-	if(localStorage.getItem("deviceplatformOS") == "iOS" && ios_on_off == "on" && parseInt(localStorage.getItem("logOnceTimehome_VERSION")) < parseInt(version_release_ios)) {
+	if(localStorage.getItem("deviceplatformOS") == "iOS" && ios_on_off == "on" && parseInt(localStorage.getItem("logOnceTimehome_VERSION")) <= parseInt(version_release_ios)) {
 	if(localStorage.getItem("clearingcache") != version_clearingcache) 
 	{ localStorage.setItem("clearingcache", version_clearingcache); var version_release_apps = version_release_ios; var version_release_update_url = "https://apps.apple.com/id/developer/ramadhani/id1522940342#"+version_release_apps+""; notifikasi_alert();
 	}}
 	
-	if(localStorage.getItem("deviceplatformOS") == "Android" && andro_on_off == "on" && parseInt(localStorage.getItem("logOnceTimehome_VERSION")) == 20220817) {
-	if(localStorage.getItem("clearingcache") != version_clearingcache) 
-	{ localStorage.setItem("clearingcache", version_clearingcache); var version_release_apps = 20220818; var version_release_update_url = "https://play.google.com/store/apps/dev?id=6786401524492803983#20220818"; var version_release_isi="*FORCE CLOSE FIXED!<br><Br>Check on Store now and thanks for 5 rating and SHARE!, lets to rock!!!"; notifikasi_alert(); 
-	}}
-	
-	if(localStorage.getItem("deviceplatformOS") == "iOS" && ios_on_off == "on" && parseInt(localStorage.getItem("logOnceTimehome_VERSION")) == 20220817) {
-	if(localStorage.getItem("clearingcache") != version_clearingcache) 
-	{ localStorage.setItem("clearingcache", version_clearingcache); var version_release_apps = 20220818; var version_release_update_url = "https://apps.apple.com/id/developer/ramadhani/id1522940342#20220818"; var version_release_isi="*FORCE CLOSE FIXED!<br><Br>Check on Store now and thanks for 5 rating and SHARE!, lets to rock!!!"; notifikasi_alert();
-	}}
-
 
 function notifikasi_alert() 
 { 
