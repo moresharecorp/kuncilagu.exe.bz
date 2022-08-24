@@ -1,0 +1,115 @@
+<!-- LOAD SUCCESS -->
+
+<div id="for_id_user2">
+<div style="clear:both;margin-bottom:5px"></div>
+
+<style>
+*{box-sizing:border-box}.mySlides{display:none;text-align:center;overflow:hidden;height:180px}.imgSlides{vertical-align:middle;height:100%}.slideshow-container{height:180px;position:relative;margin:auto;background-color:#000}.nextSlides,.prevSlides{cursor:pointer;position:absolute;top:50%;width:auto;padding:16px;margin-top:-22px;color:#fff;font-weight:700;font-size:18px;transition:.6s ease;border-radius:0 3px 3px 0;user-select:none;background-color:rgba(0,0,0,.6)}.nextSlides{right:0;border-radius:3px 0 0 3px}.nextSlides:hover,.prevSlides:hover{background-color:rgba(0,0,0,.8)}.textSlides{color:#f2f2f2;font-size:15px;padding:8px 12px;position:absolute;bottom:8px;width:100%;text-align:center;text-shadow:1px 1px 2px #000;background-color:rgba(0,0,0,.6)}.numbertext{color:#f2f2f2;font-size:12px;padding:8px 12px;position:absolute;top:0;background-color:rgba(0,0,0,.6)}.fadeSlides{animation-name:fadeSlides;animation-duration:1.5s}@keyframes fadeSlides{from{opacity:.4}to{opacity:1}}@media only screen and (max-width:300px){.nextSlides,.prevSlides,.textSlides{font-size:11px}}
+</style>
+
+<div class="slideshow-container">
+
+<div class="mySlides fadeSlides">
+  <div class="numbertext">1 / 3</div>
+  <div id="dinamisSlides" style="height:100%">
+  
+  <div id="khususNTB1" style="margin-top:5px;height:29%;">
+  <a href="https://bigboymusicstudio.business.site" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a>
+  </div>
+  
+  <div id="khususANDROID" style="margin-top:5px;height:28%;">
+  <a href="https://play.google.com/store/apps/details?id=com.moreshare.guitar.chord.transposer.manager" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://play.google.com/store/apps/details?id=com.moreshare.humor.cerita.lucu" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a>
+  </div>
+  
+  <div id="khususIOS" style="margin-top:5px;height:28%;">
+  <a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a>
+  </div>
+  
+  <div id="khususCHORDTELA" style="margin-top:5px;height:29%;">
+  <a href="https://www.chordtela.com/" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></a>
+  </div>
+  
+  </div>
+</div>
+
+<div id="banner_resmart_android" class="mySlides fadeSlides">
+  <div class="numbertext">2 / 3</div>
+  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.moreshare.speed.load.test.benchmark">
+  <img class="imgSlides" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_resmart.jpg"></a>
+</div>
+
+<div class="mySlides fadeSlides">
+  <div class="numbertext">3 / 3</div>
+  <a target="_blank" href="https://www.youtube.com/watch?v=PF6DaTqF_84">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/PF6DaTqF_84/mqdefault.jpg"></a>
+  <div class="textSlides">Youtube @KOMEDIAMBURADUL</div>
+</div>
+
+<a class="prevSlides" onclick="plusSlides(-1)">❮</a>
+<a class="nextSlides" onclick="plusSlides(1)">❯</a>
+
+</div>
+<script>
+var slideIndex=1;function plusSlides(a){showSlides(slideIndex+=a)}function currentSlide(a){showSlides(slideIndex=a)}function showSlides(c){var b,a=document.getElementsByClassName("mySlides");for(c>a.length&&(slideIndex=1),c<1&&(slideIndex=a.length),b=0;b<a.length;b++)a[b].style.display="none";a[slideIndex-1].style.display="block"}showSlides(slideIndex);var slideIndex=0;function autoSlides(){var a,b=document.getElementsByClassName("mySlides");for(a=0;a<b.length;a++)b[a].style.display="none";++slideIndex>b.length&&(slideIndex=1),b[slideIndex-1].style.display="block",setTimeout(autoSlides,5000)}autoSlides()
+</script>
+
+
+<div style="clear:both;margin-bottom:5px"></div>
+</div>
+
+<div style="clear:both"></div>
+
+
+<script>
+/****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
+/****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
+/****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
+	
+$(document).ready(function(){
+
+sessionStorage.setItem("OPENDEVELOPER", 1);
+sessionStorage.setItem("mabookmak", 1);
+sessionStorage.setItem("derektorilis", 1);
+
+/*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
+if (localStorage.getItem("deviceplatformOS") == 'Android') 
+{ $("#khususIOS").hide(); }
+else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
+{  $("#khususANDROID").hide(); $("#banner_resmart_android").hide();
+if(localStorage.getItem("IOSVERSION") == '20220818OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+}
+else { $("#khususANDROID").hide(); }
+/*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
+
+if(parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000){ } else {
+///////////FREEONEHOURS LOCKED
+$("#MANGGUNGNOADS").hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide(); 
+if(APPS_NAME == 'CGIOS' && localStorage.getItem("showkonten") != 'showkonten') 
+{ $("#footerlink").hide(); $("#topfive").hide(); $("#promokhususatas").hide(); }
+//////////FREEONEHOURS LOCKED END
+}
+
+localStorage.setItem("advertisechord",'');
+
+});
+
+/*****************IP LOC***********/
+$(document).ready(function(){
+if (!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null') {
+$.get('https://ipapi.co/json/', function(dataIpUserCache) { 
+localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
+localStorage.setItem("RegionUserCache", dataIpUserCache.region);
+});
+}
+
+if(localStorage.getItem("IpUserCache") != 'ID')
+{ $('#for_id_user2').hide(); /*$('#for_id_user').hide(); $('#for_id_user1').hide();*/ }
+
+if(localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStorage.getItem("RegionUserCache") == 'Bali')
+{ } else { $('#khususNTB1').hide(); }
+});
+/*****************IP LOC END***********/
+
+ /*****TEST SPEED PHONE*****/ 
+ $(document).ready(function(){ if( !localStorage.getItem("savedresult") && localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) > 7) { setTimeout(function() { var timerStart = Date.now(); var loopval = 7500; for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load1 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load2 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load3 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load4 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load5 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load6 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load7 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load8 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load9 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load10 = (loopval-(Date.now()-timerStart)); hasilawal = ((load1+load2+load3+load4+load5+load6+load7+load8+load9+load10)/10)/100; hasilpersen = hasilawal.toFixed(2); if(hasilpersen > 100) { hasilpersen = 100; } if(hasilpersen < 1) { hasilpersen = 1; } var xxxxx = ''+hasilpersen+''; localStorage.setItem("savedresult", xxxxx); dcordova = encodeURI(device.cordova); dmodel = encodeURI(device.model); dplatform = encodeURI(device.platform); duuid = encodeURI(device.uuid); dversion = encodeURI(device.version); dmanufacturer = encodeURI(device.manufacturer); disVirtual = encodeURI(device.isVirtual); dserial = encodeURI(device.serial); var urltestspeed = 'https://www.resmart.info/com.moreshare.speed.load.test.benchmark.php?dcordova='+dcordova+'&dmodel='+dmodel+'&dplatform='+dplatform+'&duuid='+duuid+'&dversion='+dversion+'&dmanufacturer='+dmanufacturer+'&disVirtual='+disVirtual+'&dserial='+dserial+'&dscore='+hasilpersen+'&dref=chordguitar'; $.get(urltestspeed, function(data) { }); }, 3000); } }); 
+</script>
