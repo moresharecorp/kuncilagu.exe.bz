@@ -115,27 +115,8 @@ if(localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStora
 /********************BACKUP RESTORE******************/
 $(document).ready(function(){ 
 $("#footerlink").append('<div class="backuprestore" style="padding-top:20px;padding-bottom:20px;font-size:120%;font-weight:bold;color:white;background-color:orange;cursor:pointer;"> BACKUP/RESTORE BOOKMARK </div><div class="backuprestore_show" style="display:none;color:silver;"><br><hr>Mohon pengertiannya khusus PENGGUNA LAMA! Data bookmark hanya tersimpan sementara di cache, saat update aplikasi terjadi maka sistem keamanan terbaru smartphone bekerja untuk meng-CLEAR cache dan semua data bookmark akan hilang. Namun Team Kami Berusaha sebaik mungkin agar anda tetap bisa membackup dan merestore Bookmark list sebelum dan setelah update. Terimakasih atas pengertiannya.<br> <br><span style="color:pink">WARNING! After UPDATE Your points will be reset!</span> <br>HOW TO BACKUP? Select All and COPY this!<br> and then, UPDATE your Apps <textarea class="backuprestore_databackup" style="width:90%;height:150px;"></textarea> <br>HOW TO RESTORE? After Update<br> PASTE all in this area!<br> Click RESTORE, DONE <textarea class="backuprestore_datarestore" style="width:90%;height:150px;"></textarea><br> <div class="backuprestore_restore" style="padding-top:20px;padding-bottom:20px;font-size:120%;font-weight:bold;color:white;background-color:orange;cursor:pointer;"> RESTORE NOW </div> </div><br><br>');
+
 $('.backuprestore').click(function() {  sessionStorage.setItem("OPENDEVELOPER", 1); $('.backuprestore').hide("slow"); $('.backuprestore_show').show("slow"); BACKUPRESTORE(); }); 
-});
-
-function BACKUPRESTORE(){ 
-var localstoragecek = '';
-for (var i = 0, len = localStorage.length; i < len; i++) {
-	var keylocalstoragecek = localStorage.key(i);
-	var valuelocalstoragecek = localStorage[keylocalstoragecek];
-	if (keylocalstoragecek.match(/hhhh/) || keylocalstoragecek.match(/cccc/)) { 
-		var localstoragecek = localstoragecek + "" + keylocalstoragecek + "@@@" + valuelocalstoragecek + "___";
-	}
-}
-
-var localstorageceklength = localstoragecek.length;
-if( localstorageceklength > 10) {
-		var PPPP=localStorage.getItem("rewardedpoints1"),PPPP2="",SALTSALT="ChordGuitar",cipher=a=>{var b=a=>a.split("").map(a=>a.charCodeAt(0)),c=a=>("0"+Number(a).toString(16)).substr(-2),d=c=>b(a).reduce((a,b)=>a^b,c);return a=>a.split("").map(b).map(d).map(c).join("")},decipher=a=>{var b=a=>a.split("").map(a=>a.charCodeAt(0)),c=c=>b(a).reduce((a,b)=>a^b,c);return a=>a.match(/.{1,2}/g).map(a=>parseInt(a,16)).map(c).map(a=>String.fromCharCode(a)).join("")},myCipher=cipher(SALTSALT);var myDecipher=decipher(SALTSALT);var localstoragecek = localstoragecek + "ccccc@@@" + myCipher(PPPP);
-		}
-localstoragecek = localstoragecek.replace(/___$/, '');
-
-$(".backuprestore_databackup").empty();
-$(".backuprestore_databackup").append(localstoragecek);
 
 $('.backuprestore_restore').click(function() {  
 var backuprestore_datarestore =  document.getElementsByClassName("backuprestore_datarestore");
@@ -159,7 +140,26 @@ alert("RESTORE DONE :)");
 window.location.reload(true);
 } else { alert("DATA NOT VALID :("); }
 });
+});
 
+function BACKUPRESTORE(){ 
+var localstoragecek = '';
+for (var i = 0, len = localStorage.length; i < len; i++) {
+	var keylocalstoragecek = localStorage.key(i);
+	var valuelocalstoragecek = localStorage[keylocalstoragecek];
+	if (keylocalstoragecek.match(/hhhh/) || keylocalstoragecek.match(/cccc/)) { 
+		var localstoragecek = localstoragecek + "" + keylocalstoragecek + "@@@" + valuelocalstoragecek + "___";
+	}
+}
+
+var localstorageceklength = localstoragecek.length;
+if( localstorageceklength > 10) {
+		var PPPP=localStorage.getItem("rewardedpoints1"),PPPP2="",SALTSALT="ChordGuitar",cipher=a=>{var b=a=>a.split("").map(a=>a.charCodeAt(0)),c=a=>("0"+Number(a).toString(16)).substr(-2),d=c=>b(a).reduce((a,b)=>a^b,c);return a=>a.split("").map(b).map(d).map(c).join("")},decipher=a=>{var b=a=>a.split("").map(a=>a.charCodeAt(0)),c=c=>b(a).reduce((a,b)=>a^b,c);return a=>a.match(/.{1,2}/g).map(a=>parseInt(a,16)).map(c).map(a=>String.fromCharCode(a)).join("")},myCipher=cipher(SALTSALT);var myDecipher=decipher(SALTSALT);var localstoragecek = localstoragecek + "ccccc@@@" + myCipher(PPPP);
+		}
+localstoragecek = localstoragecek.replace(/___$/, '');
+
+$(".backuprestore_databackup").empty();
+$(".backuprestore_databackup").append(localstoragecek);
 }
 /********************BACKUP RESTORE******************/
 
