@@ -178,3 +178,64 @@ if (!localStorage.getItem('rewardedpoints1') || localStorage.getItem('rewardedpo
 
 }); 
 </script>
+
+<div id="footerlink22"></div>
+<script>
+/********************BACKUP RESTORE******************/
+String.prototype.mumet = function(){ return this.replace(/[a-zA-Z]/g, function(c){ return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); }); };
+
+function BACKUPRESTORE(){ 
+
+var localstoragecek = '';
+var count_i = 0;
+for (var i = 0, len = localStorage.length; i < len; i++) {
+	var keylocalstoragecek = localStorage.key(i);
+	var valuelocalstoragecek = localStorage[keylocalstoragecek];
+	if (keylocalstoragecek.match(/hhhh/) || keylocalstoragecek.match(/cccc/)) { 
+		localstoragecek = localstoragecek + "" + keylocalstoragecek + "@@@" + valuelocalstoragecek + "___";
+		if(count_i == 5) {
+		localstoragecek = localstoragecek + "ccccc@@@" + localStorage.getItem("rewardedpoints1") + "___"; 
+		}
+		count_i++;
+	}
+}
+
+localstoragecek = localstoragecek.replace(/___$/, '');
+var localstoragecek_enc = window.btoa(localstoragecek.mumet());
+
+$(".backuprestore_databackup").empty();
+$(".backuprestore_databackup").append(localstoragecek_enc);
+}
+
+$(document).ready(function(){ 
+$("#footerlink22").append('<div class="backuprestore" style="padding-top:20px;padding-bottom:20px;font-size:120%;font-weight:bold;color:white;background-color:orange;cursor:pointer;"> BACKUP/RESTORE BOOKMARK </div><div class="backuprestore_show" style="display:none;color:silver;"><br><hr>Data bookmark hanya tersimpan sementara di cache, saat update aplikasi terjadi maka sistem keamanan terbaru smartphone bekerja untuk meng-CLEAR cache dan semua data bookmark akan hilang. Namun Team Kami Berusaha sebaik mungkin agar anda tetap bisa membackup dan merestore Bookmark list sebelum dan setelah update. Terimakasih atas pengertiannya.<br><br><span style="color:pink">WARNING! After UPDATE Your points will be reset!</span> <br>HOW TO BACKUP? Select All and COPY this!<br> and then, UPDATE your Apps <textarea class="backuprestore_databackup" style="width:90%;height:150px;color:pink;font-size:80%;" placeholder="Your Bookmark List is Empty!" disabled></textarea> <br>HOW TO RESTORE? After Update<br> PASTE all in this area!<br> Click RESTORE, DONE <br><textarea class="backuprestore_datarestore" style="width:90%;height:150px;color:green;font-size:80%;" placeholder="PASTE here from Old Bookmark..."></textarea><br> <div class="backuprestore_restore" style="padding-top:20px;padding-bottom:20px;font-size:120%;font-weight:bold;color:white;background-color:orange;cursor:pointer;"> RESTORE NOW </div> </div><br><br>');
+
+$('.backuprestore').click(function() {  sessionStorage.setItem("OPENDEVELOPER", 1); $('.backuprestore').hide("slow"); $('.backuprestore_show').show("slow"); BACKUPRESTORE(); }); 
+$('.backuprestore_restore').click(function() {  
+
+var backuprestore_datarestore =  document.getElementsByClassName("backuprestore_datarestore");
+var restore_list_full_enc = window.atob(backuprestore_datarestore[0].value);
+var restore_list_full = restore_list_full_enc.mumet();
+var restore_list_list = restore_list_full.split("___");
+var restore_done = '';
+for (var i = 0, len = restore_list_list.length; i < len; i++) {
+	var restore_list_id_judul = restore_list_list[i].split("@@@");
+	if (restore_list_id_judul[0] == "ccccc") {
+	localStorage.setItem("rewardedpoints1",restore_list_id_judul[1]); 
+	var restore_done = 'restore_done';
+	}
+	else if (restore_list_id_judul[0].match(/hhhh/) || restore_list_id_judul[0].match(/cccc/)) {
+	localStorage.setItem(restore_list_id_judul[0],restore_list_id_judul[1]);
+	var restore_done = 'restore_done';
+	}
+}
+
+if(restore_done == 'restore_done') {
+alert("RESTORE DONE :)");
+window.location.reload(true);
+} else { alert("DATA NOT VALID :("); }
+});
+});
+
+/********************BACKUP RESTORE******************/
+</script>
