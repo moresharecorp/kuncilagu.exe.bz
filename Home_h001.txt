@@ -32,10 +32,16 @@
   </div>
 </div>
 
-<div id="banner_resmart_android" class="mySlides fadeSlides">
+<!-- <div id="banner_resmart_android" class="mySlides fadeSlides">
   <div class="numbertext">2 / 3</div>
   <a target="_blank" href="https://play.google.com/store/apps/details?id=com.moreshare.speed.load.test.benchmark">
   <img class="imgSlides" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_resmart.jpg"></a>
+</div> -->
+
+<div class="mySlides fadeSlides">
+  <div class="numbertext">2 / 3</div>
+  <a target="_blank" href="https://www.youtube.com/watch?v=fTVeIwehvHg">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/fTVeIwehvHg/mqdefault.jpg"></a>
 </div>
 
 <div class="mySlides fadeSlides">
