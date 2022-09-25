@@ -40,8 +40,8 @@
 
 <div class="mySlides fadeSlides">
   <div class="numbertext">2 / 3</div>
-  <a target="_blank" href="https://www.youtube.com/watch?v=8HrJuRaebjo">
-  <img class="imgSlides" src="https://i.ytimg.com/vi/8HrJuRaebjo/mqdefault.jpg"></a>
+  <a target="_blank" href="https://www.youtube.com/watch?v=frIywLu0oP4">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/frIywLu0oP4/mqdefault.jpg"></a>
 </div>
 
 <div class="mySlides fadeSlides">
