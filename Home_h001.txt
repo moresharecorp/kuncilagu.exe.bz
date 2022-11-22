@@ -40,8 +40,9 @@
 
 <div class="mySlides fadeSlides">
   <div class="numbertext">2 / 3</div>
-  <a target="_blank" href="https://www.youtube.com/watch?v=uLzoHT-DCzM">
-  <img class="imgSlides" src="https://i.ytimg.com/vi/uLzoHT-DCzM/mqdefault.jpg"></a>
+  <a target="_blank" href="https://www.youtube.com/watch?v=YAlffyDnVUE">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/YAlffyDnVUE/mqdefault.jpg"></a>
+  <div class="textSlides">HAJATAN ROCK COVER</div>
 </div>
 
 <div class="mySlides fadeSlides">
