@@ -40,9 +40,9 @@
 
 <div class="mySlides fadeSlides">
   <div class="numbertext">2 / 3</div>
-  <a target="_blank" href="https://www.youtube.com/watch?v=1J5KNw2D_hY">
-  <img class="imgSlides" src="https://i.ytimg.com/vi/1J5KNw2D_hY/mqdefault.jpg"></a>
-  <div class="textSlides">Mei Mei Susanti Rock Cover</div>
+  <a target="_blank" href="https://www.youtube.com/watch?v=77epkJommGY">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/77epkJommGY/mqdefault.jpg"></a>
+  <div class="textSlides">MATTEO PANAMA Rock Cover</div>
 </div>
 
 <div class="mySlides fadeSlides">
