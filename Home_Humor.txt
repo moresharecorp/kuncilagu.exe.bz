@@ -2,8 +2,14 @@
 <script>
 $(document).ready(function(){
 //////////////TERBARU 2022//////////////
-if(localStorage.getItem("showkontenswitch") != 'google' && localStorage.getItem("logOnceTimehome_VERSION") == "20230501") 
-{  } else { localStorage.setItem("showkontenswitch","google"); }
+if(localStorage.getItem("showkontenswitch") == 'google' && localStorage.getItem("logOnceTimehome_VERSION") == "20230501") 
+{ localStorage.setItem("showkontenswitch","google"); } 
+else if(localStorage.getItem("showkontenswitch") == 'huawei' && localStorage.getItem("logOnceTimehome_VERSION") == "20230501") 
+{ localStorage.setItem("showkontenswitch","google"); } 
+else if(localStorage.getItem("showkontenswitch") == 'ios' && localStorage.getItem("logOnceTimehome_VERSION") == "20230501") 
+{ } 
+else
+{ localStorage.setItem("showkontenswitch","google"); }
 }); 
 
 ///////////////////////ONLINEDETECTOR
