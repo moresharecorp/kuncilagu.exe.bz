@@ -54,9 +54,8 @@
 
 <div class="mySlides fadeSlides" id="promo_ubay" style="display:none">
   <div class="numbertext">1 / 1</div>
-  <a target="_blank" href="https://www.youtube.com/watch?v=PF6DaTqF_84">
-  <img class="imgSlides" src="https://i.ytimg.com/vi/PF6DaTqF_84/mqdefault.jpg"></a>
-  <div class="textSlides">Youtube @KOMEDIAMBURADUL</div>
+  <a target="_blank" href="https://maps.app.goo.gl/d1akZ33MUn2VE8t37">
+  <img class="imgSlides" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_dapoer_ubay.jpg"></a>
 </div>
 
 <a class="prevSlides" onclick="plusSlides(-1)">❮</a>
