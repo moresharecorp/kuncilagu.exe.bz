@@ -119,7 +119,7 @@ if(localStorage.getItem("IpUserCache") != 'ID')
 { $('#for_id_user2').hide(); /*$('#for_id_user').hide(); $('#for_id_user1').hide();*/ }
 
 if(localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStorage.getItem("RegionUserCache") == 'Bali')
-{ $('#hide1,#hide2,#hide3').hide(); $('#promo_ubay').show(); } else { $('#khususNTB1').hide(); }
+{ $('#hide1').hide(); $('#hide2').hide(); $('#hide3').hide(); $('#promo_ubay').show(); } else { $('#khususNTB1').hide(); }
 });
 /*****************IP LOC END***********/
 
