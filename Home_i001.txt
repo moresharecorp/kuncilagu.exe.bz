@@ -8,7 +8,7 @@
 </style>
 
 <div class="slideshow-container">
-
+<!--
 <div class="mySlides fadeSlides" id="hide1">
   <div class="numbertext">1 / 3</div>
   <div id="dinamisSlides" style="height:100%">
@@ -32,11 +32,11 @@
   </div>
 </div>
 
-<!-- <div id="banner_resmart_android" class="mySlides fadeSlides">
+ <div id="banner_resmart_android" class="mySlides fadeSlides">
   <div class="numbertext">2 / 3</div>
   <a target="_blank" href="https://play.google.com/store/apps/details?id=com.moreshare.speed.load.test.benchmark">
   <img class="imgSlides" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_resmart.jpg"></a>
-</div> -->
+</div> 
 
 <div class="mySlides fadeSlides" id="hide2">
   <div class="numbertext">2 / 3</div>
@@ -51,7 +51,7 @@
   <img class="imgSlides" src="https://i.ytimg.com/vi/PF6DaTqF_84/mqdefault.jpg"></a>
   <div class="textSlides">Youtube @KOMEDIAMBURADUL</div>
 </div>
-
+-->
 <div class="mySlides fadeSlides" id="promo_ubay" style="display:none">
   <div class="numbertext">1 / 1</div>
   <a target="_blank" href="https://maps.app.goo.gl/d1akZ33MUn2VE8t37">
