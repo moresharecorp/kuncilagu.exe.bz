@@ -96,10 +96,14 @@ localStorage.setItem("advertisechord",'');
 /*****************IP LOC***********/
 $(document).ready(function(){
 if (!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null') {
-$.get('https://ipapi.co/json/', function(dataIpUserCache) { 
+
+$.ajax({
+  url: "https://ipwho.is/"
+}).done(function(dataIpUserCache) { 
 localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
 localStorage.setItem("RegionUserCache", dataIpUserCache.region);
 });
+
 }
 
 if(localStorage.getItem("IpUserCache") != 'ID')
