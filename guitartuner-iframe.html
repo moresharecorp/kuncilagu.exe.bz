@@ -9,7 +9,7 @@ for (var i = 0; i < 30; i++)
 {
 	var note_frequency = C2 * Math.pow(2, i / 12);
 	var note_name = notes[i % 12];
-	var note = { "frequency": note_frequency, "name": note_name };
+	var note = { "frequency": note_frequency, "name": note_name + " (OK)" };
 	var just_above = { "frequency": note_frequency * Math.pow(2, 1 / 48), "name": note_name + " (a bit sharp)" };
 	var just_below = { "frequency": note_frequency * Math.pow(2, -1 / 48), "name": note_name + " (a bit flat)" };
 	test_frequencies = test_frequencies.concat([ just_below, note, just_above ]);
@@ -133,15 +133,12 @@ function toggle_playing_note()
 </head>
 
 <body>
-<p>It sounds like you're playing...</p>
 <h1 id="note-name"></h1>
-<p>
+<p style="display:none">
 	<span>frequency (Hz):</span>
 	<span id="frequency"></span>
 </p>
-<hr>
-<button id="play-note">start/stop an E note</button>
-<hr>
-<a href="https://github.com/jbergknoff/guitar-tuner">Source code</a> / <a href="http://jonathan.bergknoff.com/journal/making-a-guitar-tuner-html5">Explanatory article</a>
+<button style="display:none" id="play-note">start/stop an E note</button>
+<a style="display:none" href="https://github.com/jbergknoff/guitar-tuner">Source code</a> <a style="display:none" href="http://jonathan.bergknoff.com/journal/making-a-guitar-tuner-html5">Explanatory article</a>
 </body>
 </html>
