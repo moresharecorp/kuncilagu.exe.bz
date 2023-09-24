@@ -3,15 +3,16 @@
 <script>
 // Define the set of test frequencies that we'll use to analyze microphone data.
 var C2 = 65.41; // C2 note, in Hz.
-var notes = [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ];
+var notes = [ "C<span style='color:white;'>#</span>", "C#", "D<span style='color:white;'>#</span>", "D#", "E<span style='color:white;'>#</span>", "F<span style='color:white;'>#</span>", "F#", "G<span style='color:white;'>#</span>", "G#", "A<span style='color:white;'>#</span>", "A#", "B<span style='color:white;'>#</span>" ];
 var test_frequencies = [];
 for (var i = 0; i < 30; i++)
 {
+
 	var note_frequency = C2 * Math.pow(2, i / 12);
 	var note_name = notes[i % 12];
-	var note = { "frequency": note_frequency, "name": note_name + " (OK)" };
-	var just_above = { "frequency": note_frequency * Math.pow(2, 1 / 48), "name": note_name + " (a bit sharp)" };
-	var just_below = { "frequency": note_frequency * Math.pow(2, -1 / 48), "name": note_name + " (a bit flat)" };
+	var note = { "frequency": note_frequency, "name": "<span style='border:solid 5px silver;border-radius:100px;padding:10px;width:1px;border-top-color: green;font-weight:bold;'>" + note_name + "</span>" };
+	var just_above = { "frequency": note_frequency * Math.pow(2, 1 / 48), "name": "<span style='border:solid 5px silver;border-radius:100px;padding:10px;width:1px;border-right-color: red;font-weight:bold;'>" + note_name + "</span>" };
+	var just_below = { "frequency": note_frequency * Math.pow(2, -1 / 48), "name": "<span style='border:solid 5px silver;border-radius:100px;padding:10px;width:1px;border-left-color: red;font-weight:bold;'>" + note_name + "</span>" };
 	test_frequencies = test_frequencies.concat([ just_below, note, just_above ]);
 }
 
