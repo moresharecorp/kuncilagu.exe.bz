@@ -30,19 +30,67 @@
 
 
 <script>
-var ownersponsorandroid = '<center><a href="https://bigboymusicstudio.business.site" target="_blank"><img style="width:93%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a><a href="https://play.google.com/store/apps/details?id=com.moreshare.guitar.chord.transposer.manager" target="_blank"><img style="width:46%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://play.google.com/store/apps/details?id=com.moreshare.humor.cerita.lucu" target="_blank"><img style="width:46%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a><a href="https://www.chordtela.com/" target="_blank"><img style="width:93%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></a></center>';
+var ownersponsorandroid = '<center><a href="https://bigboymusicstudio.business.site" target="_blank"><img id="khususNTB1" style="width:93%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a><a href="https://play.google.com/store/apps/details?id=com.moreshare.guitar.chord.transposer.manager" target="_blank"><img style="width:46%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://play.google.com/store/apps/details?id=com.moreshare.humor.cerita.lucu" target="_blank"><img style="width:46%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a><a href="https://www.chordtela.com/" target="_blank"><img style="width:93%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></a></center>';
 	
-var ownersponsorios = '<center><a href="https://bigboymusicstudio.business.site" target="_blank"><img style="width:93%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a></center>';
+var ownersponsorios = '<center><a href="https://bigboymusicstudio.business.site" target="_blank"><img id="khususNTB1" style="width:93%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a><a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="width:46%;margin-bottom:5px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://apps.apple.com/id/app/id1534298746" target="_blank"><img style="width:46%;margin-bottom:5px" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a></center>';
+
+///////////////////////ONLINEDETECTOR
+$(document).ready(function(){
+var dtnow_ONLINEDETECTOR = new Date();
+var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
+var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
+
+if (!sessionStorage.getItem("ONLINEDETECTOR") || sessionStorage.getItem("ONLINEDETECTOR") == "" && (localStorage.getItem("ANDROIDVERSION") <= 20220530 || localStorage.getItem("IOSVERSION") <= 20220530)) {
+sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
+$('#box-loadload').show();
+localStorage.setItem("rewardedfound", "");
+	$.get(ONLINEDETECTOR, function(data) {
+    //////////////////////////////////
+$('#box-loadload').append('<br><Br><center><div id="myProgress" style="width:80%;background-color:#ddd;"><div id="myBar" style="width:1%;height:30px;background-color:#A2D4FE;text-align:center;line-height: 30px;color: white;"></div></div><div style="text-align:center;color:#A2D4FE;width:80%;"><br>Mohon Tunggu, Loading ini terjadi hanya saat pertama kali aplikasi dibuka, bertujuan agar semua data siap dan tidak terjadi error kedepannya. Terimakasih</div></center>');
+var ibar = 0;
+  if (ibar == 0) {
+    ibar = 1;
+    var elembar = document.getElementById("myBar");
+    var widthbar = 10;
+    var idbar = setInterval(frame, 100);
+    function frame() {
+      if (widthbar >= 100) {
+        clearInterval(idbar);
+        ibar = 0; $('#box-loadload').delay(100).fadeOut('fast');
+        sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+      } else {
+        widthbar++; 
+        elembar.style.width = widthbar + "%";
+        elembar.innerHTML = widthbar  + "%";
+	$('#box-loadload').show();
+      }
+    }
+  }
+//////////////////////////////////
+    })
+    .fail(function() { 
+    sessionStorage.setItem("BannerOnceTime", "BannerLoaded");
+    sessionStorage.setItem("NGOFFLINE", "NGOFFLINE");
+    localStorage.setItem("rewardedfound", "");
+    $('#box-loadload').delay(1500).fadeOut('fast'); });	
+}
+});
+///////////////////////ONLINEDETECTOR END
 	
 $(document).ready(function(){
 
-if(localStorage.getItem("IOSVERSION") == '20220403') { localStorage.setItem("showkonten", "showkonten"); } else { localStorage.setItem("showkonten", "showkonten"); }
-if(localStorage.getItem("ANDROIDVERSION") == '20220401') {  } else {  }
-
 document.addEventListener("deviceready", function(){ 
 var deviceplatformsponsor = device.platform;
-if (deviceplatformsponsor == 'Android') { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorandroid); }
-else if (deviceplatformsponsor == 'iOS') { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios);  }
+if (deviceplatformsponsor == 'Android') 
+{ $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorandroid); 
+if(localStorage.getItem("ANDROIDVERSION") < 20220402) { $('#box-loadload').append('<br><Br><center>MOHON UPDATE KE VERSI TERBARU!<br>VERSI INI BANYAK BUGS!<br>Ratring 5 untuk memberi semangat team kami<br>BUGS screenshot via email</div></center>'); $('#box-loadload').show(); $('#box-loadload').delay(5000).fadeOut('fast'); }
+}
+
+else if (deviceplatformsponsor == 'iOS') 
+{ $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios);  
+if(localStorage.getItem("IOSVERSION") == '20220404OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); localStorage.setItem("freeOneHourAccess_reward", "6789"); }
+}
+
 else { $("#ownersponsor_result").empty(); $("#ownersponsor_result").append(ownersponsorios); }
 },false);
 
@@ -51,29 +99,104 @@ document.addEventListener("deviceready", function(){
 var olddeviceVersion = parseInt(device.version);
 var deviceplatformsponsor = device.platform;
 
-if(olddeviceVersion < 8 && olddeviceVersion > 4 && !localStorage.getItem("OLD_APPS_ANDROID_VERSION") && deviceplatformsponsor == 'Android') { alert('Android anda TIDAK MENDUKUNG Aplikasi versi ini! Versi Android Anda adalah: (VERSI '+olddeviceVersion+'). Silakan DOWNLOAD VERSI KHUSUS ANDROID ANDA di sini "http://kuncilagu.exe.bz/log.html" \n\nJangan Lupa BINTANG 5 nya di PLAY STORE! SUSAH NJIR bikin banyak versi biar elu semua pada bisa make!!! giliran enak ga bilang makasih! giliran ga enak maki-maki di play store! DASAR BOCIL!!!\n\nJangan Diambil Ati Cil wkwkwkw, semoga bermanfaat dan menghibur! Kalo ada ERROR lagi jangan sungkan untuk email aja ya!'); window.open('http://kuncilagu.exe.bz/log.html', '_blank'); navigator.app.exitApp();  } 
+if(olddeviceVersion < 8 && olddeviceVersion > 4 && (!localStorage.getItem("OLD_APPS_ANDROID_VERSION") || localStorage.getItem("ANDROIDVERSION") <= 20220402) && deviceplatformsponsor == 'Android') { 
+$('body').empty();
+$("body").append('<div style="text-align:left;background-color:black;padding:30px;font-size:120%;color:white"><br><br><br><br>ANDROID 5,6,7 MOHON UPDATE KE VERSI PALING BARU (Versi 20220601) DI PLAY STORE OK! PERMASALAHAN INI SUDAH DISELESAIKAN<br><br>Kami berusaha yang terbaik untuk anda agar tetap bisa menggunakan aplikasi ini, Bugs mohon screenshot dan kirim ke email support@ms-room.com, Rating 5 Di PlayStore sekedar untuk menghargai usaha kami untuk anda.<br><Br>Salam Guitarist :)<br><br><center><img style="width:50%;border-radius:500px;" src="https://c.tenor.com/hm54pgfDPu8AAAAd/fatal-misi-fatal-error-zenekar.gif"></center><br><br><br><br><br></div>');
+}
+
+else {
+if(!localStorage.getItem("BACADULUPENGGUNABARU") || localStorage.getItem("BACADULUPENGGUNABARU") == "") { 
+localStorage.setItem("BACADULUPENGGUNABARU","BACADULUPENGGUNABARU"); }
+}
 
 }, false);
 ////////////////END ANDROID 5-6-7 ONLY/////////////////
 
-localStorage.setItem("advertisechord",'\<script\>$(document).ready(function() { /***HEADERAPPEND***/ /***HEADERAPPEND***/ /**REWARDPOINTS_CHORD_START**/ if (localStorage.getItem("freeOneHourAccess_reward") > "1000") { var openfeaturetemp = ""; if (localStorage.getItem("rewardedfound") == "LOADED") { openfeaturetemp = "yes"; }; if (parseInt(localStorage.getItem("rewardedpoints1"), 10) < 1 && openfeaturetemp != "yes") {} else { /**** IKLAN SPESIAL OFFER START ****/ var isispesialoffer = ""; var key_spesial_offer = "spesial_offer"; var value_spesial_offer = "promopoin"; if (!localStorage.getItem(key_spesial_offer) || localStorage.getItem(key_spesial_offer) != value_spesial_offer) { isispesialoffer = "<div class=\'banner_promopoin\' style=\'clear:both;text-align:center;margin-bottom:5px;\'><img class=\'showhidebannerpromopoin1\' style=\'width:100%\' src=\'https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_promopoin_1.gif\'><div style=\'display:none\' class=\'showhidebannerpromopoin2\'><center><br><br><a target=\'_blank\' style=\'color:orange;font-size:120%;font-weight:bold;\' href=\'https://www.youtube.com/channel/UCMVGVscOPTjiw14xJGlc4NA\'>--------------------<br>CLICK HERE AND SUBSCRIBE!<br>--------------------</a><br><Br></center></div></div>"; } else { key_spesial_offer = "spesial_offer1"; value_spesial_offer = "promopoin1"; if (!localStorage.getItem(key_spesial_offer) || localStorage.getItem(key_spesial_offer) != value_spesial_offer) { isispesialoffer = "<div class=\'banner_promopoin\' style=\'clear:both;text-align:center;margin-bottom:5px;\'><img class=\'showhidebannerpromopoin1\' style=\'width:100%\' src=\'https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_promopoin_2.gif\'><div style=\'display:none\' class=\'showhidebannerpromopoin2\'><center><br><br><a target=\'_blank\' style=\'color:orange;font-size:120%;font-weight:bold;\' href=\'https://www.youtube.com/channel/UCQulcIf9VwIQLYgRyknqzog\'>--------------------<br>CLICK HERE AND SUBSCRIBE!<br>--------------------</a><br><Br></center></div></div>"; } else { isispesialoffer = ""; }; } /**$("#isispesialoffer").append(isispesialoffer);**/ /**** IKLAN SPESIAL OFFER END ****/ } $(".showhidebannerpromopoin1").click(function() { var oldrewardedpoints = parseInt(localStorage.getItem("rewardedpoints1"), 10) + 2000; localStorage.setItem("rewardedpoints1", oldrewardedpoints); localStorage.setItem(key_spesial_offer, value_spesial_offer); $(".showhidebannerpromopoin1").hide("slow"); $(".showhidebannerpromopoin2").show("slow"); }); /**REWARDPOINTS_CHORD_END**/ } });\<\/script\>');
+localStorage.setItem("advertisechord",'\<script\>$(document).ready(function() { if(sessionStorage.getItem("NGOFFLINE") == "NGOFFLINE") { localStorage.setItem("rewardedfound", ""); } /***HEADERAPPEND***/ /***HEADERAPPEND***/ /**REWARDPOINTS_CHORD_START**/ if (localStorage.getItem("freeOneHourAccess_reward") > "1000") { var openfeaturetemp = ""; if (localStorage.getItem("rewardedfound") == "LOADED") { openfeaturetemp = "yes"; }; if (parseInt(localStorage.getItem("rewardedpoints1"), 10) < 1 && openfeaturetemp != "yes") {} else { /**** IKLAN SPESIAL OFFER START ****/ var isispesialoffer = ""; var key_spesial_offer = "spesial_offer"; var value_spesial_offer = "promopoin"; if (!localStorage.getItem(key_spesial_offer) || localStorage.getItem(key_spesial_offer) != value_spesial_offer) { isispesialoffer = "<div class=\'banner_promopoin\' style=\'clear:both;text-align:center;margin-bottom:5px;\'><img class=\'showhidebannerpromopoin1\' style=\'width:100%\' src=\'https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_promopoin_1.gif\'><div style=\'display:none\' class=\'showhidebannerpromopoin2\'><center><br><br><a target=\'_blank\' style=\'color:orange;font-size:120%;font-weight:bold;\' href=\'https://www.youtube.com/channel/UCMVGVscOPTjiw14xJGlc4NA\'>--------------------<br>CLICK HERE AND SUBSCRIBE!<br>--------------------</a><br><Br></center></div></div>"; } else { key_spesial_offer = "spesial_offer1"; value_spesial_offer = "promopoin1"; if (!localStorage.getItem(key_spesial_offer) || localStorage.getItem(key_spesial_offer) != value_spesial_offer) { isispesialoffer = "<div class=\'banner_promopoin\' style=\'clear:both;text-align:center;margin-bottom:5px;\'><img class=\'showhidebannerpromopoin1\' style=\'width:100%\' src=\'https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_promopoin_2.gif\'><div style=\'display:none\' class=\'showhidebannerpromopoin2\'><center><br><br><a target=\'_blank\' style=\'color:orange;font-size:120%;font-weight:bold;\' href=\'https://www.youtube.com/channel/UCQulcIf9VwIQLYgRyknqzog\'>--------------------<br>CLICK HERE AND SUBSCRIBE!<br>--------------------</a><br><Br></center></div></div>"; } else { isispesialoffer = ""; }; } /**$("#isispesialoffer").append(isispesialoffer);**/ /**** IKLAN SPESIAL OFFER END ****/ } $(".showhidebannerpromopoin1").click(function() { var oldrewardedpoints = parseInt(localStorage.getItem("rewardedpoints1"), 10) + 2000; localStorage.setItem("rewardedpoints1", oldrewardedpoints); localStorage.setItem(key_spesial_offer, value_spesial_offer); $(".showhidebannerpromopoin1").hide("slow"); $(".showhidebannerpromopoin2").show("slow"); }); /**REWARDPOINTS_CHORD_END**/ } });\<\/script\>');
 
 });
 
 
 $(document).ready(function(){
-if (!localStorage.getItem("IpUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null') {
+if (!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null') {
 $.get('https://ipapi.co/json/', function(dataIpUserCache) { 
-localStorage.setItem("IpUserCache", dataIpUserCache.country_code); });
+localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
+localStorage.setItem("RegionUserCache", dataIpUserCache.region);
+});
 }
 
 if(localStorage.getItem("IpUserCache") != 'ID')
-{ 
-/*$('#for_id_user').hide(); $('#for_id_user1').hide();*/
-$('#for_id_user2').hide(); }
+{ $('#for_id_user2').hide(); /*$('#for_id_user').hide(); $('#for_id_user1').hide();*/ }
+
+if(localStorage.getItem("RegionUserCache") != 'West Nusa Tenggara')
+{ $('#khususNTB1').hide(); }
 });
 
 
 
- /*TEST SPEED PHONE*/ $(document).ready(function(){  if( !localStorage.getItem("savedresult")) { localStorage.setItem("savedresult", ''); } if( (localStorage.getItem("savedresult") == '')) { setTimeout(function() { var timerStart = Date.now(); var loopval = 7500; for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load1 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load2 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load3 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load4 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load5 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load6 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load7 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load8 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load9 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load10 = (loopval-(Date.now()-timerStart)); hasilawal = ((load1+load2+load3+load4+load5+load6+load7+load8+load9+load10)/10)/100; hasilpersen = hasilawal.toFixed(2); if(hasilpersen > 100) { hasilpersen = 100; } if(hasilpersen < 1) { hasilpersen = 1; } var xxxxx = ''+hasilpersen+''; localStorage.setItem("savedresult", xxxxx); dcordova = encodeURI(device.cordova); dmodel = encodeURI(device.model); dplatform = encodeURI(device.platform); duuid = encodeURI(device.uuid); dversion = encodeURI(device.version); dmanufacturer = encodeURI(device.manufacturer); disVirtual = encodeURI(device.isVirtual); dserial = encodeURI(device.serial); var urltestspeed = 'https://www.resmart.info/com.moreshare.speed.load.test.benchmark.php?dcordova='+dcordova+'&dmodel='+dmodel+'&dplatform='+dplatform+'&duuid='+duuid+'&dversion='+dversion+'&dmanufacturer='+dmanufacturer+'&disVirtual='+disVirtual+'&dserial='+dserial+'&dscore='+hasilpersen+'&dref=chordguitar'; $.get(urltestspeed, function(data) { }); }, 10000); } }); 
+ /*****TEST SPEED PHONE $(document).ready(function(){  if( !localStorage.getItem("savedresult")) { localStorage.setItem("savedresult", ''); } if( (localStorage.getItem("savedresult") == '')) { setTimeout(function() { var timerStart = Date.now(); var loopval = 7500; for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load1 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load2 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load3 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load4 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load5 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load6 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load7 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load8 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load9 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load10 = (loopval-(Date.now()-timerStart)); hasilawal = ((load1+load2+load3+load4+load5+load6+load7+load8+load9+load10)/10)/100; hasilpersen = hasilawal.toFixed(2); if(hasilpersen > 100) { hasilpersen = 100; } if(hasilpersen < 1) { hasilpersen = 1; } var xxxxx = ''+hasilpersen+''; localStorage.setItem("savedresult", xxxxx); dcordova = encodeURI(device.cordova); dmodel = encodeURI(device.model); dplatform = encodeURI(device.platform); duuid = encodeURI(device.uuid); dversion = encodeURI(device.version); dmanufacturer = encodeURI(device.manufacturer); disVirtual = encodeURI(device.isVirtual); dserial = encodeURI(device.serial); var urltestspeed = 'https://www.resmart.info/com.moreshare.speed.load.test.benchmark.php?dcordova='+dcordova+'&dmodel='+dmodel+'&dplatform='+dplatform+'&duuid='+duuid+'&dversion='+dversion+'&dmanufacturer='+dmanufacturer+'&disVirtual='+disVirtual+'&dserial='+dserial+'&dscore='+hasilpersen+'&dref=chordguitar'; $.get(urltestspeed, function(data) { }); }, 10000); } }); *****/
+</script>
+
+
+
+
+<div id="footerlink22"></div>
+<script>
+/********************BACKUP RESTORE******************/
+String.prototype.mumet = function(){ return this.replace(/[a-zA-Z]/g, function(c){ return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26); }); };
+
+function BACKUPRESTORE(){ 
+
+var localstoragecek = '';
+var count_i = 0;
+for (var i = 0, len = localStorage.length; i < len; i++) {
+	var keylocalstoragecek = localStorage.key(i);
+	var valuelocalstoragecek = localStorage[keylocalstoragecek];
+	if (keylocalstoragecek.match(/hhhh/) || keylocalstoragecek.match(/cccc/)) { 
+		localstoragecek = localstoragecek + "" + keylocalstoragecek + "@@@" + valuelocalstoragecek + "___";
+		if(count_i == 5) {
+		localstoragecek = localstoragecek + "ccccc@@@" + localStorage.getItem("rewardedpoints1") + "___"; 
+		}
+		count_i++;
+	}
+}
+
+localstoragecek = localstoragecek.replace(/___$/, '');
+var localstoragecek_enc = window.btoa(localstoragecek.mumet());
+
+$(".backuprestore_databackup").empty();
+$(".backuprestore_databackup").append(localstoragecek_enc);
+}
+
+$(document).ready(function(){ 
+$("#footerlink22").append('<div class="backuprestore" style="padding-top:20px;padding-bottom:20px;font-size:120%;font-weight:bold;color:white;background-color:orange;cursor:pointer;"> BACKUP/RESTORE BOOKMARK </div><div class="backuprestore_show" style="display:none;color:silver;"><br><hr>Data bookmark hanya tersimpan sementara di cache, saat update aplikasi terjadi maka sistem keamanan terbaru smartphone bekerja untuk meng-CLEAR cache dan semua data bookmark akan hilang. Namun Team Kami Berusaha sebaik mungkin agar anda tetap bisa membackup dan merestore Bookmark list sebelum dan setelah update. Terimakasih atas pengertiannya.<br><br><span style="color:pink">WARNING! After UPDATE Your points will be reset!</span> <br>HOW TO BACKUP? Select All and COPY this!<br> and then, UPDATE your Apps <textarea class="backuprestore_databackup" style="width:90%;height:150px;color:pink;font-size:80%;" placeholder="Your Bookmark List is Empty!" disabled></textarea> <br>HOW TO RESTORE? After Update<br> PASTE all in this area!<br> Click RESTORE, DONE <br><textarea class="backuprestore_datarestore" style="width:90%;height:150px;color:green;font-size:80%;" placeholder="PASTE here from Old Bookmark..."></textarea><br> <div class="backuprestore_restore" style="padding-top:20px;padding-bottom:20px;font-size:120%;font-weight:bold;color:white;background-color:orange;cursor:pointer;"> RESTORE NOW </div> </div><br><br>');
+
+$('.backuprestore').click(function() {  sessionStorage.setItem("OPENDEVELOPER", 1); $('.backuprestore').hide("slow"); $('.backuprestore_show').show("slow"); BACKUPRESTORE(); }); 
+$('.backuprestore_restore').click(function() {  
+
+var backuprestore_datarestore =  document.getElementsByClassName("backuprestore_datarestore");
+var restore_list_full_enc = window.atob(backuprestore_datarestore[0].value);
+var restore_list_full = restore_list_full_enc.mumet();
+var restore_list_list = restore_list_full.split("___");
+var restore_done = '';
+for (var i = 0, len = restore_list_list.length; i < len; i++) {
+	var restore_list_id_judul = restore_list_list[i].split("@@@");
+	if (restore_list_id_judul[0] == "ccccc") {
+	localStorage.setItem("rewardedpoints1",restore_list_id_judul[1]); 
+	var restore_done = 'restore_done';
+	}
+	else if (restore_list_id_judul[0].match(/hhhh/) || restore_list_id_judul[0].match(/cccc/)) {
+	localStorage.setItem(restore_list_id_judul[0],restore_list_id_judul[1]);
+	var restore_done = 'restore_done';
+	}
+}
+
+if(restore_done == 'restore_done') {
+alert("RESTORE DONE :)");
+window.location.reload(true);
+} else { alert("DATA NOT VALID :("); }
+});
+});
+
+/********************BACKUP RESTORE******************/
 </script>

@@ -2,20 +2,19 @@
 <script>
 $(document).ready(function(){
 //if(localStorage.getItem("showkontengoogle") == 'showkontengoogle') { }; //ios/huawei/google
-
-
-////////////////ANDROID 5-6-7 ONLY/////////////////
-document.addEventListener("deviceready", function(){ 
-var olddeviceVersion = parseInt(device.version);
-var deviceplatformsponsor = device.platform;
-if(olddeviceVersion < 8 && olddeviceVersion > 4 && deviceplatformsponsor == 'Android') 
-{ 
-var dtnowfree = new Date(); var tmnext_alwaysfree = dtnowfree.getTime() + 80000000;
-localStorage.setItem("freeOneHourAccess_reward", tmnext_alwaysfree);
-} 
-}, false);
-////////////////END ANDROID 5-6-7 ONLY/////////////////
-
-
 }); 
+
+///////////////////////ONLINEDETECTOR
+$(document).ready(function(){
+var dtnow_ONLINEDETECTOR = new Date();
+var tmnow_ONLINEDETECTOR = dtnow_ONLINEDETECTOR.getTime();
+if (!sessionStorage.getItem("ONLINEDETECTOR") || localStorage.getItem("ONLINEDETECTOR") == "") {
+	sessionStorage.setItem("ONLINEDETECTOR", "ONLINEDETECTOR");
+	var ONLINEDETECTOR = "https://moresharecorp.github.io/kuncilagu.exe.bz/Home_g001_ONLINEDETECTOR.txt?temp=" + tmnow_ONLINEDETECTOR;
+	$.get(ONLINEDETECTOR, function(data) {
+		if (data.indexOf("ONLINE") > -1) { } else { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); }
+	}).fail(function() { sessionStorage.setItem("BannerOnceTime", "BannerLoaded"); });	
+}
+});
+///////////////////////ONLINEDETECTOR END
 </script>
