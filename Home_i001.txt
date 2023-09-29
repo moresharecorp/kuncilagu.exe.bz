@@ -34,9 +34,9 @@
 
 <div class="mySlides fadeSlides">
   <div class="numbertext">2 / 3</div>
-  <a target="_blank" href="https://www.youtube.com/watch?v=zzyrLVcqd-M">
-  <img class="imgSlides" src="https://i.ytimg.com/vi/zzyrLVcqd-M/mqdefault.jpg"></a>
-  <div class="textSlides">DE RA GO SORO KORE Cover</div>
+  <a target="_blank" href="https://www.youtube.com/watch?v=2M_3XGFZA14">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/2M_3XGFZA14/mqdefault.jpg"></a>
+  <div class="textSlides">DJ CAMPINA Guitar Cover</div>
 </div>
 
 <div class="mySlides fadeSlides">
