@@ -73,9 +73,11 @@ sessionStorage.setItem("derektorilis", 1);
 
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
 if (localStorage.getItem("deviceplatformOS") == 'Android') 
-{ $("#khususIOS").hide(); }
+{ $("#khususIOS").hide(); 
+if(localStorage.getItem("ANDROIDVERSION") == '20230901' && APPS_NAME == 'KGANDROIDPRO') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+}
 else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
-{  $("#khususANDROID").hide(); $("#banner_resmart_android").hide();
+{  $("#khususANDROID").hide(); 
 if(localStorage.getItem("IOSVERSION") == '20230901') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
 }
 else { $("#khususANDROID").hide(); }
@@ -84,7 +86,7 @@ else { $("#khususANDROID").hide(); }
 if(parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000){ } else {
 ///////////FREEONEHOURS LOCKED
 $("#MANGGUNGNOADS").hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide(); 
-if(APPS_NAME == 'CGIOS' && localStorage.getItem("showkonten") != 'showkonten') 
+if((APPS_NAME == 'CGIOS' || APPS_NAME == 'KGANDROIDPRO') && localStorage.getItem("showkonten") != 'showkonten') 
 { $("#footerlink").hide(); $("#topfive").hide(); $("#promokhususatas").hide(); }
 //////////FREEONEHOURS LOCKED END
 }
