@@ -75,11 +75,11 @@ sessionStorage.setItem("derektorilis", 1);
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
 if (localStorage.getItem("deviceplatformOS") == 'Android') 
 { $("#khususIOS").hide(); 
-if(localStorage.getItem("ANDROIDVERSION") == '20230901OK' && APPS_NAME == 'KGANDROIDPRO') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+if(localStorage.getItem("ANDROIDVERSION") == '20240201' && APPS_NAME == 'KGANDROIDPRO') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
 }
 else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
 {  $("#khususANDROID").hide(); 
-if(localStorage.getItem("IOSVERSION") == '20230901OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+if(localStorage.getItem("IOSVERSION") == '20240201') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
 }
 else { $("#khususANDROID").hide(); }
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
