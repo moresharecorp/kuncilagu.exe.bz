@@ -1,5 +1,5 @@
 <center>
-<div class="headcontenttitle">Recent Update Chord<br>Version.20240501<br><b style="font-size:24px">(01 MEI 2024)</b></div><br>
+<div class="headcontenttitle">Recent Update Chord<br>Version.20240601<br><b style="font-size:24px">(01 JUN 2024)</b></div><br>
 
 <div style="color:#818181;">Website: <a style="color:white;background-color:#21b1ff;" target="_blank" href="/"> KunciLagu.exe.bz </a><br><br>
 <span style="font-size:120%;color:purple;font-weight:bold;">IOS & Android Download</span><br>
