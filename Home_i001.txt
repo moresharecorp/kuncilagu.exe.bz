@@ -73,6 +73,9 @@ sessionStorage.setItem("mabookmak", 1);
 sessionStorage.setItem("derektorilis", 1);
 
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
+localStorage.setItem("ABanner_CG", "ca-app-pub-6516367932506481/3416826518");
+localStorage.setItem("ANative_CG", "ca-app-pub-6516367932506481/5196812046");
+
 if (localStorage.getItem("deviceplatformOS") == 'Android') 
 { $("#khususIOS").hide(); 
 if(localStorage.getItem("ANDROIDVERSION") == '20240601OK' && APPS_NAME == 'KGANDROIDPRO') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
