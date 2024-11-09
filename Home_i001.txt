@@ -82,7 +82,7 @@ if(localStorage.getItem("ANDROIDVERSION") == '20240601OK' && APPS_NAME == 'KGAND
 }
 else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
 {  $("#khususANDROID").hide(); 
-if(localStorage.getItem("IOSVERSION") == '20241101') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
+if(localStorage.getItem("IOSVERSION") == '20241101OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
 }
 else { $("#khususANDROID").hide(); }
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
