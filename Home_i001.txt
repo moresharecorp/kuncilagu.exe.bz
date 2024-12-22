@@ -34,16 +34,16 @@
 
 <div class="mySlides fadeSlides">
   <div class="numbertext">2 / 3</div>
-  <a target="_blank" href="https://www.youtube.com/watch?v=836VhSBQ8MQ">
-  <img class="imgSlides" src="https://i.ytimg.com/vi/836VhSBQ8MQ/mqdefault.jpg"></a>
-  <div class="textSlides">AYAM den LAPEH Solo Cover</div>
+  <a target="_blank" href="https://www.tiktok.com/@moresharemusic/video/7450714716919352581">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/NjiAT32kXn4/hqdefault.jpg"></a>
+  <div class="textSlides">APT. Cover</div>
 </div>
 
 <div class="mySlides fadeSlides">
   <div class="numbertext">3 / 3</div>
-  <a target="_blank" href="https://www.youtube.com/watch?v=sVIiKyxGc8Y">
-  <img class="imgSlides" src="https://i.ytimg.com/vi/sVIiKyxGc8Y/mqdefault.jpg"></a>
-  <div class="textSlides">ASU LAMA Solo Cover</div>
+  <a target="_blank" href="https://www.tiktok.com/@moresharemusic/video/7451200388293741829">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/JlRUClbHi9M/hqdefault.jpg"></a>
+  <div class="textSlides">Nenekku Pahlawanku Cover</div>
 </div>
 
 <a class="prevSlides" onclick="plusSlides(-1)">❮</a>
