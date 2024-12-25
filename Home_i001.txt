@@ -34,14 +34,14 @@
 
 <div class="mySlides fadeSlides">
   <div class="numbertext">2 / 3</div>
-  <a target="_blank" href="https://www.tiktok.com/@moresharemusic/video/7450714716919352581">
-  <img class="imgSlides" src="https://i.ytimg.com/vi/NjiAT32kXn4/hqdefault.jpg"></a>
-  <div class="textSlides">APT. Cover</div>
+  <a target="_blank" href="https://vt.tiktok.com/ZS66t1Xwc/">
+  <img class="imgSlides" src="https://i.ytimg.com/vi/cStXDh-WRnY/hqdefault.jpg"></a>
+  <div class="textSlides">APT. Thailand Cover</div>
 </div>
 
 <div class="mySlides fadeSlides">
   <div class="numbertext">3 / 3</div>
-  <a target="_blank" href="https://www.tiktok.com/@moresharemusic/video/7451200388293741829">
+  <a target="_blank" href="https://vt.tiktok.com/ZS66t1ep3/">
   <img class="imgSlides" src="https://i.ytimg.com/vi/JlRUClbHi9M/hqdefault.jpg"></a>
   <div class="textSlides">Nenekku Pahlawanku Cover</div>
 </div>
