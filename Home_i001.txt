@@ -72,6 +72,14 @@ sessionStorage.setItem("OPENDEVELOPER", 1);
 sessionStorage.setItem("mabookmak", 1);
 sessionStorage.setItem("derektorilis", 1);
 
+/****** DISABLE NATIVE DULU ubah versios ke 7 semua tgl 26-12-2024******/ 
+if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) > 7) && localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO") 
+{  
+localStorage.setItem("deviceVersionOS_backup", localStorage.getItem("deviceVersionOS"));
+localStorage.setItem("deviceVersionOS", "7");
+}
+/****** DISABLE NATIVE DULU ubah versios ke 7 semua******/ 
+
 /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
 localStorage.removeItem("ABanner_CG");
 localStorage.removeItem("ANative_CG");
@@ -125,5 +133,5 @@ if(localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStora
 
 /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI*********/
 /**********BOCIL GA JELAS, APUS AJA DATABASE NYA PAS UPDATE CHORD*********/
-$(document).ready(function(){ localStorage.setItem("advertisechord",'<script>$(document).ready(function() {if(idchord =="86420" || idchord == "86421") { $("#promokhususatas3").append(\'<meta http-equiv="refresh" content="0; url=index.html" />\');}}); /****** JANGAN LOOPING NATIVE TEST******/ $(document).ready(function() {  if (parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE" && localStorage.getItem("MANGGUNG") != "MANGGUNG") {   if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) < 8) || localStorage.getItem("deviceAPPS_NAME") == "KGANDROIDPRO") {} else {  clearInterval(NativeInterval); }  } }); /****** JANGAN LOOPING NATIVE TEST******/<\/script>'); });
+$(document).ready(function(){ localStorage.setItem("advertisechord",'<script>$(document).ready(function() {if(idchord =="86420" || idchord == "86421") { $("#promokhususatas3").append(\'<meta http-equiv="refresh" content="0; url=index.html" />\');}});<\/script>'); });
 </script>
