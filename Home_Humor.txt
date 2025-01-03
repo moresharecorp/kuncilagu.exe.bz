@@ -2,7 +2,7 @@
 <script>
 $(document).ready(function(){
 //////////////TERBARU 2022//////////////
-if(localStorage.getItem("showkontenswitch") == 'google' && localStorage.getItem("logOnceTimehome_VERSION") == "20250101") 
+if(localStorage.getItem("showkontenswitch") == 'google' && localStorage.getItem("logOnceTimehome_VERSION") == "20250101ok") 
 { } 
 else if(localStorage.getItem("showkontenswitch") == 'huawei' && localStorage.getItem("logOnceTimehome_VERSION") == "20250101") 
 { } 
