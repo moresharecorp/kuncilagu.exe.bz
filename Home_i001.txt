@@ -140,5 +140,6 @@ if(localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStora
 
 /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI*********/
 /**********BOCIL GA JELAS, APUS AJA DATABASE NYA PAS UPDATE CHORD*********/
-$(document).ready(function(){ localStorage.setItem("advertisechord",'<script>$(document).ready(function() {if(idchord =="86420" || idchord == "86421") { $("#promokhususatas3").append(\'<meta http-equiv="refresh" content="0; url=index.html" />\');}});<\/script>'); });
+$(document).ready(function(){ if (localStorage.getItem("ANDROIDVERSION") < 20241230 || localStorage.getItem("IOSVERSION") < 20241230) 
+{localStorage.setItem("advertisechord",'<script>$(document).ready(function() {if(idchord =="86420" || idchord == "86421") { $("#promokhususatas3").append(\'<meta http-equiv="refresh" content="0; url=index.html" />\');}});<\/script>'); }});
 </script>
