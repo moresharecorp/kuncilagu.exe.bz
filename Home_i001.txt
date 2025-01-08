@@ -92,8 +92,6 @@
    /********FREEONEHOURS LOCKED END*********/
    }
    
-   
-   
    });
    
    /*****************IP LOC***********/
@@ -122,17 +120,22 @@
    
    /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI*********/
    /**********BOCIL GA JELAS, APUS AJA DATABASE NYA PAS UPDATE CHORD*********/
-   $(document).ready(function(){ 
-/****localStorage.setItem("advertisechord",'');****/
-if (localStorage.getItem("ANDROIDVERSION") < 20241230 || localStorage.getItem("IOSVERSION") < 20241230) 
-   {localStorage.setItem("advertisechord",'<script>$(document).ready(function() {if(idchord =="86420" || idchord == "86421") { $("#promokhususatas3").append(\'<meta http-equiv="refresh" content="0; url=index.html" />\');}});<\/' + 'script>'); }});
+   $(document).ready(function() {
+       /****localStorage.setItem("advertisechord",'');****/
+       if (localStorage.getItem("ANDROIDVERSION") < 20241230 || localStorage.getItem("IOSVERSION") < 20241230) {
+           localStorage.setItem("advertisechord", '<script>$(document).ready(function() {if(idchord =="86420" || idchord == "86421") { $("#promokhususatas3").append(\'<meta http-equiv="refresh" content="0; url=index.html" />\');}});<\/' + 'script>');
+       }
+   });
 
 /************ICON BOOKMARK GA MUNCUL******/
-$(document).ready(function(){ 
- setTimeout(function() { 
- $("#bookmark_view_button img").attr('src',"bmlist.png");
- $("#history_view_button img").attr('src',"hslist.png"); 
- }, 5000); 
+$(document).ready(function() {
+    setTimeout(function() {
+        $("#bookmark_view_button img").attr('src', "bmlist.png");
+        $("#history_view_button img").attr('src', "hslist.png");
+        if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) < 7) || localStorage.getItem("deviceAPPS_NAME") == 'KGANDROIDPRO') {} else {
+            $("#history_view_button img").attr('src', "noads.png");
+        }
+    }, 5000);
 });
 
 </script>
