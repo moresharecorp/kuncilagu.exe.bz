@@ -129,7 +129,7 @@ if (localStorage.getItem("ANDROIDVERSION") < 20241230 || localStorage.getItem("I
 
 /************HARUS RELOAD PERTAMA OPEN! SOALNYA ICON BOOKMARK GA MUNCUL******/
 $(document).ready(function(){ 
- setTimeout(function() { $("#bookmark_view_button, #history_view_button").show(); }, 5000); 
+ setTimeout(function() { $("#bookmark_view_button img, #history_view_button img").show(); }, 5000); 
 });
 
 </script>
