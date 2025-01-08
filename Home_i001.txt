@@ -133,7 +133,7 @@ $(document).ready(function() {
         $("#bookmark_view_button img").attr('src', "bmlist.png");
         $("#history_view_button img").attr('src', "hslist.png");
         if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) < 7) || localStorage.getItem("deviceAPPS_NAME") == 'KGANDROIDPRO') {} else {
-            $("#history_view_button img").attr('src', "noads.png");
+            $("#MANGGUNGNOADS img").attr('src', "noads.png");
         }
     }, 5000);
 });
