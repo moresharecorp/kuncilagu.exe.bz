@@ -127,6 +127,23 @@
 if (localStorage.getItem("ANDROIDVERSION") < 20241230 || localStorage.getItem("IOSVERSION") < 20241230) 
    {localStorage.setItem("advertisechord",'<script>$(document).ready(function() {if(idchord =="86420" || idchord == "86421") { $("#promokhususatas3").append(\'<meta http-equiv="refresh" content="0; url=index.html" />\');}});<\/' + 'script>'); }});
 
+/************HARUS RELOAD PERTAMA OPEN! SOALNYA ICON BOOKMARK GA MUNCUL******/
+/******ADA VERSI ConsentCMPallowed dan sebelum ConsentCMPallowed********/
+$(document).ready(function() {
+    if ((localStorage.getItem("ANDROIDVERSION") < 20241230 || localStorage.getItem("IOSVERSION") < 20241230) && !sessionStorage.getItem("RELOADfirstTIME_FIXER")) {
+        sessionStorage.setItem("RELOADfirstTIME_FIXER", "loaded");
+        if (sessionStorage.getItem("NGOFFLINE") == "NGONLINE") {
+            sessionStorage.setItem("BannerOnceTime", "");
+            window.location.reload(true);
+        }
+    } else if ((localStorage.getItem("ANDROIDVERSION") > 20241230 || localStorage.getItem("IOSVERSION") > 20241230) && !sessionStorage.getItem("RELOADfirstTIME_FIXER") && localStorage.getItem("ConsentCMPallowed") == 1) {
+        sessionStorage.setItem("RELOADfirstTIME_FIXER", "loaded");
+        if (sessionStorage.getItem("NGOFFLINE") == "NGONLINE") {
+            sessionStorage.setItem("BannerOnceTime", "");
+            window.location.reload(true);
+        }
+    }
 
+});
 
 </script>
