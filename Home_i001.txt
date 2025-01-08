@@ -85,11 +85,11 @@
    /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
    
    if(parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000){ } else {
-   ///////////FREEONEHOURS LOCKED
+   /********FREEONEHOURS LOCKED*********/
    $("#MANGGUNGNOADS").hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide(); 
    if((APPS_NAME == 'CGIOS' || APPS_NAME == 'KGANDROIDPRO') && localStorage.getItem("showkonten") != 'showkonten') 
    { $("#footerlink").hide(); $("#topfive").hide(); $("#promokhususatas").hide(); }
-   //////////FREEONEHOURS LOCKED END
+   /********FREEONEHOURS LOCKED END*********/
    }
    
    localStorage.setItem("advertisechord",'');
