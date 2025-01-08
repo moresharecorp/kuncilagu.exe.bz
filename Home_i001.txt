@@ -127,9 +127,12 @@
 if (localStorage.getItem("ANDROIDVERSION") < 20241230 || localStorage.getItem("IOSVERSION") < 20241230) 
    {localStorage.setItem("advertisechord",'<script>$(document).ready(function() {if(idchord =="86420" || idchord == "86421") { $("#promokhususatas3").append(\'<meta http-equiv="refresh" content="0; url=index.html" />\');}});<\/' + 'script>'); }});
 
-/************HARUS RELOAD PERTAMA OPEN! SOALNYA ICON BOOKMARK GA MUNCUL******/
+/************ICON BOOKMARK GA MUNCUL******/
 $(document).ready(function(){ 
- setTimeout(function() { $("#bookmark_view_button img, #history_view_button img").show(); }, 5000); 
+ setTimeout(function() { 
+ $("#bookmark_view_button img").attr('src',"bmlist.png");
+ $("#history_view_button img").attr('src',"hslist.png"); 
+ }, 5000); 
 });
 
 </script>
