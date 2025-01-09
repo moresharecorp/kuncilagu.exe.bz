@@ -129,11 +129,14 @@
 
 /************ICON BOOKMARK GA MUNCUL******/
 $(document).ready(function() {
+$('#bookmark_view_button img,#history_view_button img,#MANGGUNGNOADS img').hide();
     setTimeout(function() {
         $("#bookmark_view_button img").attr('src', "bmlist.png");
         $("#history_view_button img").attr('src', "hslist.png");
+         $('#bookmark_view_button img,#history_view_button img').show('slow');
         if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) < 7) || localStorage.getItem("deviceAPPS_NAME") == 'KGANDROIDPRO') {} else {
             $("#MANGGUNGNOADS img").attr('src', "noads.png");
+            $('#MANGGUNGNOADS img').show('slow');
         }
     }, 5000);
 });
