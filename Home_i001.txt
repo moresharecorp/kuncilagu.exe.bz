@@ -62,7 +62,7 @@
    }
    /****** DISABLE NATIVE DULU ubah versios ke 7 semua******/ 
    /****** ACTIVATE NATIVE SETELAH 2025 dan sebelum ERROR *******/
-   if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) == 7) && localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO" && localStorage.getItem("ANDROIDVERSION") > 20241230 && localStorage.getItem("ANDROIDVERSION") < 20240401 && parseInt(localStorage.getItem("deviceVersionOS_backup")) > 7) 
+   if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) == 7) && localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO" && (localStorage.getItem("ANDROIDVERSION") > 20241230 || localStorage.getItem("ANDROIDVERSION") < 20240401) && parseInt(localStorage.getItem("deviceVersionOS_backup")) > 7) 
    {  
    localStorage.setItem("deviceVersionOS", parseInt(localStorage.getItem("deviceVersionOS_backup")));
    localStorage.removeItem("deviceVersionOS_backup");
