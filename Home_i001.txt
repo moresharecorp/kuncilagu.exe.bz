@@ -138,7 +138,7 @@ $(document).ready(function() {
     }, 5000);
 });
 
-/**************Force UPDATE**************/
+/**************Force UPDATE dibawah versi 20250101**************/
  $(document).ready(function() {
  var ForceUPDATE = '';
  var ForceUPDATEurl = '';
