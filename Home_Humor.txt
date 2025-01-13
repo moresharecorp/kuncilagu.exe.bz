@@ -6,7 +6,7 @@ if(localStorage.getItem("showkontenswitch") == 'google' && localStorage.getItem(
 { } 
 else if(localStorage.getItem("showkontenswitch") == 'huawei' && localStorage.getItem("logOnceTimehome_VERSION") == "20250101ok") 
 { } 
-else if(localStorage.getItem("showkontenswitch") == 'ios' && localStorage.getItem("logOnceTimehome_VERSION") == "20250101") 
+else if(localStorage.getItem("showkontenswitch") == 'ios' && localStorage.getItem("logOnceTimehome_VERSION") == "20250101ok") 
 { } 
 else
 { localStorage.setItem("showkontenswitch","google"); }
