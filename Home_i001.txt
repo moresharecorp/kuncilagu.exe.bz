@@ -156,5 +156,23 @@ $('#ForceUPDATEclose').click(function() { $("#ForceUPDATE").hide('slow'); });
  }
  });
 
+/**************BINTANG 5 versi 20250101**************/
+ $(document).ready(function() {
+ var GiveFiveStarsurl = '';
+ 
+ if ((!localStorage.getItem("GiveFiveStarsFORM") || localStorage.getItem("GiveFiveStarsFORM") == '') && localStorage.getItem("ANDROIDVERSION") > 20241230 && (APPS_NAME == 'CGANDROID' || APPS_NAME == 'KGANDROID'))
+ { localStorage.setItem("GiveFiveStarsFORM", "yes"); localStorage.setItem("GiveFiveStarsSAVED", "no"); 
+ 
+ if (APPS_NAME == 'CGANDROID') 
+ { GiveFiveStarsurl = 'https://play.google.com/store/apps/details?id=com.moreshare.chord.guitar.full.offline'; }
+ else if (APPS_NAME == 'KGANDROID') 
+ { GiveFiveStarsurl = 'https://play.google.com/store/apps/details?id=com.moreshare.kumpulan.kunci.gitar.indonesia'; }
+ 
+ $('body').append('<div id="GiveFiveStars" style="z-index:2;width:100%;text-align:center;position:fixed;top:150px;margin:0px;"><center> <div style="padding:15px;background-color:white;margin:0px;width:270px;text-align:center;border-radius: 50px 20px;animation: myborderanimation 2s infinite;border: solid 4px #ff8d85;font-size:120%;"> <span style="color:#808080;"><b style="text-decoration: underline overline;">Bintang 5 nya Bro!</b><br><br> Kalo lagi santai aja bro ya, Kasih bintang 5 dan komen diPlay Store, biar team kita tetep pada semangat benerin bugs/error dan semangat update chordnya<br><br><b>5 Stars Please</b><br><span style="color:orange;">★★★★★</span><br><br></span> <a id="GiveFiveStarsurl" target="_blank" href="'+GiveFiveStarsurl+'"><div id="GiveFiveStarsyes" style="display:inline-block;padding:10px;width:150px;border-radius: 50px 20px;color:white;background-color:#5fdcde;cursor:pointer;"><b>KASIH 5</b></div></a> <div id="GiveFiveStarsclose" style="display:inline-block;padding:10px;width:60px;border-radius: 50px 20px;color:white;background-color:silver;cursor:pointer;"><b>Close</b></div><br> <div style="clear:both"></div> </center></div> </div>');
+ $('#GiveFiveStarsclose').click(function() { $("#GiveFiveStars").hide('slow'); });
+ $('#GiveFiveStarsurl').click(function() { localStorage.setItem("GiveFiveStarsSAVED", "yes"); });
+ }
+ });
+
 
 </script>
