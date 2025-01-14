@@ -182,6 +182,12 @@ $(document).ready(function() {
 if (localStorage.getItem("IpUserCache") == 'ID' && (APPS_NAME == 'CGANDROID' || APPS_NAME == 'KGANDROID') && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE")
 
  {
+
+setTimeout(function() {
+        $(".tombol_prov img").attr('src', "https://moresharecorp.github.io/kuncilagu.exe.bz/images/cuitcuit.png");
+    }, 5000);
+
+
  $(".tombol_prov").show("slow");
  
  
@@ -221,7 +227,7 @@ if(prov_id == "prov_pap") { prov_frame_url = "https://cgpapua.chatango.com/"; }
 
 <style>
 .box_prov, .box_prov_iframe{ width:300px;overflow:hidden; text-align:center; background-color:#f0e6d1;margin:0px;border-radius: 50px 20px;border: solid 4px #ff8d85; color:#7d7d7d;}
-.listprov{ float:left; width:105px; padding:5px;margin:5px; overflow:hidden; text-align:center;background-color:#d49f2f;color:white;border-radius: 50px 20px;border: solid 2px #873a3a; }
+.listprov{ display:inline-block; font-size:110%; width:110px; padding:5px;margin:5px; overflow:hidden; text-align:center;background-color:#d49f2f;color:white;border-radius: 50px 20px;border: solid 2px #873a3a; }
 .close_button_box{ float:right; padding:5px;margin:5px; overflow:hidden; text-align:center;background-color:#757171;color:white;border-radius: 50px 20px;border: solid 2px #873a3a;font-size:80%;clear:both; }
 </style>
 
@@ -252,7 +258,7 @@ if(prov_id == "prov_pap") { prov_frame_url = "https://cgpapua.chatango.com/"; }
 
 <div class="box_prov_iframe" style="display:none;">
 <div class="close_button_box" id="box_prov_iframe_close">Close</div>
-<iframe class="iframe_prov_url" src="" style="height:380px;margin-left:-5px"></iframe>
+<iframe class="iframe_prov_url" src="" style="height:450px;margin-left:-5px"></iframe>
 </div>
 </center>
 </div>
