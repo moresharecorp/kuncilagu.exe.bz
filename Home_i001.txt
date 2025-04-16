@@ -24,15 +24,15 @@
       </div>
       <div class="mySlides fadeSlides">
          <div class="numbertext">2 / 3</div>
-         <a target="_blank" href="https://vt.tiktok.com/ZS66t1Xwc/">
-         <img class="imgSlides" src="https://i.ytimg.com/vi/cStXDh-WRnY/hqdefault.jpg"></a>
-         <div class="textSlides">APT. Thailand Cover</div>
+         <a target="_blank" href="https://vt.tiktok.com/ZSr4Lp8VB/">
+         <img class="imgSlides" src="https://i.ytimg.com/vi/0DcHZyCxK0A/hqdefault.jpg"></a>
+         <div class="textSlides">STECU STECU Cover</div>
       </div>
       <div class="mySlides fadeSlides">
          <div class="numbertext">3 / 3</div>
-         <a target="_blank" href="https://vt.tiktok.com/ZS66t1ep3/">
-         <img class="imgSlides" src="https://i.ytimg.com/vi/JlRUClbHi9M/hqdefault.jpg"></a>
-         <div class="textSlides">Nenekku Pahlawanku Cover</div>
+         <a target="_blank" href="https://vt.tiktok.com/ZS66t1Xwc/">
+         <img class="imgSlides" src="https://i.ytimg.com/vi/cStXDh-WRnY/hqdefault.jpg"></a>
+         <div class="textSlides">APT. Thailand Cover</div>
       </div>
       <a class="prevSlides" onclick="plusSlides(-1)">❮</a>
       <a class="nextSlides" onclick="plusSlides(1)">❯</a>
