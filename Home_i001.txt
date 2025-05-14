@@ -121,10 +121,7 @@
    /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI*********/
    /**********BOCIL GA JELAS, APUS AJA DATABASE NYA PAS UPDATE CHORD*********/
    $(document).ready(function() {
-       /****localStorage.setItem("advertisechord",'');****/
-       if (localStorage.getItem("ANDROIDVERSION") < 20201230 || localStorage.getItem("IOSVERSION") < 20201230) {
-           localStorage.setItem("advertisechord", '');
-       }
+       localStorage.setItem("advertisechord",'<script>$(document).ready(function(){ var iklan_id = "iklan_001"; var iklan_isi = \'<a class="\'+iklan_id+\'" target="_blank" href="https://vt.tokopedia.com/t/ZShHmLpcS/"><div style="padding-bottom:5px;padding-top:5px;clear:both;"><center><img style="width:98%;padding-bottom:2px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/tiktok_aff_gitar150.jpg"><br><span style="color:#e6d3b3;font-size:80%;">NOTE! Setelah diKLIK iklan ini akan HILANG, jadi jangan lewatkan!</span></center></div></a>\'; if(localStorage.getItem(iklan_id) != "1" && localStorage.getItem("IpUserCache") == "ID" && (APPS_NAME == "CGANDROID" || APPS_NAME == "KGANDROID") && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE") { $("#isispesialoffer").append(iklan_isi); } $(\'.\'+iklan_id+\'\').click(function() { localStorage.setItem(iklan_id, "1"); }); }); <\/script>');
    });
 
 /************ICON BOOKMARK GA MUNCUL******/
