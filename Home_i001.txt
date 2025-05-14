@@ -231,7 +231,7 @@ if(prov_id == "prov_pap") { prov_frame_url = "https://cgpapua.chatango.com/"; }
 .close_button_box{ float:right; padding:5px;margin:5px; overflow:hidden; text-align:center;background-color:#757171;color:white;border-radius: 50px 20px;border: solid 2px #873a3a;font-size:80%;clear:both; }
 </style>
 
-<div class="tombol_prov" style="z-index:2;position:fixed;top:22px;right:8px;display:none;"><img style="width:40px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/cuitcuit.png"></div>
+<div class="tombol_prov" style="position:fixed;top:22px;right:8px;display:none;"><img style="width:40px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/cuitcuit.png"></div>
 
 <div class="centering_box" style="z-index:2;width:100%;text-align:center;position:fixed;top:120px;margin:0px;display:none;">
 <center>
