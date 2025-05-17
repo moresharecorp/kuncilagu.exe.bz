@@ -114,7 +114,7 @@
 		  
           /**************BINTANG 5 versi 20250101**************/
           var GiveFiveStarsurl = '';
-          if ((!localStorage.getItem("GiveFiveStarsFORM") || localStorage.getItem("GiveFiveStarsFORM") == '') && localStorage.getItem("ANDROIDVERSION") > 20241230 && (APPS_NAME == 'CGANDROID' || APPS_NAME == 'KGANDROID')) {
+          if ((!localStorage.getItem("GiveFiveStarsFORM") || localStorage.getItem("GiveFiveStarsFORM") == '') && localStorage.getItem("ANDROIDVERSION") > 20241230 && (APPS_NAME == 'CGANDROID' || APPS_NAME == 'KGANDROID') && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && localStorage.getItem("IpUserCache") == 'ID') {
             localStorage.setItem("GiveFiveStarsFORM", "yes");
             localStorage.setItem("GiveFiveStarsSAVED", "no");
             if (APPS_NAME == 'CGANDROID') {
