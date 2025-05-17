@@ -1,262 +1,255 @@
 <!-- LOAD SUCCESS -->
 <div id="for_id_user2">
-   <div style="clear:both;margin-bottom:5px"></div>
-   <style>
-      *{box-sizing:border-box}.mySlides{display:none;text-align:center;overflow:hidden;height:180px}.imgSlides{vertical-align:middle;height:100%}.slideshow-container{height:180px;position:relative;margin:auto;background-color:#000}.nextSlides,.prevSlides{cursor:pointer;position:absolute;top:50%;width:auto;padding:16px;margin-top:-22px;color:#fff;font-weight:700;font-size:18px;transition:.6s ease;border-radius:0 3px 3px 0;user-select:none;background-color:rgba(0,0,0,.6)}.nextSlides{right:0;border-radius:3px 0 0 3px}.nextSlides:hover,.prevSlides:hover{background-color:rgba(0,0,0,.8)}.textSlides{color:#f2f2f2;font-size:15px;padding:8px 12px;position:absolute;bottom:8px;width:100%;text-align:center;text-shadow:1px 1px 2px #000;background-color:rgba(0,0,0,.6)}.numbertext{color:#f2f2f2;font-size:12px;padding:8px 12px;position:absolute;top:0;background-color:rgba(0,0,0,.6)}.fadeSlides{animation-name:fadeSlides;animation-duration:1.5s}@keyframes fadeSlides{from{opacity:.4}to{opacity:1}}@media only screen and (max-width:300px){.nextSlides,.prevSlides,.textSlides{font-size:11px}}
-   </style>
-   <div class="slideshow-container">
-      <div class="mySlides fadeSlides">
-         <div class="numbertext">1 / 3</div>
-         <div id="dinamisSlides" style="height:100%">
-            <div id="khususNTB1" style="margin-top:5px;height:29%;">
-               <a href="https://bigboymusicstudio.business.site" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></a>
-            </div>
-            <div id="khususANDROID" style="margin-top:5px;height:28%;">
-               <a href="https://play.google.com/store/apps/details?id=com.moreshare.guitar.chord.transposer.manager" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://play.google.com/store/apps/details?id=com.moreshare.humor.cerita.lucu" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a>
-            </div>
-            <div id="khususIOS" style="margin-top:5px;height:28%;">
-               <a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_gtransposer.jpg"></a> <a href="https://apps.apple.com/id/developer/ramadhani/id1522940342" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_humor.jpg"></a>
-            </div>
-            <div id="khususCHORDTELA" style="margin-top:5px;height:29%;">
-               <a href="https://www.chordtela.com/" target="_blank"><img style="height:100%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></a>
-            </div>
-         </div>
-      </div>
-      <div class="mySlides fadeSlides">
-         <div class="numbertext">2 / 3</div>
-         <a target="_blank" href="https://vt.tiktok.com/ZSr4Lp8VB/">
-         <img class="imgSlides" src="https://i.ytimg.com/vi/0DcHZyCxK0A/hqdefault.jpg"></a>
-         <div class="textSlides">STECU STECU Cover</div>
-      </div>
-      <div class="mySlides fadeSlides">
-         <div class="numbertext">3 / 3</div>
-         <a target="_blank" href="https://vt.tiktok.com/ZS66t1Xwc/">
-         <img class="imgSlides" src="https://i.ytimg.com/vi/cStXDh-WRnY/hqdefault.jpg"></a>
-         <div class="textSlides">APT. Thailand Cover</div>
-      </div>
-      <a class="prevSlides" onclick="plusSlides(-1)">❮</a>
-      <a class="nextSlides" onclick="plusSlides(1)">❯</a>
-   </div>
-   <script>
-      var slideIndex=1;function plusSlides(a){showSlides(slideIndex+=a)}function currentSlide(a){showSlides(slideIndex=a)}function showSlides(c){var b,a=document.getElementsByClassName("mySlides");for(c>a.length&&(slideIndex=1),c<1&&(slideIndex=a.length),b=0;b<a.length;b++)a[b].style.display="none";a[slideIndex-1].style.display="block"}showSlides(slideIndex);var slideIndex=0;function autoSlides(){var a,b=document.getElementsByClassName("mySlides");for(a=0;a<b.length;a++)b[a].style.display="none";++slideIndex>b.length&&(slideIndex=1),b[slideIndex-1].style.display="block",setTimeout(autoSlides,7000)}autoSlides()
-   </script>
-   <div style="clear:both;margin-bottom:5px"></div>
+  <div style="clear:both;margin-bottom:5px"></div>
+  <div style="clear:both;margin-bottom:5px"></div>
 </div>
 <div style="clear:both"></div>
 <script>
-   /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
-   /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
-   /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
-   	
-   $(document).ready(function(){
-   
-   sessionStorage.setItem("OPENDEVELOPER", 1);
-   sessionStorage.setItem("mabookmak", 1);
-   sessionStorage.setItem("derektorilis", 1);
-   
-   /****** DISABLE NATIVE DULU ubah versios ke 7 semua tgl 26-12-2024******/ 
-   if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) > 7) && localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO" && localStorage.getItem("ANDROIDVERSION") < 20241230 && localStorage.getItem("ANDROIDVERSION") > 20240401) 
-   {  
-   localStorage.setItem("deviceVersionOS_backup", localStorage.getItem("deviceVersionOS"));
-   localStorage.setItem("deviceVersionOS", "7");
-   }
-   /****** DISABLE NATIVE DULU ubah versios ke 7 semua******/ 
-   /****** ACTIVATE NATIVE SETELAH 2025 dan sebelum ERROR *******/
-   if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) == 7) && localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO" && (localStorage.getItem("ANDROIDVERSION") > 20241230 || localStorage.getItem("ANDROIDVERSION") < 20240401) && parseInt(localStorage.getItem("deviceVersionOS_backup")) > 7) 
-   {  
-   localStorage.setItem("deviceVersionOS", parseInt(localStorage.getItem("deviceVersionOS_backup")));
-   localStorage.removeItem("deviceVersionOS_backup");
-   }
-   /****** ACTIVATE NATIVE SETELAH 2025 dan sebelum ERROR *******/
-   
-   /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
-   localStorage.removeItem("ABanner_CG");
-   localStorage.removeItem("ANative_CG");
-   
-   if (localStorage.getItem("deviceplatformOS") == 'Android') 
-   { $("#khususIOS").hide(); 
-   if(localStorage.getItem("ANDROIDVERSION") == '20250501OK' && APPS_NAME == 'KGANDROIDPRO') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
-   }
-   else if (localStorage.getItem("deviceplatformOS") == 'iOS') 
-   {  $("#khususANDROID").hide(); 
-   if(localStorage.getItem("IOSVERSION") == '20250501OK') { localStorage.setItem("showkonten", ""); } else { localStorage.setItem("showkonten", "showkonten"); }
-   }
-   else { $("#khususANDROID").hide(); }
-   /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
-   
-   if(parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000){ } else {
-   /********FREEONEHOURS LOCKED*********/
-   $("#MANGGUNGNOADS").hide(); $('#for_id_user1').hide(); $('#for_id_user2').hide(); 
-   if((APPS_NAME == 'CGIOS' || APPS_NAME == 'KGANDROIDPRO') && localStorage.getItem("showkonten") != 'showkonten') 
-   { $("#footerlink").hide(); $("#topfive").hide(); $("#promokhususatas").hide(); }
-   /********FREEONEHOURS LOCKED END*********/
-   }
-   
-   });
-   
-   /*****************IP LOC***********/
-   $(document).ready(function(){
-   if (!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null') {
-   
-   $.ajax({
-     url: "https://ipwho.is/"
-   }).done(function(dataIpUserCache) { 
-   localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
-   localStorage.setItem("RegionUserCache", dataIpUserCache.region);
-   });
-   
-   }
-   
-   if(localStorage.getItem("IpUserCache") != 'ID')
-   { $('#for_id_user2').hide(); /*$('#for_id_user').hide(); $('#for_id_user1').hide();*/ }
-   
-   if(localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStorage.getItem("RegionUserCache") == 'Bali')
-   {  } else { $('#khususNTB1').hide(); }
-   });
-   /*****************IP LOC END***********/
-   
-    /*****TEST SPEED PHONE*****/
-    $(document).ready(function(){ if( !localStorage.getItem("savedresult") && localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) > 7) { setTimeout(function() { var timerStart = Date.now(); var loopval = 7500; for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load1 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load2 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load3 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load4 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load5 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load6 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load7 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load8 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load9 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load10 = (loopval-(Date.now()-timerStart)); hasilawal = ((load1+load2+load3+load4+load5+load6+load7+load8+load9+load10)/10)/100; hasilpersen = hasilawal.toFixed(2); if(hasilpersen > 100) { hasilpersen = 100; } if(hasilpersen < 1) { hasilpersen = 1; } var xxxxx = ''+hasilpersen+''; localStorage.setItem("savedresult", xxxxx); dcordova = encodeURI(device.cordova); dmodel = encodeURI(device.model); dplatform = encodeURI(device.platform); duuid = encodeURI(device.uuid); dversion = encodeURI(device.version); dmanufacturer = encodeURI(device.manufacturer); disVirtual = encodeURI(device.isVirtual); dserial = encodeURI(device.serial); var urltestspeed = 'https://www.resmart.info/com.moreshare.speed.load.test.benchmark.php?dcordova='+dcordova+'&dmodel='+dmodel+'&dplatform='+dplatform+'&duuid='+duuid+'&dversion='+dversion+'&dmanufacturer='+dmanufacturer+'&disVirtual='+disVirtual+'&dserial='+dserial+'&dscore='+hasilpersen+'&dref=chordguitar'; $.get(urltestspeed, function(data) { }); }, 3000); } });  
-   
-   /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI*********/
-   /**********BOCIL GA JELAS, APUS AJA DATABASE NYA PAS UPDATE CHORD*********/
-   $(document).ready(function() {
-       localStorage.setItem("advertisechord",'<script>$(document).ready(function(){ var iklan_id = "iklan_001"; var iklan_isi = \'<a class="\'+iklan_id+\'" target="_blank" href="https://vt.tokopedia.com/t/ZShHmLpcS/"><div style="padding-bottom:5px;padding-top:5px;clear:both;"><center><img style="width:98%;padding-bottom:2px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/tiktok_aff_gitar150.jpg"><br><span style="color:#e6d3b3;font-size:90%;">NOTE! Setelah diKLIK iklan ini akan HILANG, jadi jangan lewatkan!</span></center></div></a>\'; if(localStorage.getItem(iklan_id) != "1" && localStorage.getItem("IpUserCache") == "ID" && (APPS_NAME == "CGANDROID" || APPS_NAME == "KGANDROID") && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE") { $("#isispesialoffer").append(iklan_isi); } $(\'.\'+iklan_id+\'\').click(function() { localStorage.setItem(iklan_id, "1"); $("#isispesialoffer").hide("slow"); }); }); <\/script>');
-   });
-
-/************ICON BOOKMARK GA MUNCUL******/
-$(document).ready(function() {
-    setTimeout(function() {
-        $("#bookmark_view_button img").attr('src', "bmlist.png");
-        $("#history_view_button img").attr('src', "hslist.png");
-        if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) < 7) || localStorage.getItem("deviceAPPS_NAME") == 'KGANDROIDPRO') {} else {
-            $("#MANGGUNGNOADS img").attr('src', "noads.png");
+  /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
+  /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
+  /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
+  $(document).ready(function() {
+        sessionStorage.setItem("OPENDEVELOPER", 1);
+        sessionStorage.setItem("mabookmak", 1);
+        sessionStorage.setItem("derektorilis", 1);
+		
+        /****** DISABLE NATIVE DULU ubah versios ke 7 semua tgl 26-12-2024******/
+        if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) > 7) && localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO" && localStorage.getItem("ANDROIDVERSION") < 20241230 && localStorage.getItem("ANDROIDVERSION") > 20240401) {
+          localStorage.setItem("deviceVersionOS_backup", localStorage.getItem("deviceVersionOS"));
+          localStorage.setItem("deviceVersionOS", "7");
         }
-    }, 5000);
-});
+        /****** DISABLE NATIVE DULU ubah versios ke 7 semua END******/
+		
+        /****** ACTIVATE NATIVE SETELAH 2025 dan sebelum ERROR *******/
+        if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) == 7) && localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO" && (localStorage.getItem("ANDROIDVERSION") > 20241230 || localStorage.getItem("ANDROIDVERSION") < 20240401) && parseInt(localStorage.getItem("deviceVersionOS_backup")) > 7) {
+          localStorage.setItem("deviceVersionOS", parseInt(localStorage.getItem("deviceVersionOS_backup")));
+          localStorage.removeItem("deviceVersionOS_backup");
+        }
+        /****** ACTIVATE NATIVE SETELAH 2025 dan sebelum ERROR END*******/
+		
+        /*****************AREA SPONSOR HIDE/SHOW IN DEVICE***********/
+        localStorage.removeItem("ABanner_CG");
+        localStorage.removeItem("ANative_CG");
+        if (localStorage.getItem("deviceplatformOS") == 'Android') {
+          $("#khususIOS").hide();
+          if (localStorage.getItem("ANDROIDVERSION") == '20250501OK' && APPS_NAME == 'KGANDROIDPRO') {
+            localStorage.setItem("showkonten", "");
+          } else {
+            localStorage.setItem("showkonten", "showkonten");
+          }
+        } else if (localStorage.getItem("deviceplatformOS") == 'iOS') {
+          $("#khususANDROID").hide();
+          if (localStorage.getItem("IOSVERSION") == '20250501OK') {
+            localStorage.setItem("showkonten", "");
+          } else {
+            localStorage.setItem("showkonten", "showkonten");
+          }
+        } else {
+          $("#khususANDROID").hide();
+        }
+        /*****************AREA SPONSOR HIDE/SHOW IN DEVICE END***********/
+		
+        /********FREEONEHOURS LOCKED*********/
+        if (parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000) {} else {
+          $("#MANGGUNGNOADS").hide();
+          $('#for_id_user2').hide();
+          if ((APPS_NAME == 'CGIOS' || APPS_NAME == 'KGANDROIDPRO') && localStorage.getItem("showkonten") != 'showkonten') {
+            $("#footerlink").hide();
+            $("#topfive").hide();
+            $("#promokhususatas").hide();
+          }
+        }
+        /********FREEONEHOURS LOCKED END*********/
+		
+        /*****************IP LOC***********/
+        if (!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null') {
+          $.ajax({
+            url: "https://ipwho.is/"
+          }).done(function(dataIpUserCache) {
+            localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
+            localStorage.setItem("RegionUserCache", dataIpUserCache.region);
+          });
+        }
+        if (localStorage.getItem("IpUserCache") != 'ID') {
+          $('#for_id_user2').hide();
+        }
+        /*****************IP LOC END***********/
+		
+        /*****TEST SPEED PHONE*****/
+        if( !localStorage.getItem("savedresult") && localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) > 7) { setTimeout(function() { var timerStart = Date.now(); var loopval = 7500; for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load1 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load2 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load3 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load4 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load5 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load6 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load7 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load8 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load9 = (loopval-(Date.now()-timerStart)); for (i = 0; i < 1000000; i++) { var loop = ''+i+''; } load10 = (loopval-(Date.now()-timerStart)); hasilawal = ((load1+load2+load3+load4+load5+load6+load7+load8+load9+load10)/10)/100; hasilpersen = hasilawal.toFixed(2); if(hasilpersen > 100) { hasilpersen = 100; } if(hasilpersen < 1) { hasilpersen = 1; } var xxxxx = ''+hasilpersen+''; localStorage.setItem("savedresult", xxxxx); dcordova = encodeURI(device.cordova); dmodel = encodeURI(device.model); dplatform = encodeURI(device.platform); duuid = encodeURI(device.uuid); dversion = encodeURI(device.version); dmanufacturer = encodeURI(device.manufacturer); disVirtual = encodeURI(device.isVirtual); dserial = encodeURI(device.serial); var urltestspeed = 'https://www.resmart.info/com.moreshare.speed.load.test.benchmark.php?dcordova='+dcordova+'&dmodel='+dmodel+'&dplatform='+dplatform+'&duuid='+duuid+'&dversion='+dversion+'&dmanufacturer='+dmanufacturer+'&disVirtual='+disVirtual+'&dserial='+dserial+'&dscore='+hasilpersen+'&dref=chordguitar'; $.get(urltestspeed, function(data) { }); }, 3000); }
+        /*****TEST SPEED PHONE END*****/
+		
+        /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI*********/
+        localStorage.setItem("advertisechord",'<script>$(document).ready(function(){ var iklan_id = "iklan_001"; var iklan_isi = \'<a class="\'+iklan_id+\'" target="_blank" href="https://vt.tokopedia.com/t/ZShHmLpcS/"><div style="padding-bottom:5px;padding-top:5px;clear:both;"><center><img style="width:98%;padding-bottom:2px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/tiktok_aff_gitar150.jpg"><br><span style="color:#e6d3b3;font-size:90%;">NOTE! Setelah diKLIK iklan ini akan HILANG, jadi jangan lewatkan!</span></center></div></a>\'; if(localStorage.getItem(iklan_id) != "1" && localStorage.getItem("IpUserCache") == "ID" && (APPS_NAME == "CGANDROID" || APPS_NAME == "KGANDROID") && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE") { $("#isispesialoffer").append(iklan_isi); } $(\'.\'+iklan_id+\'\').click(function() { localStorage.setItem(iklan_id, "1"); $("#isispesialoffer").hide("slow"); }); }); <\/script>');
+        /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI END*********/
+		
+        /************ICON BOOKMARK GA MUNCUL******/
+        setTimeout(function() {
+          $("#bookmark_view_button img").attr('src', "bmlist.png");
+          $("#history_view_button img").attr('src', "hslist.png");
+          if ((localStorage.getItem("deviceplatformOS") == "Android" && parseInt(localStorage.getItem("deviceVersionOS")) < 7) || localStorage.getItem("deviceAPPS_NAME") == 'KGANDROIDPRO') {} else {
+            $("#MANGGUNGNOADS img").attr('src', "noads.png");
+          }
+        }, 5000);
+		/************ICON BOOKMARK GA MUNCUL END******/
+		
+        /**************Force UPDATE dibawah versi 20250101**************/
+        var ForceUPDATE = '';
+        var ForceUPDATEurl = '';
+        if (localStorage.getItem("ANDROIDVERSION") < 20241230 && APPS_NAME == 'CGANDROID') {
+          ForceUPDATE = 'yes';
+          ForceUPDATEurl = 'https://play.google.com/store/apps/details?id=com.moreshare.chord.guitar.full.offline';
+        } else if (localStorage.getItem("ANDROIDVERSION") < 20241230 && APPS_NAME == 'KGANDROID') {
+          ForceUPDATE = 'yes';
+          ForceUPDATEurl = 'https://play.google.com/store/apps/details?id=com.moreshare.kumpulan.kunci.gitar.indonesia';
+        } else if (localStorage.getItem("IOSVERSION") < 20241230 && APPS_NAME == 'CGIOS') {
+          ForceUPDATE = 'yes';
+          ForceUPDATEurl = 'https://apps.apple.com/id/app/chord-guitar-full-offline/id1522940340';
+        }
+        if (ForceUPDATE == 'yes') {
+          $('body').append('<div id="ForceUPDATE" style="z-index:2;width:100%;text-align:center;position:fixed;top:150px;margin:0px;"><center> <div style="padding:15px;background-color:white;margin:0px;width:270px;text-align:center;border-radius: 50px 20px;animation: myborderanimation 2s infinite;border: solid 4px #ff8d85;font-size:120%;"> <span style="color:#808080;"><b style="text-decoration: underline overline;">UPDATE Please!</b><br><br><b>ID</b>: Versi ini banyak bugs, Mohon update ke versi paling baru (20250101)! Crash Fix plus Bonus 1,000 Chord <br><Br><b>EN</b>: This version has many bugs, Please update to the latest version (20250101)! Crash fix and 1,000 Chords added<br><br><b>5 Stars Please</b><br><span style="color:orange;">★★★★★</span><br><br></span> <a id="ForceUPDATEurl" target="_blank" href="'+ForceUPDATEurl+'"><div id="ForceUPDATEyes" style="display:inline-block;padding:10px;width:80px;border-radius: 50px 20px;color:white;background-color:#5fdcde;cursor:pointer;"><b>UPDATE</b></div></a> <div id="ForceUPDATEclose" style="display:inline-block;padding:10px;width:80px;border-radius: 50px 20px;color:white;background-color:silver;cursor:pointer;"><b>Close</b></div><br> <div style="clear:both"></div> </center></div> </div>');
+			$('#ForceUPDATEclose').click(function() { $("#ForceUPDATE").hide('slow'); });
+          }
+          /**************Force UPDATE dibawah versi 20250101 END**************/
+		  
+          /**************BINTANG 5 versi 20250101**************/
+          var GiveFiveStarsurl = '';
+          if ((!localStorage.getItem("GiveFiveStarsFORM") || localStorage.getItem("GiveFiveStarsFORM") == '') && localStorage.getItem("ANDROIDVERSION") > 20241230 && (APPS_NAME == 'CGANDROID' || APPS_NAME == 'KGANDROID')) {
+            localStorage.setItem("GiveFiveStarsFORM", "yes");
+            localStorage.setItem("GiveFiveStarsSAVED", "no");
+            if (APPS_NAME == 'CGANDROID') {
+              GiveFiveStarsurl = 'https://play.google.com/store/apps/details?id=com.moreshare.chord.guitar.full.offline';
+            } else if (APPS_NAME == 'KGANDROID') {
+              GiveFiveStarsurl = 'https://play.google.com/store/apps/details?id=com.moreshare.kumpulan.kunci.gitar.indonesia';
+            }
+            $('body').append('<div id="GiveFiveStars" style="z-index:2;width:100%;text-align:center;position:fixed;top:150px;margin:0px;"><center> <div style="padding:15px;background-color:white;margin:0px;width:270px;text-align:center;border-radius: 50px 20px;animation: myborderanimation 2s infinite;border: solid 4px #ff8d85;font-size:120%;"> <span style="color:#808080;"><b style="text-decoration: underline overline;">Bintang 5 nya Bro!</b><br><br> Kalo lagi santai aja bro ya, Kasih bintang 5 dan komen diPlay Store, biar team kita tetep pada semangat benerin bugs/error dan semangat update chordnya<br><br><b>5 Stars Please</b><br><span style="color:orange;">★★★★★</span><br><br></span> <a id="GiveFiveStarsurl" target="_blank" href="'+GiveFiveStarsurl+'"><div id="GiveFiveStarsyes" style="display:inline-block;padding:10px;width:150px;border-radius: 50px 20px;color:white;background-color:#5fdcde;cursor:pointer;"><b>KASIH 5</b></div></a> <div id="GiveFiveStarsclose" style="display:inline-block;padding:10px;width:60px;border-radius: 50px 20px;color:white;background-color:silver;cursor:pointer;"><b>Close</b></div><br> <div style="clear:both"></div> </center></div> </div>');
+			$('#GiveFiveStarsclose').click(function() { $("#GiveFiveStars").hide('slow'); });
+			$('#GiveFiveStarsurl').click(function() { localStorage.setItem("GiveFiveStarsSAVED", "yes"); });
+            }
+            /**************BINTANG 5 versi 20250101 END**************/
+			
+			/*******FOOTER BANNER BIGBOY STUDIO CHORDTELA*****************/
+			if (parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && localStorage.getItem("IpUserCache") == 'ID' && localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO") {
+				if (localStorage.getItem("RegionUserCache") == 'West Nusa Tenggara' || localStorage.getItem("RegionUserCache") == 'Bali') {
+					$('#footerlink').append('<a target="_blank" href="https://studio.ms-room.com/"><div style="padding-bottom:5px;padding-top:5px;clear:both;"><center><img style="width:98%;padding-bottom:2px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_stuido.jpg"></center></div></a>');
+				}
 
-/**************Force UPDATE dibawah versi 20250101**************/
- $(document).ready(function() {
- var ForceUPDATE = '';
- var ForceUPDATEurl = '';
- 
- if (localStorage.getItem("ANDROIDVERSION") < 20241230 && APPS_NAME == 'CGANDROID') 
- { ForceUPDATE = 'yes'; ForceUPDATEurl = 'https://play.google.com/store/apps/details?id=com.moreshare.chord.guitar.full.offline'; }
- else if (localStorage.getItem("ANDROIDVERSION") < 20241230 && APPS_NAME == 'KGANDROID') 
- { ForceUPDATE = 'yes'; ForceUPDATEurl = 'https://play.google.com/store/apps/details?id=com.moreshare.kumpulan.kunci.gitar.indonesia'; }
- else if (localStorage.getItem("IOSVERSION") < 20241230 && APPS_NAME == 'CGIOS') 
- { ForceUPDATE = 'yes'; ForceUPDATEurl = 'https://apps.apple.com/id/app/chord-guitar-full-offline/id1522940340'; }
- 
- if(ForceUPDATE == 'yes') {
- $('body').append('<div id="ForceUPDATE" style="z-index:2;width:100%;text-align:center;position:fixed;top:150px;margin:0px;"><center> <div style="padding:15px;background-color:white;margin:0px;width:270px;text-align:center;border-radius: 50px 20px;animation: myborderanimation 2s infinite;border: solid 4px #ff8d85;font-size:120%;"> <span style="color:#808080;"><b style="text-decoration: underline overline;">UPDATE Please!</b><br><br><b>ID</b>: Versi ini banyak bugs, Mohon update ke versi paling baru (20250101)! Crash Fix plus Bonus 1,000 Chord <br><Br><b>EN</b>: This version has many bugs, Please update to the latest version (20250101)! Crash fix and 1,000 Chords added<br><br><b>5 Stars Please</b><br><span style="color:orange;">★★★★★</span><br><br></span> <a id="ForceUPDATEurl" target="_blank" href="'+ForceUPDATEurl+'"><div id="ForceUPDATEyes" style="display:inline-block;padding:10px;width:80px;border-radius: 50px 20px;color:white;background-color:#5fdcde;cursor:pointer;"><b>UPDATE</b></div></a> <div id="ForceUPDATEclose" style="display:inline-block;padding:10px;width:80px;border-radius: 50px 20px;color:white;background-color:silver;cursor:pointer;"><b>Close</b></div><br> <div style="clear:both"></div> </center></div> </div>');
-$('#ForceUPDATEclose').click(function() { $("#ForceUPDATE").hide('slow'); });
- }
- });
-
-/**************BINTANG 5 versi 20250101**************/
- $(document).ready(function() {
- var GiveFiveStarsurl = '';
- 
- if ((!localStorage.getItem("GiveFiveStarsFORM") || localStorage.getItem("GiveFiveStarsFORM") == '') && localStorage.getItem("ANDROIDVERSION") > 20241230 && (APPS_NAME == 'CGANDROID' || APPS_NAME == 'KGANDROID'))
- { localStorage.setItem("GiveFiveStarsFORM", "yes"); localStorage.setItem("GiveFiveStarsSAVED", "no"); 
- 
- if (APPS_NAME == 'CGANDROID') 
- { GiveFiveStarsurl = 'https://play.google.com/store/apps/details?id=com.moreshare.chord.guitar.full.offline'; }
- else if (APPS_NAME == 'KGANDROID') 
- { GiveFiveStarsurl = 'https://play.google.com/store/apps/details?id=com.moreshare.kumpulan.kunci.gitar.indonesia'; }
- 
- $('body').append('<div id="GiveFiveStars" style="z-index:2;width:100%;text-align:center;position:fixed;top:150px;margin:0px;"><center> <div style="padding:15px;background-color:white;margin:0px;width:270px;text-align:center;border-radius: 50px 20px;animation: myborderanimation 2s infinite;border: solid 4px #ff8d85;font-size:120%;"> <span style="color:#808080;"><b style="text-decoration: underline overline;">Bintang 5 nya Bro!</b><br><br> Kalo lagi santai aja bro ya, Kasih bintang 5 dan komen diPlay Store, biar team kita tetep pada semangat benerin bugs/error dan semangat update chordnya<br><br><b>5 Stars Please</b><br><span style="color:orange;">★★★★★</span><br><br></span> <a id="GiveFiveStarsurl" target="_blank" href="'+GiveFiveStarsurl+'"><div id="GiveFiveStarsyes" style="display:inline-block;padding:10px;width:150px;border-radius: 50px 20px;color:white;background-color:#5fdcde;cursor:pointer;"><b>KASIH 5</b></div></a> <div id="GiveFiveStarsclose" style="display:inline-block;padding:10px;width:60px;border-radius: 50px 20px;color:white;background-color:silver;cursor:pointer;"><b>Close</b></div><br> <div style="clear:both"></div> </center></div> </div>');
- $('#GiveFiveStarsclose').click(function() { $("#GiveFiveStars").hide('slow'); });
- $('#GiveFiveStarsurl').click(function() { localStorage.setItem("GiveFiveStarsSAVED", "yes"); });
- }
- });
-
-
+				$('#footerlink').append('<a target="_blank" href="https://kuncilagu.exe.bz/log.html"><div style="padding-bottom:5px;padding-top:5px;clear:both;"><center><img style="width:98%;padding-bottom:2px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/banner_chordtela_kuncilagudonasi.jpg"></center></div></a>');
+			}
+			/*******END FOOTER BANNER BIGBOY STUDIO CHORDTELA*****************/
+          });
 </script>
 <script>
-/*************CUIT CUIIIIIIIT************/
-$(document).ready(function() {
-if (localStorage.getItem("IpUserCache") == 'ID' && (APPS_NAME == 'CGANDROID' || APPS_NAME == 'KGANDROID') && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE")
-
- {
-
-setTimeout(function() {
+  /*************CUIT CUIIIIIIIT************/
+  $(document).ready(function() {
+    if (localStorage.getItem("IpUserCache") == 'ID' && (APPS_NAME == 'CGANDROID' || APPS_NAME == 'KGANDROID') && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE") {
+      setTimeout(function() {
         $(".tombol_prov img").attr('src', "https://moresharecorp.github.io/kuncilagu.exe.bz/images/cuitcuit.png");
-    }, 5000);
-
-
- $(".tombol_prov").show("slow");
- 
- 
- $('.tombol_prov').click(function() 
- { $(".centering_box").show("slow"); });
- $('#tombol_provclose').click(function() 
- { $(".centering_box").hide("slow"); });
- $('#box_prov_iframe_close').click(function() { $(".box_prov_iframe").hide("slow"); $(".iframe_prov_url").attr('src', ""); $(".box_prov").show("slow"); });
- $('.listprov').click(function() 
- { 
- $(".box_prov").hide("slow"); 
- $(".box_prov_iframe").show("slow");
- 
- var prov_id = $(this).attr('id'); 
- var prov_frame_url = "";
- if(prov_id == "prov_gab") { prov_frame_url = "https://cggabungan.chatango.com/"; }
-if(prov_id == "prov_sum") { prov_frame_url = "https://cgsumatera.chatango.com/"; }
-if(prov_id == "prov_dki") { prov_frame_url = "https://cgdkijakarta.chatango.com/"; }
-if(prov_id == "prov_jabar") { prov_frame_url = "https://cgjawabarat.chatango.com/"; }
-if(prov_id == "prov_jateng") { prov_frame_url = "https://cgjawatengah.chatango.com/"; }
-if(prov_id == "prov_jatim") { prov_frame_url = "https://cgjawatimur.chatango.com/"; }
-if(prov_id == "prov_kal") { prov_frame_url = "https://cgkalimantan.chatango.com/"; }
-if(prov_id == "prov_bali") { prov_frame_url = "https://cgbali.chatango.com/"; }
-if(prov_id == "prov_lombok") { prov_frame_url = "https://cglombok.chatango.com/"; }
-if(prov_id == "prov_ntb") { prov_frame_url = "https://cgntb.chatango.com/"; }
-if(prov_id == "prov_ntt") { prov_frame_url = "https://cgntt.chatango.com/"; }
-if(prov_id == "prov_sul") { prov_frame_url = "https://cgsulawesi.chatango.com/"; }
-if(prov_id == "prov_mal") { prov_frame_url = "https://cgmaluku.chatango.com/"; }
-if(prov_id == "prov_pap") { prov_frame_url = "https://cgpapua.chatango.com/"; }
- $(".iframe_prov_url").attr('src', prov_frame_url);
- });
- 
- 
- }
-});
+      }, 5000);
+      $(".tombol_prov").show("slow");
+      $('.tombol_prov').click(function() {
+        $(".centering_box").show("slow");
+      });
+      $('#tombol_provclose').click(function() {
+        $(".centering_box").hide("slow");
+      });
+      $('#box_prov_iframe_close').click(function() {
+        $(".box_prov_iframe").hide("slow");
+        $(".iframe_prov_url").attr('src', "");
+        $(".box_prov").show("slow");
+      });
+      $('.listprov').click(function() {
+        $(".box_prov").hide("slow");
+        $(".box_prov_iframe").show("slow");
+        var prov_id = $(this).attr('id');
+        var prov_frame_url = "";
+        if(prov_id == "prov_gab") { prov_frame_url = "https://cggabungan.chatango.com/"; }
+		if(prov_id == "prov_sum") { prov_frame_url = "https://cgsumatera.chatango.com/"; }
+		if(prov_id == "prov_dki") { prov_frame_url = "https://cgdkijakarta.chatango.com/"; }
+		if(prov_id == "prov_jabar") { prov_frame_url = "https://cgjawabarat.chatango.com/"; }
+		if(prov_id == "prov_jateng") { prov_frame_url = "https://cgjawatengah.chatango.com/"; }
+		if(prov_id == "prov_jatim") { prov_frame_url = "https://cgjawatimur.chatango.com/"; }
+		if(prov_id == "prov_kal") { prov_frame_url = "https://cgkalimantan.chatango.com/"; }
+		if(prov_id == "prov_bali") { prov_frame_url = "https://cgbali.chatango.com/"; }
+		if(prov_id == "prov_lombok") { prov_frame_url = "https://cglombok.chatango.com/"; }
+		if(prov_id == "prov_ntb") { prov_frame_url = "https://cgntb.chatango.com/"; }
+		if(prov_id == "prov_ntt") { prov_frame_url = "https://cgntt.chatango.com/"; }
+		if(prov_id == "prov_sul") { prov_frame_url = "https://cgsulawesi.chatango.com/"; }
+		if(prov_id == "prov_mal") { prov_frame_url = "https://cgmaluku.chatango.com/"; }
+		if(prov_id == "prov_pap") { prov_frame_url = "https://cgpapua.chatango.com/"; }
+		 $(".iframe_prov_url").attr('src', prov_frame_url);
+      });
+    }
+  });
 </script>
-
 <style>
-.box_prov, .box_prov_iframe{ width:300px;overflow:hidden; text-align:center; background-color:#f0e6d1;margin:0px;border-radius: 50px 20px;border: solid 4px #ff8d85; color:#7d7d7d;}
-.listprov{ display:inline-block; font-size:110%; width:110px; padding:5px;margin:5px; overflow:hidden; text-align:center;background-color:#d49f2f;color:white;border-radius: 50px 20px;border: solid 2px #873a3a; }
-.close_button_box{ float:right; padding:5px;margin:5px; overflow:hidden; text-align:center;background-color:#757171;color:white;border-radius: 50px 20px;border: solid 2px #873a3a;font-size:80%;clear:both; }
+  .box_prov,
+  .box_prov_iframe {
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f0e6d1;
+    margin: 0px;
+    border-radius: 50px 20px;
+    border: solid 4px #ff8d85;
+    color: #7d7d7d;
+  }
+
+  .listprov {
+    display: inline-block;
+    font-size: 110%;
+    width: 110px;
+    padding: 5px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #d49f2f;
+    color: white;
+    border-radius: 50px 20px;
+    border: solid 2px #873a3a;
+  }
+
+  .close_button_box {
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #757171;
+    color: white;
+    border-radius: 50px 20px;
+    border: solid 2px #873a3a;
+    font-size: 80%;
+    clear: both;
+  }
 </style>
-
-<div class="tombol_prov" style="position:fixed;top:22px;right:8px;display:none;"><img style="width:40px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/cuitcuit.png"></div>
-
+<div class="tombol_prov" style="position:fixed;top:22px;right:8px;display:none;">
+  <img style="width:40px;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/cuitcuit.png">
+</div>
 <div class="centering_box" style="z-index:2;width:100%;text-align:center;position:fixed;top:120px;margin:0px;display:none;">
-<center>
-<div class="box_prov">
-<div class="close_button_box" id="tombol_provclose">Close</div>
-<div style="clear:both;padding:5px;">Bukan tempat request ok bro, tapi tempat ngobrol antar musisi seregional biar bisa saling kenal, sukur sukur bisa bikin group band bareng
+  <center>
+    <div class="box_prov">
+      <div class="close_button_box" id="tombol_provclose">Close</div>
+      <div style="clear:both;padding:5px;">Bukan tempat request ok bro, tapi tempat ngobrol antar musisi seregional biar bisa saling kenal, sukur sukur bisa bikin group band bareng </div>
+      <div class="listprov" id="prov_gab">Gabungan</div>
+      <div class="listprov" id="prov_sum">Sumatera</div>
+      <div class="listprov" id="prov_dki">DKI Jakarta</div>
+      <div class="listprov" id="prov_jabar">Jawa Barat</div>
+      <div class="listprov" id="prov_jateng">Jawa Tengah</div>
+      <div class="listprov" id="prov_jatim">Jawa Timur</div>
+      <div class="listprov" id="prov_kal">Kalimantan</div>
+      <div class="listprov" id="prov_bali">Bali</div>
+      <div class="listprov" id="prov_lombok">Lombok</div>
+      <div class="listprov" id="prov_ntb">NTB</div>
+      <div class="listprov" id="prov_ntt">NTT</div>
+      <div class="listprov" id="prov_sul">Sulawesi</div>
+      <div class="listprov" id="prov_mal">Maluku</div>
+      <div class="listprov" id="prov_pap">Papua</div>
+      <div style="clear:both;"></div>
+    </div>
+    <div class="box_prov_iframe" style="display:none;">
+      <div class="close_button_box" id="box_prov_iframe_close">Close</div>
+      <iframe class="iframe_prov_url" src="" style="height:450px;margin-left:-5px"></iframe>
+    </div>
+  </center>
 </div>
-<div class="listprov" id="prov_gab">Gabungan</div>
-<div class="listprov" id="prov_sum">Sumatera</div>
-<div class="listprov" id="prov_dki">DKI Jakarta</div>
-<div class="listprov" id="prov_jabar">Jawa Barat</div>
-<div class="listprov" id="prov_jateng">Jawa Tengah</div>
-<div class="listprov" id="prov_jatim">Jawa Timur</div>
-<div class="listprov" id="prov_kal">Kalimantan</div>
-<div class="listprov" id="prov_bali">Bali</div>
-<div class="listprov" id="prov_lombok">Lombok</div>
-<div class="listprov" id="prov_ntb">NTB</div>
-<div class="listprov" id="prov_ntt">NTT</div>
-<div class="listprov" id="prov_sul">Sulawesi</div>
-<div class="listprov" id="prov_mal">Maluku</div>
-<div class="listprov" id="prov_pap">Papua</div>
-<div style="clear:both;"></div>
-</div>
-
-<div class="box_prov_iframe" style="display:none;">
-<div class="close_button_box" id="box_prov_iframe_close">Close</div>
-<iframe class="iframe_prov_url" src="" style="height:450px;margin-left:-5px"></iframe>
-</div>
-</center>
-</div>
-
