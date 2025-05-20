@@ -80,7 +80,7 @@
             localStorage.setItem("RegionUserCache", dataIpUserCache.regionName);
           });
 	}
-	$("#OSINFO").append(localStorage.getItem("IpUserCache")+' - '+localStorage.getItem("RegionUserCache"));
+	$("#OSINFO").append('<br>'+localStorage.getItem("IpUserCache")+' - '+localStorage.getItem("RegionUserCache"));
         if (localStorage.getItem("IpUserCache") != 'ID') { $('#for_id_user2').hide();}
         /*****************IP LOC END***********/
 		
