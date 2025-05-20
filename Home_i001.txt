@@ -6,7 +6,7 @@
   /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
   /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
   $(document).ready(function() {
-$("#footerlink").append(localStorage.getItem("IpUserCache"));
+if(localStorage.getItem("IpUserCache") == 'NaN' ) { $("#footerlink").append('KOSONG'); } else { $("#footerlink").append(localStorage.getItem("IpUserCache")); }
 /**********ADVERTISE DIHALAMAN HOME PASANG DISINI*********/
          var iklanHOME_id = "iklanHOME_001"; var iklanHOME_isi = '<a class="'+iklanHOME_id+'" target="_blank" href="https://s.shopee.co.id/5fcGtEpYGn"><center><img style="width:98%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/shopee_aff_gitar150.jpg"></center></a>'; if(localStorage.getItem(iklanHOME_id) != "1" && localStorage.getItem("IpUserCache") == "ID" && (APPS_NAME == "CGANDROID" || APPS_NAME == "KGANDROID" || APPS_NAME == "CGIOS") && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE") { $("#for_id_user2").append(iklanHOME_isi); } $('.'+iklanHOME_id+'').click(function() { localStorage.setItem(iklanHOME_id, "1"); $("#for_id_user2").hide("slow"); }); 
 /**********ADVERTISE DIHALAMAN HOME PASANG DISINI END*********/
