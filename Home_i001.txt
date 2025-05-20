@@ -72,9 +72,15 @@ $("#footerlink").append(localStorage.getItem("IpUserCache"));
             localStorage.setItem("RegionUserCache", dataIpUserCache.region);
           });
         }
-        if (localStorage.getItem("IpUserCache") != 'ID') {
-          $('#for_id_user2').hide();
-        }
+	if(!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == undefined || localStorage.getItem("IpUserCache") == null || localStorage.getItem("IpUserCache") == NaN || localStorage.getItem("IpUserCache") == false || localStorage.getItem("IpUserCache") == 0) {
+	$.ajax({
+            url: "http://ip-api.com/json/"
+          }).done(function(dataIpUserCache) {
+            localStorage.setItem("IpUserCache", dataIpUserCache.countryCode);
+            localStorage.setItem("RegionUserCache", dataIpUserCache.regionName);
+          });
+	}
+        if (localStorage.getItem("IpUserCache") != 'ID') { $('#for_id_user2').hide();}
         /*****************IP LOC END***********/
 		
         /*****TEST SPEED PHONE*****/
