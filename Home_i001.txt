@@ -134,7 +134,7 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
         /*****TEST SPEED PHONE END*****/
 		
         /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI*********/
-        
+        localStorage.setItem("advertisechord","");
         /**********ADVERTISE DIHALAMAN CHORD PASANG DISINI END*********/
 		
         /************ICON BOOKMARK GA MUNCUL******/
