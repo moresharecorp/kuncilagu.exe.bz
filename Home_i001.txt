@@ -31,7 +31,7 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
 }
 
 var iklanHOME_id2 = "iklanHOME_002";
-var iklanHOME_isi2 = '<a class="' + iklanHOME_id2 + '" target="_blank" href="https://youtube.com/shorts/0RcWLp3uRqU"><center><img style="width:98%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/cg_poin_komedi_amburadul.jpg"></center></a>';
+var iklanHOME_isi2 = '<a class="' + iklanHOME_id2 + '" target="_blank" href="https://youtube.com/shorts/S7kQLa5xlSI"><center><img style="width:98%;" src="https://moresharecorp.github.io/kuncilagu.exe.bz/images/cg_poin_komedi_amburadul.jpg"></center></a>';
 if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getItem(iklanHOME_id) == "1" && localStorage.getItem(iklanHOME_id2) != "1" && localStorage.getItem("IpUserCache") == "ID" && (APPS_NAME == "CGANDROID" || APPS_NAME == "KGANDROID" || APPS_NAME == "CGIOS") && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE") {
     $("#for_id_user2").append(iklanHOME_isi2);
     $('.' + iklanHOME_id2 + '').click(function() {
