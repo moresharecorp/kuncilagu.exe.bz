@@ -8,6 +8,17 @@
   $(document).ready(function() {
 
 /**********ADVERTISE DIHALAMAN HOME PASANG DISINI*********/
+
+/********HAPUS RUMUS INI SETELAH LEWAT TANGGAL 1 juni 2025**********/
+if (localStorage.getItem("IpUserCache") == "ID" && (APPS_NAME == "CGANDROID" || APPS_NAME == "KGANDROID" || APPS_NAME == "CGIOS") && parseInt(localStorage.getItem("freeOneHourAccess_reward")) < parseInt(localStorage.getItem("tmnow_reward")) && parseInt(localStorage.getItem("freeOneHourAccess_reward")) > 1000 && sessionStorage.getItem("NGOFFLINE") != "NGOFFLINE") 
+{ 
+if(localStorage.getItem(iklanHOME_id) != "1" && (parseInt(localStorage.getItem("freeOneHourAccess_reward"))+(86400000*6)) < parseInt(localStorage.getItem("tmnow_reward")))
+{ localStorage.setItem(iklanHOME_id, "1"); $("#for_id_user2").empty(); }
+if(localStorage.getItem(iklan_id) != "1" && (parseInt(localStorage.getItem("freeOneHourAccess_reward"))+(86400000*6)) < parseInt(localStorage.getItem("tmnow_reward")))
+{ localStorage.setItem(iklan_id, "1"); }
+}
+/********HAPUS RUMUS INI SETELAH LEWAT TANGGAL 1 juni 2025 END**********/
+
 var iklanHOME_today = new Date().getTime();
 var iklanHOME_1d = iklanHOME_today + 36000000;
 var iklanHOME_7d = iklanHOME_today + (36000000 * 15);
