@@ -87,7 +87,7 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
           }
         } else if (localStorage.getItem("deviceplatformOS") == 'iOS') {
           $("#khususANDROID").hide();
-          if (localStorage.getItem("IOSVERSION") == '20250901') {
+          if (localStorage.getItem("IOSVERSION") == '20250901OK') {
             localStorage.setItem("showkonten", "");
           } else {
             localStorage.setItem("showkonten", "showkonten");
