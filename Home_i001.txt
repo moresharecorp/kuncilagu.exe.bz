@@ -80,14 +80,14 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
         localStorage.removeItem("ANative_CG");
         if (localStorage.getItem("deviceplatformOS") == 'Android') {
           $("#khususIOS").hide();
-          if (localStorage.getItem("ANDROIDVERSION") == '20250901OK' && APPS_NAME == 'KGANDROIDPRO') {
+          if (localStorage.getItem("ANDROIDVERSION") == '20251201OK' && APPS_NAME == 'KGANDROIDPRO') {
             localStorage.setItem("showkonten", "");
           } else {
             localStorage.setItem("showkonten", "showkonten");
           }
         } else if (localStorage.getItem("deviceplatformOS") == 'iOS') {
           $("#khususANDROID").hide();
-          if (localStorage.getItem("IOSVERSION") == '20250901OK') {
+          if (localStorage.getItem("IOSVERSION") == '20251201') {
             localStorage.setItem("showkonten", "");
           } else {
             localStorage.setItem("showkonten", "showkonten");
