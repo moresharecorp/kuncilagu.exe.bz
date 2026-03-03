@@ -110,11 +110,18 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
         /********FREEONEHOURS LOCKED END*********/
 		
         /*****************IP LOC***********/
+		if(!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == undefined || localStorage.getItem("IpUserCache") == null || localStorage.getItem("IpUserCache") == NaN || localStorage.getItem("IpUserCache") == false || localStorage.getItem("IpUserCache") == 0) {
+          $.ajax({
+            url: "https://ipapi.co/json/"
+          }).done(function(dataIpUserCache) {
+            localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
+            localStorage.setItem("RegionUserCache", dataIpUserCache.region);
+          });
+        }
         if(!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == undefined || localStorage.getItem("IpUserCache") == null || localStorage.getItem("IpUserCache") == NaN || localStorage.getItem("IpUserCache") == false || localStorage.getItem("IpUserCache") == 0) {
           $.ajax({
             url: "https://ipwho.is/"
-          }).done(function(data0IpUserCache) {
-			var dataIpUserCache = JSON.parse(data0IpUserCache);
+          }).done(function(dataIpUserCache) {
             localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
             localStorage.setItem("RegionUserCache", dataIpUserCache.region);
           });
@@ -122,8 +129,7 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
 	if(!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == undefined || localStorage.getItem("IpUserCache") == null || localStorage.getItem("IpUserCache") == NaN || localStorage.getItem("IpUserCache") == false || localStorage.getItem("IpUserCache") == 0) {
 	$.ajax({
             url: "http://ip-api.com/json/"
-          }).done(function(data0IpUserCache) {
-			var dataIpUserCache = JSON.parse(data0IpUserCache);
+          }).done(function(dataIpUserCache) {
             localStorage.setItem("IpUserCache", dataIpUserCache.countryCode);
             localStorage.setItem("RegionUserCache", dataIpUserCache.regionName);
           });
