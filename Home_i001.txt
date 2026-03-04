@@ -113,25 +113,25 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
 		if(!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == undefined || localStorage.getItem("IpUserCache") == null || localStorage.getItem("IpUserCache") == NaN || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null' || localStorage.getItem("IpUserCache") == 'NaN' || localStorage.getItem("IpUserCache") == false || localStorage.getItem("IpUserCache") == 0) {
           $.ajax({
             url: "https://ipapi.co/json/"
-          }).done(function(dataIpUserCache) {
-            localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
-            localStorage.setItem("RegionUserCache", dataIpUserCache.region);
+          }).done(function(dataIpUserCache0) {
+            localStorage.setItem("IpUserCache", dataIpUserCache0.country_code);
+            localStorage.setItem("RegionUserCache", dataIpUserCache0.region);
           });
         }
         if(!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == undefined || localStorage.getItem("IpUserCache") == null || localStorage.getItem("IpUserCache") == NaN || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null' || localStorage.getItem("IpUserCache") == 'NaN' || localStorage.getItem("IpUserCache") == false || localStorage.getItem("IpUserCache") == 0) {
           $.ajax({
             url: "https://ipwho.is/"
-          }).done(function(dataIpUserCache) {
-            localStorage.setItem("IpUserCache", dataIpUserCache.country_code);
-            localStorage.setItem("RegionUserCache", dataIpUserCache.region);
+          }).done(function(dataIpUserCache1) {
+            localStorage.setItem("IpUserCache", dataIpUserCache1.country_code);
+            localStorage.setItem("RegionUserCache", dataIpUserCache1.region);
           });
         }
 	if(!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == undefined || localStorage.getItem("IpUserCache") == null || localStorage.getItem("IpUserCache") == NaN || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null' || localStorage.getItem("IpUserCache") == 'NaN' || localStorage.getItem("IpUserCache") == false || localStorage.getItem("IpUserCache") == 0) {
 	$.ajax({
             url: "http://ip-api.com/json/"
-          }).done(function(dataIpUserCache) {
-            localStorage.setItem("IpUserCache", dataIpUserCache.countryCode);
-            localStorage.setItem("RegionUserCache", dataIpUserCache.regionName);
+          }).done(function(dataIpUserCache2) {
+            localStorage.setItem("IpUserCache", dataIpUserCache2.countryCode);
+            localStorage.setItem("RegionUserCache", dataIpUserCache2.regionName);
           });
 	}
 	$("#OSINFO").append('<br>'+localStorage.getItem("IpUserCache")+' - '+localStorage.getItem("RegionUserCache"));
