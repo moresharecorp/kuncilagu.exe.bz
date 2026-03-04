@@ -134,6 +134,22 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
             localStorage.setItem("RegionUserCache", dataIpUserCache2.regionName);
           });
 	}
+	if(!localStorage.getItem("IpUserCache") || !localStorage.getItem("RegionUserCache") || localStorage.getItem("IpUserCache") == '' || localStorage.getItem("IpUserCache") == undefined || localStorage.getItem("IpUserCache") == null || localStorage.getItem("IpUserCache") == NaN || localStorage.getItem("IpUserCache") == 'undefined' || localStorage.getItem("IpUserCache") == 'null' || localStorage.getItem("IpUserCache") == 'NaN' || localStorage.getItem("IpUserCache") == false || localStorage.getItem("IpUserCache") == 0) {
+
+			var TimeToLocation = new Date();
+			var TimeToLocationGet = TimeToLocation.toString();
+			if (TimeToLocationGet.match(/indonesia/i)) 
+			{ 
+			var matchesINDO = TimeToLocationGet.match(/\((.*)\)/i);
+			var CodematchesINDO = matchesINDO[1];
+			localStorage.setItem("IpUserCache", "ID");
+            localStorage.setItem("RegionUserCache", CodematchesINDO);
+			}
+			else { 
+				localStorage.setItem("IpUserCache", "US");
+            	localStorage.setItem("RegionUserCache", "Outside");
+				}
+	}
 	$("#OSINFO").append('<br>'+localStorage.getItem("IpUserCache")+' - '+localStorage.getItem("RegionUserCache"));
         if (localStorage.getItem("IpUserCache") != 'ID') { $('#for_id_user2').hide();}
         /*****************IP LOC END***********/
