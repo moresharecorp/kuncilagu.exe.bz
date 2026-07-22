@@ -80,7 +80,7 @@ if (localStorage.getItem("iklanHOME_1d") < iklanHOME_today && localStorage.getIt
         localStorage.removeItem("ANative_CG");
         if (localStorage.getItem("deviceplatformOS") == 'Android') {
           $("#khususIOS").hide();
-          if (localStorage.getItem("ANDROIDVERSION") == '20260720' && APPS_NAME == 'KGANDROIDPRO') {
+          if (localStorage.getItem("ANDROIDVERSION") == '20260720OK' && APPS_NAME == 'KGANDROIDPRO') {
             localStorage.setItem("showkonten", "");
           } else {
             localStorage.setItem("showkonten", "showkonten");
