@@ -2,11 +2,11 @@
 <script>
 $(document).ready(function(){
 //////////////TERBARU 2022//////////////
-if(localStorage.getItem("showkontenswitch") == 'google' && localStorage.getItem("logOnceTimehome_VERSION") == "20250901ok") 
+if(localStorage.getItem("showkontenswitch") == 'google' && localStorage.getItem("logOnceTimehome_VERSION") == "20260720ok") 
 { } 
-else if(localStorage.getItem("showkontenswitch") == 'huawei' && localStorage.getItem("logOnceTimehome_VERSION") == "20250901") 
+else if(localStorage.getItem("showkontenswitch") == 'huawei' && localStorage.getItem("logOnceTimehome_VERSION") == "20260720") 
 { } 
-else if(localStorage.getItem("showkontenswitch") == 'ios' && localStorage.getItem("logOnceTimehome_VERSION") == "20250901") 
+else if(localStorage.getItem("showkontenswitch") == 'ios' && localStorage.getItem("logOnceTimehome_VERSION") == "20260720") 
 { } 
 else
 { localStorage.setItem("showkontenswitch","google"); }
