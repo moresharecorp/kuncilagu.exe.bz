@@ -9,7 +9,7 @@
 
 /**********HAPUS INI SETELAH VERSI 20260721**********/
 if (localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO" && localStorage.getItem("ANDROIDVERSION") == 20260720) {
-document.getElementById("p2").style.bottom = "164px";
+document.getElementById("MANGGUNGNOADS").style.bottom = "164px";
         }
 /****************************************************/
 
