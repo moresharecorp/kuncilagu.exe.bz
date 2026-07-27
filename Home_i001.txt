@@ -7,6 +7,12 @@
   /****************WARNING!!! HIDE/SHOW HARUS DIDEKLARASIIN LAGI SETELAH INI!*************/
   $(document).ready(function() {
 
+/**********HAPUS INI SETELAH VERSI 20260721**********/
+if (localStorage.getItem("deviceAPPS_NAME") != "KGANDROIDPRO" && localStorage.getItem("ANDROIDVERSION") == 20260721) {
+document.getElementById("p2").style.bottom = "164px";
+        }
+/****************************************************/
+
 /**********ADVERTISE DIHALAMAN HOME PASANG DISINI*********/
 
 var iklanHOME_today = new Date().getTime();
