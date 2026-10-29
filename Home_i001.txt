@@ -72,7 +72,7 @@ if(skip_if_not_update != "x1x1x1x1x1x1x1x1x1x")
 {
 	var id_vid_ytube = auto_change_latest_vid_youtube_from_kuncilagu_test_github_iklanHOME;
 	var iklanHOME_vid_youtube = "iklanHOME_"+id_vid_ytube;
-		if (localStorage.getItem("iklanHOME_id") != "1")
+		if (localStorage.getItem(iklanHOME_vid_youtube) != "1")
 		{
 		const prefixiklanHOME = 'iklanHOME_';
 		Object.keys(localStorage).forEach(key => {if (key.startsWith(prefixiklanHOME)) {localStorage.removeItem(key);}});
