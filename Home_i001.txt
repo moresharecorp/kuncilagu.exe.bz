@@ -69,7 +69,7 @@ if (iklanHOME_id2 != "iklanHOME_002" && localStorage.getItem("iklanHOME_1d") < i
 
 
 /*******PROMO AUTO UPDATE CHANNEL YOUTUBE OTOMATIS********/
-var auto_change_latest_vid_youtube_from_kuncilagu_test_github_iklanHOME = "i3MaADaSkQs";
+var auto_change_latest_vid_youtube_from_kuncilagu_test_github_iklanHOME = "x1x1x1x1x1x1x1x1x1x";
 
 var skip_if_not_update = auto_change_latest_vid_youtube_from_kuncilagu_test_github_iklanHOME;
 if(skip_if_not_update != "x1x1x1x1x1x1x1x1x1x")
