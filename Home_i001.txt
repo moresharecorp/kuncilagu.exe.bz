@@ -133,7 +133,7 @@ if(skip_if_not_update != "x1x1x1x1x1x1x1x1x1x")
           }
         } else if (localStorage.getItem("deviceplatformOS") == 'iOS') {
           $("#khususANDROID").hide();
-          if (localStorage.getItem("IOSVERSION") == '20261101') {
+          if (localStorage.getItem("IOSVERSION") == '20261101OK') {
             localStorage.setItem("showkonten", "");
           } else {
             localStorage.setItem("showkonten", "showkonten");
