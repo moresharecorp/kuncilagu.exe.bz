@@ -21,7 +21,7 @@ $(document).ready(function() {
 	var iklanHOME_7d = iklanHOME_today + (36000000 * 15);
 
 /*******PROMO AUTO UPDATE CHANNEL YOUTUBE OTOMATIS********/
-	var auto_change_latest_vid_youtube_from_kuncilagu_test_github_iklanHOME = "Mbj_KKBCjPs";
+	var auto_change_latest_vid_youtube_from_kuncilagu_test_github_iklanHOME = "3FDXTls6Z_g";
 
 	var skip_if_not_update = auto_change_latest_vid_youtube_from_kuncilagu_test_github_iklanHOME;
 	if(skip_if_not_update != "x1x1x1x1x1x1x1x1x1x")
